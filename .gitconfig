@@ -34,7 +34,7 @@
 	changed = green
 	untracked = cyan
 [core]
-  	editor = atom --wait
+  	editor = code --wait
 	excludesfile = ~/.gitexclude
 [filter "hawser"]
 	clean = git hawser clean %f
