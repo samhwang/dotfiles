@@ -93,9 +93,21 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git iterm2 vscode meteor osx brew macports z zsh-syntax-highlighting
-)
+
+case `uname` in
+  Darwin)
+    # commands for OS X go here
+    plugins=(
+    git iterm2 vscode meteor osx brew macports z zsh-syntax-highlighting
+    )
+  ;;
+  Linux)
+    # commands for Linux go here
+    plugins=(
+    git vscode meteor ubuntu z zsh-syntax-highlighting
+    )
+  ;;
+esac
 
 source $ZSH/oh-my-zsh.sh
 
