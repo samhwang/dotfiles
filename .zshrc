@@ -1,9 +1,3 @@
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
-# These settings are from medium
-# Link: https://medium.freecodecamp.org/how-you-can-style-your-terminal-like-medium-freecodecamp-or-any-way-you-want-f499234d48bc
-
 # Customise the Powerlevel9k prompts and load Nerd Fonts with PowerLevel9k
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=( os_icon context dir vcs newline)
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
@@ -25,7 +19,7 @@ function title_text {
 }
 title_text SamHuynhMBP
 
-#zsh completions
+# zsh completions
 fpath=(/usr/local/share/zsh-completions $fpath)
 
 ################# OH MY ZSH
@@ -35,17 +29,8 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/samhwang/.oh-my-zsh"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# Theme
 ZSH_THEME="powerlevel9k/powerlevel9k"
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -115,8 +100,35 @@ source $ZSH/oh-my-zsh.sh
 
 export MANPATH="/usr/local/man:$MANPATH"
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+# MacPorts
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
+# Setting PATH for Python 2.7
+# The orginal version is saved in .bash_profile.pysave
+export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+
+# Setting PATH for PHP 7.0
+export PATH="/usr/local/php5/bin:$PATH"
+
+# Load NVM into shell session as a function
+export NVM_DIR="/Users/samhwang/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# PATH for Ruby
+export PATH="/Users/samhwang/.gem/ruby/2.3.0/bin:$PATH"
+
+# Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Language environment
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
