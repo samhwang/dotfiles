@@ -12,14 +12,8 @@
 	type = cat-file -t
 	dump = cat-file -p
 [color]
-	# Update on 13/2/2019: Change the color for branch, diff and status to the
-	# three blocks below.
-  	# diff = auto
-  	# status = auto
-  	# branch = auto
   	interactive = auto
   	ui = true
-  	pager = true
 [color "branch"]
 	current = yellow reverse
 	local = yellow
@@ -36,6 +30,7 @@
 [core]
   	editor = code --wait
 	excludesfile = ~/.gitexclude
+	pager = less -FRSX
 [filter "hawser"]
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
