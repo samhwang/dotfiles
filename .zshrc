@@ -13,11 +13,6 @@ ITERM2_TITLE_BACKGROUND_RED="18"
 ITERM2_TITLE_BACKGROUND_GREEN="26"
 ITERM2_TITLE_BACKGROUND_BLUE="33"
 title_background_color
-# Set iTerm2 tab title text
-function title_text {
-    echo -ne "\033]0;"$*"\007"
-}
-title_text SamHuynhMBP
 
 # zsh completions
 fpath=(/usr/local/share/zsh-completions $fpath)
@@ -157,7 +152,7 @@ alias ll='ls -laF'
 # git aliases
 alias gs='git status '
 alias go='git checkout '
-# alias gk='gitk --all&'
+alias gk='gitk --all&'
 alias gx='gitx --all'
 alias got='git '
 alias get='git '
