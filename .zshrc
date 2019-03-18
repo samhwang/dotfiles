@@ -2,6 +2,7 @@ export TERM="xterm-256color"
 
 # Customise the Powerlevel9k prompts and load Nerd Fonts with PowerLevel9k
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=( os_icon context dir vcs newline)
+DEFAULT_USER='samhwang'
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 POWERLEVEL9K_MODE='nerdfont-complete'
 
