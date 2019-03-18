@@ -151,6 +151,7 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # system aliases
 alias ll='ls -laF'
+alias reload='clear; source ~/.zshrc'
 
 # git aliases
 alias gs='git status '
