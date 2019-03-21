@@ -28,7 +28,7 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 export ZSH="/Users/samhwang/.oh-my-zsh"
 
 # Theme
-ZSH_THEME="powerlevel9k/powerlevel9k"
+source ~/projects/powerlevel10k/powerlevel10k.zsh-theme
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
