@@ -1,3 +1,3 @@
-export PROJECT="${ZDOTDIR:-${HOME}}/projects/dotfiles" 
-source "$PROJECT/.zshrc-auxiliary"
-source "$PROJECT/.zshrc-`uname`"
+export PROJECTS="${ZDOTDIR:-${HOME}}/projects" 
+source "$PROJECTS/dotfiles/.zshrc-auxiliary"
+source "$PROJECTS/dotfiles/.zshrc-`uname`"
