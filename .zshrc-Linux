@@ -1,0 +1,8 @@
+plugins=(git vscode meteor ubuntu z zsh-completions zsh-syntax-highlighting)
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+export MANPATH="/usr/local/man:$MANPATH"
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"

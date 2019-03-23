@@ -1,0 +1,42 @@
+plugins=(git iterm2 vscode meteor osx brew macports z zsh-completions zsh-syntax-highlighting)
+source $ZSH/oh-my-zsh.sh
+
+# iTerm2 config
+# Set a color for iTerm2 tab title background using rgb values
+function title_background_color {
+  echo -ne "\033]6;1;bg;red;brightness;$ITERM2_TITLE_BACKGROUND_RED\a"
+  echo -ne "\033]6;1;bg;green;brightness;$ITERM2_TITLE_BACKGROUND_GREEN\a"
+  echo -ne "\033]6;1;bg;blue;brightness;$ITERM2_TITLE_BACKGROUND_BLUE\a"
+}
+ITERM2_TITLE_BACKGROUND_RED="18"
+ITERM2_TITLE_BACKGROUND_GREEN="26"
+ITERM2_TITLE_BACKGROUND_BLUE="33"
+title_background_color
+
+# ClassCom Specific aliases
+alias rc_start='meteor npm start'
+alias rc_test='TEST_MODE=true meteor npm start'
+alias rc_chimp='meteor npm run chimp-test'
+
+# PHP Composer alias
+alias composer="php /usr/local/bin/composer.phar"
+
+# Software Packages, Language and Environment
+# PATH for MacPorts
+export PATH="/opt/local/bin:/opt/local/sbin:${PATH}"
+
+# PATH for Python 2.7 and Python 3.6
+export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+
+# PATH for PHP 7.0
+export PATH="/usr/local/php5/bin:$PATH"
+
+# Load NVM into shell session as a function
+export NVM_DIR="~/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# PATH for Ruby and loading RVM into shell session as a function
+export PATH="~/.gem/ruby/2.3.0/bin:$PATH"
+export PATH="$PATH:$HOME/.rvm/bin"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
