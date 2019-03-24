@@ -13,11 +13,6 @@ ITERM2_TITLE_BACKGROUND_GREEN="26"
 ITERM2_TITLE_BACKGROUND_BLUE="33"
 title_background_color
 
-# ClassCom Specific aliases
-alias rc_start='meteor npm start'
-alias rc_test='TEST_MODE=true meteor npm start'
-alias rc_chimp='meteor npm run chimp-test'
-
 # PHP Composer alias
 alias composer="php /usr/local/bin/composer.phar"
 

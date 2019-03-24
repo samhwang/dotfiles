@@ -29,6 +29,11 @@ alias gx='gitx --all'
 alias got='git '
 alias get='git '
 
+# ClassCom Specific aliases
+alias rc_start='meteor npm start'
+alias rc_test='TEST_MODE=true meteor npm start'
+alias rc_chimp='meteor npm run chimp-test'
+
 ################# OH MY ZSH CONFIGURATIONS
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
