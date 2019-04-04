@@ -14,7 +14,7 @@ export ZSH="$HOME/.oh-my-zsh"
 source "$PROJECTS/dotfiles/.zshrc-`uname`"
 
 # Cowfiles directory
-export COWPATH="$PROJECTS/.cowsay:$COWPATH"
+export COWPATH="$PROJECTS/cowfiles:$COWPATH"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
