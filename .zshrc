@@ -22,7 +22,7 @@ export COWPATH="$PROJECTS/cowfiles:$COWPATH"
 # For a full list of active aliases, run `alias`.
 # system aliases
 alias ll='ls -laF'
-alias reload='clear; source $HOME/.zshrc'
+alias reload='src'
 alias zshconfig="code $HOME/.zshrc"
 alias ohmyzsh="code $HOME/.oh-my-zsh"
 
