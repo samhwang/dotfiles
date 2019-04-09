@@ -1,4 +1,4 @@
-plugins=(git iterm2 osx vscode meteor brew macports z zsh_reload zsh-completions zsh-syntax-highlighting)
+plugins=(git iterm2 osx vscode brew macports z zsh_reload zsh-completions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # iTerm2 config
