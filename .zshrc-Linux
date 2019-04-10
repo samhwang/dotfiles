@@ -8,5 +8,11 @@ export MANPATH="/usr/local/man:$MANPATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
+# Specify gems directory for Ruby
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
+# Add RVM to PATH for scripting.
+export PATH="$PATH:$HOME/.rvm/bin"
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
