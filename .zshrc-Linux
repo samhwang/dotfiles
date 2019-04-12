@@ -11,8 +11,6 @@ export NVM_DIR="$HOME/.nvm"
 # Specify gems directory for Ruby
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
-# Add RVM to PATH for scripting.
-export PATH="$PATH:$HOME/.rvm/bin"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
