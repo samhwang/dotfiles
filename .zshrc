@@ -1,5 +1,5 @@
 #Theme
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=( os_icon context dir vcs newline)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=( os_icon context dir virtualenv vcs newline)
 DEFAULT_USER='samhwang'
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 POWERLEVEL9K_MODE='nerdfont-complete'
