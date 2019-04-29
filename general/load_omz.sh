@@ -1,5 +1,5 @@
 # Theme
-DEFAULT_USER='samhwang'
+DEFAULT_USER='pi'
 ZSH_THEME="powerlevel10k/powerlevel10k"
 source "$GENERALCONFIG/p10k-config-lean.zsh"
 

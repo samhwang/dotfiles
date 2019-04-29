@@ -28,7 +28,7 @@
 	changed = green
 	untracked = cyan
 [core]
-  	editor = code --wait
+  	editor = vim
 	excludesfile = ~/.gitexclude
 	pager = less -FRSX
 [filter "hawser"]
