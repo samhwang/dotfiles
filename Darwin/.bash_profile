@@ -34,6 +34,9 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 eval $(/usr/libexec/path_helper -s)
 
+# Homebrew command-not-found
+if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew command-not-found-init)"; fi
+
 # Setting PATH for Python 2.7
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"

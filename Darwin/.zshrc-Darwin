@@ -1,4 +1,7 @@
-plugins=(git iterm2 osx vscode brew macports virtualenv z zsh_reload zsh-completions zsh-syntax-highlighting)
+# Command-not-found for Mac
+if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew command-not-found-init)"; fi
+
+plugins=(command-not-found git iterm2 osx vscode z zsh_reload zsh-completions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # iTerm2 config
