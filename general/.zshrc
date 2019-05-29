@@ -13,6 +13,9 @@ export TERM="xterm-256color"
 export ZSH="$HOME/.oh-my-zsh"
 source "$PROJECTS/dotfiles/`uname`/.zshrc-`uname`"
 
+# iTerm2 Shell integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
 # Cowfiles directory
 export COWPATH="$PROJECTS/cowfiles:$COWPATH"
 
