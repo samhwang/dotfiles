@@ -1,5 +1,6 @@
 #Theme
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=( os_icon context dir virtualenv vcs newline)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir virtualenv vcs newline)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time)
 DEFAULT_USER='samhwang'
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 POWERLEVEL9K_MODE='nerdfont-complete'
