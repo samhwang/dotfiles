@@ -1,4 +1,8 @@
-#Theme
+# Make copying much faster and disable highlight
+DISABLE_MAGIC_FUNCTIONS=true
+zle_highlight=('paste:none')
+
+# Theme
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir virtualenv vcs newline)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time)
 DEFAULT_USER='samhwang'
