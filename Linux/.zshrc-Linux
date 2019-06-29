@@ -1,4 +1,4 @@
-plugins=(command-not-found git vscode ubuntu virtualenv z zsh_reload zsh-completions zsh-syntax-highlighting)
+plugins=(command-not-found ubuntu z zsh_reload zsh-completions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration

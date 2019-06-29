@@ -1,7 +1,10 @@
 # Command-not-found for Mac
 if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew command-not-found-init)"; fi
 
-plugins=(command-not-found git iterm2 osx vscode z zsh_reload zsh-completions zsh-syntax-highlighting)
+# iTerm2 Shell integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+plugins=(command-not-found osx z zsh_reload zsh-completions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # iTerm2 config
