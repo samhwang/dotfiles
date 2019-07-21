@@ -2,25 +2,23 @@
 DISABLE_MAGIC_FUNCTIONS=true
 zle_highlight=('paste:none')
 
-# Theme
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir virtualenv vcs newline)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time)
-DEFAULT_USER='samhwang'
-POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-POWERLEVEL9K_MODE='nerdfont-complete'
-ZSH_THEME="powerlevel10k/powerlevel10k"
-
 # Setting up environment
 export PROJECTS="${ZDOTDIR:-${HOME}}/projects"
 export LANG=en_US.UTF-8
 export SSH_KEY_PATH="$HOME/.ssh/id_rsa"
 export TERM="xterm-256color"
 export ZSH="$HOME/.oh-my-zsh"
-source "$PROJECTS/dotfiles/`uname`/.zshrc-`uname`"
-source "$PROJECTS/dotfiles/general/.purepower"
 
 # Cowfiles directory
 export COWPATH="$PROJECTS/cowfiles:$COWPATH"
+
+# Theme
+DEFAULT_USER='samhwang'
+ZSH_THEME="powerlevel10k/powerlevel10k"
+source "$PROJECTS/dotfiles/general/p10k-config.zsh"
+
+# Load oh-my-zsh specific distro config
+source "$PROJECTS/dotfiles/`uname`/.zshrc-`uname`"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -66,9 +64,6 @@ alias get='git '
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
 
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
-
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
@@ -81,16 +76,6 @@ alias get='git '
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load?
-# Standard plugins can be found in $HOME/.oh-my-zsh/plugins/*
-# Custom plugins may be added to $HOME/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-# plugins = ()
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
