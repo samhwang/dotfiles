@@ -9,6 +9,7 @@ DEFAULT_USER='samhwang'
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 POWERLEVEL9K_MODE='nerdfont-complete'
 ZSH_THEME="powerlevel10k/powerlevel10k"
+source "$PROJECTS/dotfiles/general/.purepower"
 
 # Setting up environment
 export PROJECTS="${ZDOTDIR:-${HOME}}/projects"
