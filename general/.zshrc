@@ -9,7 +9,6 @@ DEFAULT_USER='samhwang'
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 POWERLEVEL9K_MODE='nerdfont-complete'
 ZSH_THEME="powerlevel10k/powerlevel10k"
-source "$PROJECTS/dotfiles/general/.purepower"
 
 # Setting up environment
 export PROJECTS="${ZDOTDIR:-${HOME}}/projects"
@@ -18,6 +17,7 @@ export SSH_KEY_PATH="$HOME/.ssh/id_rsa"
 export TERM="xterm-256color"
 export ZSH="$HOME/.oh-my-zsh"
 source "$PROJECTS/dotfiles/`uname`/.zshrc-`uname`"
+source "$PROJECTS/dotfiles/general/.purepower"
 
 # Cowfiles directory
 export COWPATH="$PROJECTS/cowfiles:$COWPATH"
