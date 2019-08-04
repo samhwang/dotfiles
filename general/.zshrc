@@ -7,7 +7,8 @@ export PROJECTS="${ZDOTDIR:-${HOME}}/projects"
 export LANG=en_US.UTF-8
 export SSH_KEY_PATH="$HOME/.ssh/id_rsa"
 export TERM="xterm-256color"
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$PROJECTS/dotfiles/general/oh-my-zsh"
+ZSH_CUSTOM="$PROJECTS/dotfiles/general/oh-my-zsh-custom"
 
 # Cowfiles directory
 export COWPATH="$PROJECTS/cowfiles:$COWPATH"
@@ -27,8 +28,8 @@ source "$PROJECTS/dotfiles/`uname`/.zshrc-`uname`"
 # system aliases
 alias ll='ls -laF'
 alias reload='src'
-alias zshconfig="code $HOME/.zshrc"
-alias ohmyzsh="code $HOME/.oh-my-zsh"
+alias zshconfig="code $PROJECTS/dotfiles/general/.zshrc"
+alias ohmyzsh="code $ZSH"
 
 # git aliases
 alias gs='git status '
