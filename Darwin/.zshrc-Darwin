@@ -20,15 +20,8 @@ title_background_color
 alias composer="php /usr/local/bin/composer.phar"
 
 # Software Packages, Language and Environment
-# PATH for MacPorts
-export PATH="/opt/local/bin:/opt/local/sbin:${PATH}"
-
-# PATH for Python 2.7 and Python 3.6
-export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-
-# PATH for PHP 7.0
-export PATH="/usr/local/php5/bin:$PATH"
+# PATH for Homebrew
+export PATH="/usr/local/sbin:$PATH"
 
 # Load NVM into shell session as a function
 export NVM_DIR="/Users/samhwang/.nvm"
