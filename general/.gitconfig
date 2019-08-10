@@ -1,6 +1,6 @@
 [user]
 	name = Sam Huynh
-	email = samhwang21121994@gmail.com
+	email = samhwang2112.dev@gmail.com
 [alias]
   	lol = log --graph --decorate --pretty=oneline --abbrev-commit
   	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
