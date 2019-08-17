@@ -16,9 +16,6 @@ ITERM2_TITLE_BACKGROUND_GREEN="26"
 ITERM2_TITLE_BACKGROUND_BLUE="33"
 title_background_color
 
-# PHP Composer alias
-alias composer="php /usr/local/bin/composer.phar"
-
 # Software Packages, Language and Environment
 # PATH for Homebrew
 export PATH="/usr/local/sbin:$PATH"
