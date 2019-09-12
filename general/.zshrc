@@ -33,9 +33,6 @@ alias ohmyzsh="code $ZSH"
 
 # git aliases
 alias gs='git status '
-alias go='git checkout '
-alias gk='gitk --all&'
-alias gx='gitx --all'
 alias got='git '
 alias get='git '
 
