@@ -20,6 +20,13 @@ title_background_color
 # PATH for Homebrew
 export PATH="/usr/local/sbin:$PATH"
 
+# PATH for Go
+export GOPATH="${HOME}/.go"
+export GOROOT="/usr/local/opt/go/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+test -d "${GOPATH}" || mkdir "${GOPATH}"
+test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
+
 # Load NVM into shell session as a function
 export NVM_DIR="/Users/samhwang/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
