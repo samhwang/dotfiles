@@ -24,7 +24,6 @@ export PATH="/usr/local/sbin:$PATH"
 export NVM_DIR="/Users/samhwang/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-# PATH for Ruby and loading RVM into shell session as a function
-export PATH="~/.gem/ruby/2.3.0/bin:$PATH"
+# Load RVM into shell session as a function
 export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
