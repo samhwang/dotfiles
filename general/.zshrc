@@ -16,7 +16,7 @@ export COWPATH="$PROJECTS/cowfiles:$COWPATH"
 # Theme
 DEFAULT_USER='samhwang'
 ZSH_THEME="powerlevel10k/powerlevel10k"
-source "$PROJECTS/dotfiles/general/p10k-config.zsh"
+source "$PROJECTS/dotfiles/general/p10k-config-lean.zsh"
 
 # Load oh-my-zsh specific distro config
 source "$PROJECTS/dotfiles/`uname`/.zshrc-`uname`"
