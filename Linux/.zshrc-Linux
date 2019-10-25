@@ -4,6 +4,9 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export MANPATH="/usr/local/man:$MANPATH"
 
+# PATH for Composer global stuff
+export PATH="${HOME}/.composer/vendor/bin:$PATH"
+
 # Load NVM into shell session as a function
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
