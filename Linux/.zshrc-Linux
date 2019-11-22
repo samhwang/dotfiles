@@ -1,4 +1,4 @@
-plugins=(command-not-found ubuntu z zsh_reload zsh-completions zsh-syntax-highlighting)
+plugins=(ubuntu z zsh_reload zsh-completions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -9,7 +9,7 @@ export PATH="${HOME}/.composer/vendor/bin:$PATH"
 
 # Load NVM into shell session as a function
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use
 
 # Specify gems directory for Ruby
 export GEM_HOME="$HOME/gems"
