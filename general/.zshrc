@@ -19,6 +19,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 source "$PROJECTS/dotfiles/general/p10k-config-lean.zsh"
 
 # Load oh-my-zsh specific distro config
+DISABLE_AUTO_UPDATE="true"
 source "$PROJECTS/dotfiles/`uname`/.zshrc-`uname`"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
@@ -37,7 +38,6 @@ alias got='git '
 alias get='git '
 
 ################# OH MY ZSH CONFIGURATIONS
-DISABLE_AUTO_UPDATE="true"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
