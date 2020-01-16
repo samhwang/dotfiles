@@ -32,6 +32,10 @@ alias reload='src'
 alias zshconfig="code $PROJECTS/dotfiles/general/.zshrc"
 alias ohmyzsh="code $ZSH"
 
+if type nvim > /dev/null 2>&1; then
+  alias vim='nvim'
+fi
+
 # git aliases
 alias gs='git status '
 alias got='git '
