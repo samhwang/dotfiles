@@ -49,3 +49,8 @@ export NVM_DIR="/Users/samhwang/.nvm"
 # Load RVM into a shell session *as a function*
 export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# Enable Byobu on Darwin
+if type byobu > /dev/null 2>&1; then
+  _byobu_sourced=1 . /usr/local/Cellar/byobu/5.130/bin/byobu-launch 2>/dev/null || true
+fi
