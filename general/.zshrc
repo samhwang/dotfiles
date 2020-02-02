@@ -20,7 +20,7 @@ source "$PROJECTS/dotfiles/general/p10k-config-lean.zsh"
 
 # Load oh-my-zsh specific distro config
 DISABLE_AUTO_UPDATE="true"
-source "$PROJECTS/dotfiles/`uname`/.zshrc-`uname`"
+source "$PROJECTS/dotfiles/`uname`/`uname`.zshrc"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
