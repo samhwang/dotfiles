@@ -14,6 +14,7 @@ export MANPATH="/usr/local/man:$MANPATH"
 
 # Software Packages, Language and Environment
 load_module "composer"
+load_module "golang"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
