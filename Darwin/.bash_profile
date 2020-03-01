@@ -32,9 +32,6 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 eval $(/usr/libexec/path_helper -s)
 
-# Homebrew command-not-found
-if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew command-not-found-init)"; fi
-
 # PATH for Go
 export GOPATH="${HOME}/.go"
 export GOROOT="/usr/local/opt/go/libexec"
@@ -44,13 +41,8 @@ test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
 
 # Load NVM into shell session as a function
 export NVM_DIR="/Users/samhwang/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use
 
-# Load RVM into a shell session *as a function*
-export PATH="$PATH:$HOME/.rvm/bin"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-# Enable Byobu on Darwin
 if type byobu > /dev/null 2>&1; then
-  _byobu_sourced=1 . /usr/local/Cellar/byobu/5.130/bin/byobu-launch 2>/dev/null || true
+  _byobu_sourced=1 . `which byobu-launch` 2>/dev/null || true
 fi

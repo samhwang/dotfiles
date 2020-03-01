@@ -19,7 +19,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 source "$PROJECTS/dotfiles/general/p10k-config-lean.zsh"
 
 # Load oh-my-zsh specific distro config
-DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE=true
 source "$PROJECTS/dotfiles/`uname`/`uname`.zshrc"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
