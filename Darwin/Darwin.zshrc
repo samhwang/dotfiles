@@ -1,20 +1,8 @@
-# iTerm2 Shell integration
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 plugins=(osx z zsh_reload zsh-completions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
-# iTerm2 config
-# Set a color for iTerm2 tab title background using rgb values
-function title_background_color {
-  echo -ne "\033]6;1;bg;red;brightness;$ITERM2_TITLE_BACKGROUND_RED\a"
-  echo -ne "\033]6;1;bg;green;brightness;$ITERM2_TITLE_BACKGROUND_GREEN\a"
-  echo -ne "\033]6;1;bg;blue;brightness;$ITERM2_TITLE_BACKGROUND_BLUE\a"
-}
-ITERM2_TITLE_BACKGROUND_RED="18"
-ITERM2_TITLE_BACKGROUND_GREEN="26"
-ITERM2_TITLE_BACKGROUND_BLUE="33"
-title_background_color
+# Load iterm2 config
+source "$DOTFILEPATH/Darwin/iterm2.zsh"
 
 # Software Packages, Language and Environment
 # PATH for Composer global stuff
