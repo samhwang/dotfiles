@@ -18,8 +18,28 @@ fi
   emulate -L zsh
   setopt no_unset
 
-  typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs newline prompt_char)
-  typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator command_execution_time background_jobs virtualenv context newline battery time)
+  typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
+    # =========================[ Line #1 ]=========================
+    os_icon
+    dir
+    vcs
+    # =========================[ Line #2 ]=========================
+    newline
+    prompt_char
+  )
+
+  typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
+    # =========================[ Line #1 ]=========================
+    status
+    root_indicator
+    command_execution_time
+    background_jobs
+    context
+    # =========================[ Line #1 ]=========================
+    newline
+    battery
+    time
+  )
 
   typeset -g POWERLEVEL9K_BACKGROUND=                            # transparent background
   typeset -g POWERLEVEL9K_{LEFT,RIGHT}_{LEFT,RIGHT}_WHITESPACE=  # no surrounding whitespace
@@ -31,6 +51,7 @@ fi
   typeset -g POWERLEVEL9K_VISUAL_IDENTIFIER_EXPANSION=
 
   typeset -g POWERLEVEL9K_MODE=nerdfont-complete
+  typeset -g POWERLEVEL9K_ICON_PADDING=moderate
 
   # Regarding newline, ruler and first_prompt_gap
   # ADD_NEWLINE adds a new line to each prompt, SHOW_RULER shows a line before each prompt
@@ -169,65 +190,6 @@ fi
   # typeset -g POWERLEVEL9K_CONTEXT_{DEFAULT,SUDO}_{CONTENT,VISUAL_IDENTIFIER}_EXPANSION=
   typeset -g POWERLEVEL9K_ALWAYS_SHOW_CONTEXT=true
 
-  # virtualenv
-  typeset -g POWERLEVEL9K_VIRTUALENV_FOREGROUND=6
-  typeset -g POWERLEVEL9K_VIRTUALENV_SHOW_PYTHON_VERSION=true
-  typeset -g POWERLEVEL9K_VIRTUALENV_{LEFT,RIGHT}_DELIMITER=
-
-  # Anaconda
-  typeset -g POWERLEVEL9K_ANACONDA_FOREGROUND=6
-  typeset -g POWERLEVEL9K_ANACONDA_SHOW_PYTHON_VERSION=true
-  typeset -g POWERLEVEL9K_ANACONDA_{LEFT,RIGHT}_DELIMITER=
-
-  # Pyenv
-  typeset -g POWERLEVEL9K_PYENV_FOREGROUND=6
-  typeset -g POWERLEVEL9K_PYENV_PROMPT_ALWAYS_SHOW=false
-
-  # Nodenv color.
-  typeset -g POWERLEVEL9K_NODENV_FOREGROUND=2
-  typeset -g POWERLEVEL9K_NODENV_PROMPT_ALWAYS_SHOW=false
-
-  # Nvm color.
-  typeset -g POWERLEVEL9K_NVM_FOREGROUND=2
-
-  # Nodeenv color.
-  typeset -g POWERLEVEL9K_NODEENV_FOREGROUND=2
-
-  # Node version color.
-  typeset -g POWERLEVEL9K_NODE_VERSION_FOREGROUND=2
-  typeset -g P9K_NODE_VERSION_PROJECT_ONLY=true
-
-  # Kubernetes context classes for the purpose of using different colors with
-  # different contexts.
-  #
-  # POWERLEVEL9K_KUBECONTEXT_CLASSES is an array with even number of elements.
-  # The first element in each pair defines a pattern against which the current
-  # kubernetes context (in the format it is displayed in the prompt) gets matched.
-  # The second element defines the context class. Patterns are tried in order.
-  # The first match wins.
-  #
-  # For example, if your current kubernetes context is "deathray-testing", its
-  # class is TEST because "deathray-testing" doesn't match the pattern '*prod*'
-  # but does match '*test*'. Hence it'll be shown with the color of
-  # $POWERLEVEL9K_KUBECONTEXT_TEST_FOREGROUND.
-  typeset -g POWERLEVEL9K_KUBECONTEXT_CLASSES=(
-      # '*prod*'  PROD    # These values are examples that are unlikely
-      # '*test*'  TEST    # to match your needs. Customize them as needed.
-      '*'       DEFAULT)
-  # typeset -g POWERLEVEL9K_KUBECONTEXT_PROD_FOREGROUND=1
-  # typeset -g POWERLEVEL9K_KUBECONTEXT_TEST_FOREGROUND=2
-  typeset -g POWERLEVEL9K_KUBECONTEXT_DEFAULT_FOREGROUND=3
-  # Kubernetes context too long? You can shorten it by defining an expansion. The original
-  # Kubernetes context that you see in your prompt is stored in ${P9K_CONTENT} when
-  # the expansion is evaluated. To remove everything up to and including the last '/',
-  # set POWERLEVEL9K_KUBECONTEXT_CONTENT_EXPANSION='${P9K_CONTENT##*/}'. This is just,
-  # an example which isn't necessarily the right expansion for you. Parameter expansions
-  # are very flexible and fast, too. See reference:
-  # http://zsh.sourceforge.net/Doc/Release/Expansion.html#Parameter-Expansion.
-  typeset POWERLEVEL9K_KUBECONTEXT_CONTENT_EXPANSION='${P9K_CONTENT}'
-  # Show the trailing "/default" in kubernetes context.
-  typeset -g POWERLEVEL9K_KUBECONTEXT_SHOW_DEFAULT_NAMESPACE=true
-
   # Public IP color.
   typeset -g POWERLEVEL9K_PUBLIC_IP_FOREGROUND=144
 
@@ -236,15 +198,21 @@ fi
   typeset -g POWERLEVEL9K_BATTERY_LOW_FOREGROUND=1
   typeset -g POWERLEVEL9K_BATTERY_CHARGING_FOREGROUND=2
   typeset -g POWERLEVEL9K_BATTERY_DISCONNECTED_FOREGROUND=3
-  typeset -g POWERLEVEL9K_BATTERY_STAGES='▁▂▃▄▅▆▇'
+  typeset -g POWERLEVEL9K_BATTERY_STAGES='\uf58d\uf579\uf57a\uf57b\uf57c\uf57d\uf57e\uf57f\uf580\uf581\uf578'
   typeset -g POWERLEVEL9K_BATTERY_VISUAL_IDENTIFIER_EXPANSION='%0K${P9K_VISUAL_IDENTIFIER}%k'
   typeset -g POWERLEVEL9K_BATTERY_CHARGED_{CONTENT,VISUAL_IDENTIFIER}_EXPANSION=
   typeset -g POWERLEVEL9K_BATTERY_VERBOSE=false
 
   # Current time
   typeset -g POWERLEVEL9K_TIME_FOREGROUND=66
-  typeset -g POWERLEVEL9K_TIME_FORMAT='%D{%H:%M:%S}'
+  typeset -g POWERLEVEL9K_TIME_FORMAT='%D{%I:%M:%S %p}'
   typeset -g POWERLEVEL9K_TIME_UPDATE_ON_COMMAND=false
+
+  # Instant Prompt verbose
+  typeset -g POWERLEVEL9K_INSTANT_PROMPT=verbose
+
+  # Transient Prompt
+  typeset -g POWERLEVEL9K_TRANSIENT_PROMPT=same-dir
 }
 
 (( ! p10k_lean_restore_aliases )) || setopt aliases
