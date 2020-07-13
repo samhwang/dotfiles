@@ -7,9 +7,8 @@ export MANPATH="/usr/local/man:$MANPATH"
 # PATH for Composer global stuff
 export PATH="${HOME}/.config/composer/vendor/bin:$PATH"
 
-# Load NVM into shell session as a function
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# Load NVM
+source "$GENERALCONFIG/load_nvm.sh"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
