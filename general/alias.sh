@@ -1,3 +1,10 @@
+# Preferred editor for local and remote sessions
+EDITOR='code --wait'
+if [[ -n $SSH_CONNECTION ]]; then
+  EDITOR='vim'
+fi
+export EDITOR
+
 # system aliases
 alias ll='ls -laF'
 alias reload='src'

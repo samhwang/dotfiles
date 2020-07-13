@@ -2,9 +2,9 @@
 	name = Sam Huynh
 	email = samhwang2112.dev@gmail.com
 [alias]
-  	lol = log --graph --decorate --pretty=oneline --abbrev-commit
-  	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-  	co = checkout
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	co = checkout
 	ci = commit
 	st = status
 	br = branch
@@ -12,8 +12,8 @@
 	type = cat-file -t
 	dump = cat-file -p
 [color]
-  	interactive = auto
-  	ui = true
+	interactive = auto
+	ui = true
 [color "branch"]
 	current = yellow reverse
 	local = yellow
@@ -28,7 +28,7 @@
 	changed = green
 	untracked = cyan
 [core]
-  	editor = code --wait
+	editor = $EDITOR
 	excludesfile = ~/.gitexclude
 	pager = less -FRSX
 [filter "hawser"]
