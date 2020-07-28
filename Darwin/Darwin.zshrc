@@ -1,4 +1,11 @@
-plugins=(osx z zsh_reload zsh-completions zsh-syntax-highlighting)
+plugins=(
+  nvm
+  osx
+  z
+  zsh_reload
+  zsh-completions
+  zsh-syntax-highlighting
+)
 source $ZSH/oh-my-zsh.sh
 
 # Load iterm2 config
@@ -14,9 +21,6 @@ export GOROOT="/usr/local/opt/go/libexec"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 test -d "${GOPATH}" || mkdir "${GOPATH}"
 test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
-
-# Load NVM
-source "$GENERALCONFIG/load_nvm.sh"
 
 # Load PyPi packages
 export PATH="${HOME}/Library/Python/3.7/bin:$PATH"
