@@ -1,7 +1,5 @@
 .DS_Store
 Thumbs.db
 
-.vim/.netrwhist
-
 log/
 *.log
