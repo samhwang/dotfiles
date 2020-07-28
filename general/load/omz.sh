@@ -1,7 +1,7 @@
 # Theme
 DEFAULT_USER='samhwang'
 ZSH_THEME="powerlevel10k/powerlevel10k"
-source "$GENERALCONFIG/p10k-config-lean.zsh"
+source "$LOAD/p10k-config-lean.zsh"
 
 # Instant prompt
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then

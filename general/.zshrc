@@ -9,8 +9,6 @@ GENERALCONFIG="$DOTFILEPATH/general"
 ZSH_CUSTOM="$GENERALCONFIG/oh-my-zsh-custom"
 export ZSH="$GENERALCONFIG/oh-my-zsh"
 
-# Load Oh-My-Zsh
-source "$GENERALCONFIG/load_omz.sh"
-
-# Load aliases
-source "$GENERALCONFIG/alias.sh"
+export LOAD="$GENERALCONFIG/load"
+source "$LOAD/omz.sh"
+source "$LOAD/alias.sh"
