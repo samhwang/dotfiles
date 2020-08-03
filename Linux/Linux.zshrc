@@ -13,7 +13,7 @@ source $ZSH/oh-my-zsh.sh
 export MANPATH="/usr/local/man:$MANPATH"
 
 # Software Packages, Language and Environment
-source "$LOAD/composer.sh"
+load_module "composer"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"

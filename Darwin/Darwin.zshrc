@@ -10,11 +10,11 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # Load iterm2 config
-source "$DOTFILEPATH/Darwin/iterm2.zsh"
+load_module "iterm2"
 
 # Software Packages, Language and Environment
-source "$LOAD/composer.sh"
-source "$LOAD/golang.sh"
-source "$LOAD/pypi.sh"
-source "$LOAD/google_cloud_sdk.sh"
-source "$LOAD/byobu.sh"
+load_module "composer"
+load_module "golang"
+load_module "pypi"
+load_module "google_cloud_sdk"
+load_module "byobu"
