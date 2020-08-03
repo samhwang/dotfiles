@@ -1,4 +1,5 @@
 plugins=(
+  command-not-found
   nvm
   osx
   z
