@@ -4,6 +4,7 @@ plugins=(
   osx
   z
   zsh_reload
+  zsh-autosuggestions
   zsh-completions
   zsh-syntax-highlighting
 )
