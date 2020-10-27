@@ -13,10 +13,14 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export MANPATH="/usr/local/man:$MANPATH"
 
-# Software Packages, Language and Environment
-load_module "composer"
-load_module "golang"
-load_module "deno"
-
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+
+os_modules=(
+  # Software Packages, Language and Environment
+  "composer"
+  "golang"
+  "deno"
+)
+load_modules $os_modules
+unset $os_modules

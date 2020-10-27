@@ -9,13 +9,20 @@ GENERALCONFIG="$DOTFILEPATH/general"
 ZSH_CUSTOM="$GENERALCONFIG/oh-my-zsh-custom"
 export ZSH="$GENERALCONFIG/oh-my-zsh"
 
-function load_module () {
-    LOAD="$GENERALCONFIG/load"
-    source "$LOAD/$1.sh"
+function load_modules() {
+    arr=("$@")
+    for module in "${arr[@]}"; do
+        LOAD="$GENERALCONFIG/load"
+        source "$LOAD/$module.sh"
+    done
 }
 
-load_module "omz"
-load_module "alias"
-load_module "package"
+base_modules=(
+    "omz"
+    "alias"
+    "package"
+)
+load_modules $base_modules
+unset $base_modules
 
-disable -f "load_module"
+disable -f "load_modules"
