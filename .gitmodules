@@ -13,3 +13,7 @@
 [submodule "general/oh-my-zsh-custom/plugins/zsh-autosuggestions"]
 	path = general/oh-my-zsh-custom/plugins/zsh-autosuggestions
 	url = git@github.com:zsh-users/zsh-autosuggestions.git
+[submodule "general/cowfiles"]
+	path = general/cowfiles
+	url = git@github.com:samhwang/cowfiles.git
+	branch = mycows
