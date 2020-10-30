@@ -14,6 +14,9 @@ os_modules=(
   # iTerm2 config
   "iterm2"
 
+  # cows
+  "cowsay"
+
   # Software Packages, Language and Environment
   "composer"
   "golang"
