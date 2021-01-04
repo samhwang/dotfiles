@@ -24,3 +24,5 @@ os_modules=(
 )
 load_modules $os_modules
 unset $os_modules
+
+eval $(dircolors ${HOME}/.dir_colors/dircolors)
