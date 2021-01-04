@@ -1,5 +1,4 @@
-let g:solarized_termcolors=256
-
-syntax enable
+let g:gruvbox_italic=1
 set background=dark
-colorscheme solarized
+set termguicolors
+autocmd vimenter * ++nested colorscheme gruvbox
