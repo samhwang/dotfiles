@@ -5,7 +5,17 @@ elif [ $CURRENT_OS = "Linux" ]; then
 fi
 
 function pkg_up() {
-    set -x;
+    echo "UPDATING SYSTEM PACKAGES";
     update_packages;
-    git --git-dir $DOTFILEPATH/.git submodule update --recursive --remote;
+
+    echo "GOING TO DOTFILES DIRECTORY";
+    cd $DOTFILEPATH;
+    echo "CURRENTLY AT `pwd`";
+
+    echo "UPDATING DOTFILES SUBMODULES";
+    git submodule update --recursive --remote;
+    
+    echo "FINISH UPDATING. GOING BACK TO PREVIOUS DIRECTORY";
+    cd -;
+    echo "CURRENTLY AT `pwd`";
 }
