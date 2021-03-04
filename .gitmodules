@@ -23,3 +23,6 @@
 [submodule "Linux/gnome-terminal-colors"]
 	path = Linux/gnome-terminal-colors
 	url = git@github.com:metalelf0/gnome-terminal-colors.git
+[submodule "general/oh-my-zsh-custom/plugins/wakatime"]
+	path = general/oh-my-zsh-custom/plugins/wakatime
+	url = git@github.com:sobolevn/wakatime-zsh-plugin.git

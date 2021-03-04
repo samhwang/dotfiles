@@ -2,6 +2,7 @@ plugins=(
   command-not-found
   nvm
   osx
+  wakatime
   z
   zsh_reload
   zsh-autosuggestions
