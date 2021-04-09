@@ -6,10 +6,17 @@ function download_font() {
 }
 
 # ORIGINAL FONTS
-CASCADIA_VER=2009.22
+IOSEVKA_VER=5.2.1
+CASCADIA_VER=2102.25
 FIRA_VER=5.2
-JETBRAINS_VER=2.001
+JETBRAINS_VER=2.225
 original_fonts=(
+  https://github.com/be5invis/Iosevka/releases/download/v5.2.1/super-ttc-iosevka-${IOSEVKA_VER}.zip
+  https://github.com/be5invis/Iosevka/releases/download/v5.2.1/super-ttc-iosevka-aile-${IOSEVKA_VER}.zip
+  https://github.com/be5invis/Iosevka/releases/download/v5.2.1/super-ttc-iosevka-curly-${IOSEVKA_VER}.zip
+  https://github.com/be5invis/Iosevka/releases/download/v5.2.1/super-ttc-iosevka-curly-slab-${IOSEVKA_VER}.zip
+  https://github.com/be5invis/Iosevka/releases/download/v5.2.1/super-ttc-iosevka-etoile-${IOSEVKA_VER}.zip
+  https://github.com/be5invis/Iosevka/releases/download/v5.2.1/super-ttc-iosevka-slab-${IOSEVKA_VER}.zip
   https://github.com/microsoft/cascadia-code/releases/download/v${CASCADIA_VER}/CascadiaCode-${CASCADIA_VER}.zip
   https://github.com/tonsky/FiraCode/releases/download/${FIRA_VER}/Fira_Code_v${FIRA_VER}.zip
   https://download.jetbrains.com/fonts/JetBrainsMono-${JETBRAINS_VER}.zip
@@ -28,6 +35,7 @@ download_og_fonts
 
 # NERD FONTS SECTION
 nerd_fonts=(
+  "Iosevka"
   "CascadiaCode"
   "FiraCode"
   "FiraMono"
