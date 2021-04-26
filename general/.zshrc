@@ -6,11 +6,14 @@ export PROJECTS="${ZDOTDIR:-${HOME}}/projects"
 DOTFILEPATH="${PROJECTS}/dotfiles"
 GENERALCONFIG="$DOTFILEPATH/general"
 
+# Load zinit
+source $GENERALCONFIG/zinit/zinit.zsh
+
 function load_modules() {
     arr=("$@")
     for module in "${arr[@]}"; do
         LOAD="$GENERALCONFIG/load"
-        source "$LOAD/$module.sh"
+        zinit snippet "$LOAD/$module.sh"
     done
 }
 

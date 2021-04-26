@@ -1,15 +1,6 @@
-plugins=(
-  command-not-found
-  nvm
-  osx
-  wakatime
-  z
-  zsh_reload
-  zsh-autosuggestions
-  zsh-completions
-  zsh-syntax-highlighting
-)
-source $ZSH/oh-my-zsh.sh
+# Load PZT & OMZ modules
+zinit wait lucid for \
+  PZTM::osx
 
 os_modules=(
   # iTerm2 config
