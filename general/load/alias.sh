@@ -10,7 +10,6 @@ alias ll='ls -laF'
 alias reload='src'
 alias zshconfig="$EDITOR $GENERALCONFIG/.zshrc"
 alias dotfileconfig="$EDITOR $DOTFILEPATH"
-alias ohmyzsh="$EDITOR $ZSH"
 
 if type nvim > /dev/null 2>&1; then
   alias vim='nvim'

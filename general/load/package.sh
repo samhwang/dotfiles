@@ -10,12 +10,13 @@ function pkg_up() {
 
     echo "GOING TO DOTFILES DIRECTORY";
     cd $DOTFILEPATH;
-    echo "CURRENTLY AT `pwd`";
+    echo "CURRENTLY AT $(pwd)";
 
     echo "UPDATING DOTFILES SUBMODULES";
     git submodule update --recursive --remote;
-    
+    zinit update --all;
+
     echo "FINISH UPDATING. GOING BACK TO PREVIOUS DIRECTORY";
     cd -;
-    echo "CURRENTLY AT `pwd`";
+    echo "CURRENTLY AT $(pwd)";
 }
