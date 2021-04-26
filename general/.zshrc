@@ -5,8 +5,6 @@ export TERM="xterm-256color"
 export PROJECTS="${ZDOTDIR:-${HOME}}/projects"
 DOTFILEPATH="${PROJECTS}/dotfiles"
 GENERALCONFIG="$DOTFILEPATH/general"
-ZSH_CUSTOM="$GENERALCONFIG/oh-my-zsh-custom"
-export ZSH="$GENERALCONFIG/oh-my-zsh"
 
 function load_modules() {
     arr=("$@")

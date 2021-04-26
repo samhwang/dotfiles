@@ -1,18 +1,3 @@
-[submodule "general/oh-my-zsh"]
-	path = general/oh-my-zsh
-	url = git@github.com:robbyrussell/oh-my-zsh.git
-[submodule "general/oh-my-zsh-custom/themes/powerlevel10k"]
-	path = general/oh-my-zsh-custom/themes/powerlevel10k
-	url = git@github.com:romkatv/powerlevel10k.git
-[submodule "general/oh-my-zsh-custom/plugins/zsh-completions"]
-	path = general/oh-my-zsh-custom/plugins/zsh-completions
-	url = git@github.com:zsh-users/zsh-completions.git
-[submodule "general/oh-my-zsh-custom/plugins/zsh-syntax-highlighting"]
-	path = general/oh-my-zsh-custom/plugins/zsh-syntax-highlighting
-	url = git@github.com:zsh-users/zsh-syntax-highlighting.git
-[submodule "general/oh-my-zsh-custom/plugins/zsh-autosuggestions"]
-	path = general/oh-my-zsh-custom/plugins/zsh-autosuggestions
-	url = git@github.com:zsh-users/zsh-autosuggestions.git
 [submodule "general/cowfiles"]
 	path = general/cowfiles
 	url = git@github.com:samhwang/cowfiles.git
@@ -23,6 +8,3 @@
 [submodule "Linux/gnome-terminal-colors"]
 	path = Linux/gnome-terminal-colors
 	url = git@github.com:metalelf0/gnome-terminal-colors.git
-[submodule "general/oh-my-zsh-custom/plugins/wakatime"]
-	path = general/oh-my-zsh-custom/plugins/wakatime
-	url = git@github.com:sobolevn/wakatime-zsh-plugin.git
