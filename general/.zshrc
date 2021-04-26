@@ -16,12 +16,19 @@ function load_modules() {
     done
 }
 
-base_modules=(
+# Shared Modules
+shared_modules=(
+    # Base Modules
     "omz"
     "alias"
     "package"
+
+    # Software Packages, Language and Environment
+    "composer"
+    "golang"
+    "deno"
 )
-load_modules $base_modules
-unset $base_modules
+load_modules $shared_modules
+unset $shared_modules
 
 disable -f "load_modules"

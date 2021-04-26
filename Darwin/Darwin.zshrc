@@ -19,12 +19,9 @@ os_modules=(
   "cowsay"
 
   # Software Packages, Language and Environment
-  "composer"
-  "golang"
   "pypi"
   "google_cloud_sdk"
   "byobu"
-  "deno"
 )
 load_modules $os_modules
 unset $os_modules
