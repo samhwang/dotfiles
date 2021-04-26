@@ -1,8 +1,14 @@
-if [ $CURRENT_OS = "Darwin" ]; then
-    alias update_packages="brew update; brew upgrade; brew cleanup;"
-elif [ $CURRENT_OS = "Linux" ]; then
-    alias update_packages="sudo apt update; sudo apt upgrade -y; sudo apt autoremove -y;"
-fi
+function update_packages() {
+    if [ $CURRENT_OS = "Darwin" ]; then
+        brew update;
+        brew upgrade;
+        brew cleanup;
+    elif [ $CURRENT_OS = "Linux" ]; then
+        sudo apt update;
+        sudo apt upgrade -y;
+        sudo apt autoremove -y;
+    fi
+}
 
 function pkg_up() {
     echo "UPDATING SYSTEM PACKAGES";

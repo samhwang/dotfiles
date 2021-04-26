@@ -25,7 +25,6 @@ zinit wait lucid for \
   light-mode zsh-users/zsh-syntax-highlighting
 
 # Load oh-my-zsh specific distro config
-CURRENT_OS=`uname`
 OS_CONFIG_PATH="$DOTFILEPATH/$CURRENT_OS/$CURRENT_OS.zshrc"
 source "$OS_CONFIG_PATH"
 

@@ -5,6 +5,7 @@ export TERM="xterm-256color"
 export PROJECTS="${ZDOTDIR:-${HOME}}/projects"
 DOTFILEPATH="${PROJECTS}/dotfiles"
 GENERALCONFIG="$DOTFILEPATH/general"
+export CURRENT_OS=`uname`
 
 # Load zinit
 source $GENERALCONFIG/zinit/zinit.zsh
