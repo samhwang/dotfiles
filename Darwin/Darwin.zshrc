@@ -1,18 +1,15 @@
 # Load PZT & OMZ modules
 zinit wait lucid for \
-  PZTM::osx
+  PZTM::osx \
+  OMZP::iterm2
 
-os_modules=(
-  # iTerm2 config
-  "iterm2"
+# iTerm2 Shell integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-  # cows
-  "cowsay"
-
-  # Software Packages, Language and Environment
-  "pypi"
-  "google_cloud_sdk"
-  "byobu"
-)
-load_modules $os_modules
-unset $os_modules
+BACKGROUND_RED="18"
+BACKGROUND_GREEN="26"
+BACKGROUND_BLUE="33"
+iterm2_tab_color \
+  $BACKGROUND_RED \
+  $BACKGROUND_GREEN \
+  $BACKGROUND_BLUE

@@ -5,12 +5,10 @@ zinit wait for lucid \
 # User configuration
 export MANPATH="/usr/local/man:$MANPATH"
 
+# PATH for eb cli
+export PATH="$HOME/.ebcli-virtual-env/executables:$PATH"
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-
-# os_modules=(
-# )
-# load_modules $os_modules
-# unset $os_modules
 
 eval $(dircolors ${HOME}/.dir_colors/dircolors)

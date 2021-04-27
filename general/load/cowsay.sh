@@ -1,3 +1,0 @@
-EXTRACOWS="$GENERALCONFIG/cowfiles"
-
-test -d "${EXTRACOWS}" && export COWPATH="${EXTRACOWS}:$COWPATH"
