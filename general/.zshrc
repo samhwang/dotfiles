@@ -79,9 +79,9 @@ zinit wait lucid for \
     OMZP::composer \
     OMZP::git \
     OMZP::golang \
-    OMZP::deno \
     OMZP::dotenv \
     OMZP::jump \
+    OMZP::thefuck \
     OMZP::zsh_reload \
     PZTM::command-not-found \
     PZTM::history \
@@ -89,9 +89,10 @@ zinit wait lucid for \
     PZTM::terminal \
     light-mode agkozak/zsh-z \
     light-mode sobolevn/wakatime-zsh-plugin \
-    light-mode zsh-users/zsh-autosuggestions \
-    light-mode zsh-users/zsh-completions \
-    light-mode zsh-users/zsh-syntax-highlighting
+    light-mode atload"!_zsh_autosuggest_start" zsh-users/zsh-autosuggestions \
+    light-mode blockf zsh-users/zsh-completions \
+    light-mode atload'bindkey "$terminfo[kcuu1]" history-substring-search-up; bindkey "$terminfo[kcud1]" history-substring-search-down' zsh-users/zsh-history-substring-search \
+    light-mode atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" zdharma/fast-syntax-highlighting
 
 # Load P10K theme
 zinit ice depth=1
@@ -100,6 +101,12 @@ zinit snippet "${GENERALCONFIG}/p10k-config-lean.zsh"
 
 # Enable completion for zsh-z
 autoload -U compinit && compinit
+
+# Auto terminal title
+zstyle ':prezto:module:terminal' auto-title 'yes'
+zstyle ':prezto:module:terminal:window-title' format '%s'
+zstyle ':prezto:module:terminal:tab-title' format '%s'
+zstyle ':prezto:module:terminal:multiplexer-title' format '%s'
 
 ###########
 # Aliases #
