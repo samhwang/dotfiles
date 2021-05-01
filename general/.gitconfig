@@ -42,3 +42,5 @@
 	clean = git-lfs clean -- %f
 [pull]
 	rebase = false
+[init]
+	defaultBranch = master
