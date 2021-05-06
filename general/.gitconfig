@@ -30,7 +30,19 @@
 [core]
 	editor = $EDITOR
 	excludesfile = ~/.gitexclude
-	pager = less -FRSX
+	pager = delta --diff-so-fancy
+[delta]
+	plus-style = "syntax #012800"
+	minus-style = "syntax #340001"
+	syntax-theme = gruvbox-dark
+	navigate = true
+	inspect-raw-lines = false
+	line-numbers = true
+	# side-by-side = true
+[interactive]
+	diffFilter = delta --color-only
+[diff]
+	colorMoved = default
 [filter "hawser"]
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
