@@ -92,7 +92,8 @@ zinit wait lucid for \
     light-mode atload"!_zsh_autosuggest_start" zsh-users/zsh-autosuggestions \
     light-mode blockf zsh-users/zsh-completions \
     light-mode atload'bindkey "$terminfo[kcuu1]" history-substring-search-up; bindkey "$terminfo[kcud1]" history-substring-search-down' zsh-users/zsh-history-substring-search \
-    light-mode atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" zdharma/fast-syntax-highlighting
+    light-mode atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" zdharma/fast-syntax-highlighting \
+    light-mode from"gh-r" as"program" junegunn/fzf-bin
 
 # Load P10K theme
 zinit ice depth=1
