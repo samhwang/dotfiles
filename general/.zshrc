@@ -79,7 +79,6 @@ zinit wait lucid for \
     OMZP::composer \
     OMZP::git \
     OMZP::golang \
-    OMZP::dotenv \
     OMZP::jump \
     OMZP::thefuck \
     OMZP::zsh_reload \
