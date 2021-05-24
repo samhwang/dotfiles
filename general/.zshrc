@@ -30,6 +30,10 @@ elif [ $CURRENT_OS = "Linux" ]; then
 fi
 export PATH="$PYPI_PATH:$PATH"
 
+# PATH for nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && source $NVM_DIR/nvm.sh --no-use
+
 ####################################
 # Functions for updating utilities #
 ####################################
@@ -84,7 +88,6 @@ zinit wait lucid for \
     OMZP::zsh_reload \
     PZTM::command-not-found \
     PZTM::history \
-    PZTM::node \
     PZTM::terminal \
     light-mode agkozak/zsh-z \
     light-mode sobolevn/wakatime-zsh-plugin \
