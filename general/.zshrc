@@ -44,8 +44,8 @@ function update_packages() {
         brew cleanup
     elif [ $CURRENT_OS = "Linux" ]; then
         sudo apt update
-        sudo apt upgrade -y
-        sudo apt autoremove -y
+        sudo apt upgrade --yes
+        sudo apt autoremove --yes
     fi
 }
 
@@ -60,6 +60,7 @@ function pkg_up() {
     echo "UPDATING DOTFILES SUBMODULES"
     git submodule update --recursive --remote
     zinit update --all
+    zinit delete --clean --yes
 
     echo "FINISH UPDATING. GOING BACK TO PREVIOUS DIRECTORY"
     cd -
