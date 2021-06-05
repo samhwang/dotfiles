@@ -23,13 +23,13 @@
         "revision": "916be5238f2fade31240a763a4f8da4b65a97ae5"
       },
       "homebrew/cask": {
-        "revision": "f0bcd6d3da249df4feb40d0e9fdfa48edcb97684"
+        "revision": "a72b39c41b2c44df2a92eb2a8cda13c802975ff7"
       },
       "homebrew/command-not-found": {
         "revision": "40195b1fa6698f823763e9c1165d7e23a946dbaa"
       },
       "homebrew/core": {
-        "revision": "8b1defc78758102dae1bcaad3341181a14b2fd82"
+        "revision": "b10932e6511b68c83b13a08c02a7ba2fe71b7736"
       },
       "homebrew/services": {
         "revision": "db39d0232a09a592f1298ee97ea80f7f622c0e77"
@@ -38,7 +38,7 @@
         "revision": "098099fc178d4d2fb4133b02f9ea56deabcc2dc9"
       },
       "jesseduffield/lazygit": {
-        "revision": "ce874bcd88a53906ca45334c6198e8fafe70f9a2"
+        "revision": "e16aff84ccad48edf2aa5402d43ed7e1ae23bdf8"
       },
       "jesseduffield/lazynpm": {
         "revision": "4ec011d881df7ed44e9c90190203f2bc9765b7d2"
@@ -2452,7 +2452,7 @@
         "bottle": false
       },
       "jesseduffield/lazygit/lazygit": {
-        "version": "0.28.1",
+        "version": "0.28.2",
         "bottle": false
       },
       "jesseduffield/lazynpm/lazynpm": {
@@ -2596,6 +2596,12 @@
         "options": {
           "full_name": "zoom"
         }
+      },
+      "openkey": {
+        "version": "2.0.4",
+        "options": {
+          "full_name": "openkey"
+        }
       }
     }
   },
@@ -2608,6 +2614,14 @@
         "CLT": "12.0.0.32.27",
         "Xcode": "12.4",
         "macOS": "10.15.7"
+      },
+      "big_sur": {
+        "HOMEBREW_VERSION": "3.1.9-121-g654c78c",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "b10932e6511b68c83b13a08c02a7ba2fe71b7736",
+        "CLT": "12.0.0.32.27",
+        "Xcode": "12.4",
+        "macOS": "11.4"
       }
     }
   }
