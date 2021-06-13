@@ -12,7 +12,7 @@ ZSH_CUSTOM="$GENERALCONFIG/custom-omz"
 export CURRENT_OS=$(uname)
 OS_CONFIG_PATH="$DOTFILEPATH/$CURRENT_OS/$CURRENT_OS.zshrc"
 HISTFILE=$HOME/.zsh_history
-DEFAULT_USER='samhwang'
+DEFAULT_USER='sam'
 DISABLE_MAGIC_FUNCTIONS=true # Make copying into zsh faster
 zle_highlight=('paste:none') # Disable highlight
 zstyle ':omz:update' mode disabled  # disable automatic OMZ updates
