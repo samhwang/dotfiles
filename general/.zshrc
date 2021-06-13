@@ -9,7 +9,7 @@ DOTFILEPATH="${PROJECTS}/dotfiles"
 GENERALCONFIG="$DOTFILEPATH/general"
 export CURRENT_OS=$(uname)
 HISTFILE=$HOME/.zsh_history
-DEFAULT_USER='samhwang'
+DEFAULT_USER='sam'
 DISABLE_MAGIC_FUNCTIONS=true # Make copying into zsh faster
 zle_highlight=('paste:none') # Disable highlight
 
@@ -138,3 +138,4 @@ fi
 ###########
 # Cleanup #
 ###########
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
