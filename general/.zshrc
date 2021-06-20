@@ -70,14 +70,6 @@ function pkg_up() {
 ######################
 # Themes and Plugins #
 ######################
-# Load specific distro plugins
-OS_CONFIG_PATH="$DOTFILEPATH/$CURRENT_OS/$CURRENT_OS.zshrc"
-source "$OS_CONFIG_PATH"
-
-# Load extra cowfiles if exist
-EXTRACOWS="$GENERALCONFIG/cowfiles"
-test -d "${EXTRACOWS}" && export COWPATH="${EXTRACOWS}:$COWPATH"
-
 # Load common zsh modules
 zinit wait lucid for \
     OMZP::common-aliases \
@@ -110,6 +102,14 @@ zstyle ':prezto:module:terminal' auto-title 'yes'
 zstyle ':prezto:module:terminal:window-title' format '%s'
 zstyle ':prezto:module:terminal:tab-title' format '%s'
 zstyle ':prezto:module:terminal:multiplexer-title' format '%s'
+
+# Load specific distro plugins
+OS_CONFIG_PATH="$DOTFILEPATH/$CURRENT_OS/$CURRENT_OS.zshrc"
+source "$OS_CONFIG_PATH"
+
+# Load extra cowfiles if exist
+EXTRACOWS="$GENERALCONFIG/cowfiles"
+test -d "${EXTRACOWS}" && export COWPATH="${EXTRACOWS}:$COWPATH"
 
 ###########
 # Aliases #
