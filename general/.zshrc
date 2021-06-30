@@ -33,6 +33,7 @@ export PATH="$PYPI_PATH:$PATH"
 # PATH for nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && source $NVM_DIR/nvm.sh --no-use
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 ####################################
 # Functions for updating utilities #
@@ -72,7 +73,6 @@ function pkg_up() {
 ######################
 # Load common zsh modules
 zinit wait lucid for \
-    OMZP::common-aliases \
     OMZP::composer \
     OMZP::git \
     OMZP::golang \
