@@ -78,7 +78,6 @@ zinit wait lucid for \
     OMZP::golang \
     OMZP::jump \
     OMZP::thefuck \
-    OMZP::zsh_reload \
     PZTM::command-not-found \
     PZTM::history \
     PZTM::terminal \
@@ -123,7 +122,7 @@ export EDITOR
 
 # system aliases
 alias ll='ls -laF'
-alias reload='src'
+alias reload='exec zsh'
 
 # git aliases
 alias gs='git status '
