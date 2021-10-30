@@ -24,7 +24,7 @@ source $GENERALCONFIG/zinit/zinit.zsh
 # PATH for PyPI
 PYPI_PATH=""
 if [ $CURRENT_OS = "Darwin" ]; then
-    PYPI_PATH="${HOME}/Library/Python/3.7/bin"
+    PYPI_PATH="${HOME}/Library/Python/3.9/bin"
 elif [ $CURRENT_OS = "Linux" ]; then
     PYPI_PATH="$HOME/.local/bin"
 fi
@@ -136,5 +136,3 @@ fi
 ###########
 # Cleanup #
 ###########
-
-export PATH="$HOME/Library/Python/3.8/bin:$PATH"
