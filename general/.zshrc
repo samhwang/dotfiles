@@ -82,7 +82,6 @@ zinit wait lucid for \
     PZTM::history \
     PZTM::terminal \
     light-mode agkozak/zsh-z \
-    light-mode sobolevn/wakatime-zsh-plugin \
     light-mode atload"!_zsh_autosuggest_start" zsh-users/zsh-autosuggestions \
     light-mode blockf zsh-users/zsh-completions \
     light-mode atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" zdharma/fast-syntax-highlighting \
