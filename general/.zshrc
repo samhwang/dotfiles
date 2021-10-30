@@ -84,7 +84,7 @@ zinit wait lucid for \
     light-mode agkozak/zsh-z \
     light-mode atload"!_zsh_autosuggest_start" zsh-users/zsh-autosuggestions \
     light-mode blockf zsh-users/zsh-completions \
-    light-mode atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" zdharma/fast-syntax-highlighting \
+    light-mode atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" zdharma-continuum/fast-syntax-highlighting \
     light-mode from"gh-r" as"program" junegunn/fzf-bin
 
 # Load P10K theme

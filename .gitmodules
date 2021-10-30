@@ -10,4 +10,4 @@
 	url = git@github.com:metalelf0/gnome-terminal-colors.git
 [submodule "general/zinit"]
 	path = general/zinit
-	url = git@github.com:zdharma/zinit.git
+	url = git@github.com:zdharma-continuum/zinit.git
