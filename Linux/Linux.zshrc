@@ -1,7 +1,5 @@
 # Load PZT & OMZ modules
-zinit wait for lucid \
-  OMZP::ubuntu \
-    light-mode atload'bindkey "$terminfo[kcuu1]" history-substring-search-up; bindkey "$terminfo[kcud1]" history-substring-search-down' zsh-users/zsh-history-substring-search
+zgenom ohmyzsh plugins/ubuntu
 
 # User configuration
 export MANPATH="/usr/local/man:$MANPATH"

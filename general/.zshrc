@@ -18,8 +18,8 @@ if type byobu >/dev/null 2>&1; then
     _byobu_sourced=1 . $(which byobu-launch) 2>/dev/null || true
 fi
 
-# Load zinit
-source $GENERALCONFIG/zinit/zinit.zsh
+# Load zgenom
+source $GENERALCONFIG/zgenom/zgenom.zsh
 
 # PATH for PyPI
 PYPI_PATH=""
@@ -60,8 +60,9 @@ function pkg_up() {
 
     echo "UPDATING DOTFILES SUBMODULES"
     git submodule update --recursive --remote
-    zinit update --all
-    zinit delete --clean --yes
+    zgenom selfupdate
+    zgenom update
+    zgenom clean
 
     echo "FINISH UPDATING. GOING BACK TO PREVIOUS DIRECTORY"
     cd -
@@ -72,28 +73,36 @@ function pkg_up() {
 # Themes and Plugins #
 ######################
 # Load common zsh modules
-zinit wait lucid for \
-    OMZP::composer \
-    OMZP::git \
-    OMZP::golang \
-    OMZP::jump \
-    OMZP::thefuck \
-    PZTM::command-not-found \
-    PZTM::history \
-    PZTM::terminal \
-    light-mode agkozak/zsh-z \
-    light-mode atload"!_zsh_autosuggest_start" zsh-users/zsh-autosuggestions \
-    light-mode blockf zsh-users/zsh-completions \
-    light-mode atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" zdharma-continuum/fast-syntax-highlighting \
-    light-mode from"gh-r" as"program" junegunn/fzf-bin
+zgenom ohmyzsh
+zgenom ohmyzsh plugins/composer
+zgenom ohmyzsh plugins/git
+zgenom ohmyzsh plugins/golang
+zgenom ohmyzsh plugins/jump
+zgenom ohmyzsh plugins/thefuck
+zgenom ohmyzsh plugins/composer
+zgenom ohmyzsh plugins/z
+
+zgenom prezto
+zgenom prezto command-not-found
+zgenom prezto history
+zgenom prezto terminal
+
+zgenom load zsh-users/zsh-autosuggestions
+zgenom load zsh-users/zsh-completions
+zgenom load zsh-users/zsh-syntax-highlighting
+zgenom load zsh-users/zsh-history-substring-search
+
+
 
 # Load P10K theme
-zinit ice depth=1
-zinit light romkatv/powerlevel10k
-zinit snippet "${GENERALCONFIG}/p10k-config-lean.zsh"
+zgenom load romkatv/powerlevel10k powerlevel10k
+zgenom load ${GENERALCONFIG}/p10k-config-lean.zsh
 
 # Enable completion for zsh-z
 autoload -U compinit && compinit
+
+# Load fzf keybindings
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Auto terminal title
 zstyle ':prezto:module:terminal' auto-title 'yes'
