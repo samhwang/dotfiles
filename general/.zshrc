@@ -69,53 +69,66 @@ function pkg_up() {
     echo "CURRENTLY AT $(pwd)"
 }
 
-######################
-# Themes and Plugins #
-######################
-# Load common zsh modules
-zgenom ohmyzsh
-zgenom ohmyzsh plugins/composer
-zgenom ohmyzsh plugins/git
-zgenom ohmyzsh plugins/golang
-zgenom ohmyzsh plugins/jump
-zgenom ohmyzsh plugins/thefuck
-zgenom ohmyzsh plugins/composer
-zgenom ohmyzsh plugins/z
+function reload() {
+    echo "Saving zgenom static script"
+    zgenom save
+    exec zsh
+    echo "Reload complete!"
+}
 
-zgenom prezto
-zgenom prezto command-not-found
-zgenom prezto history
-zgenom prezto terminal
+###################################
+# Loading scripts for environment #
+###################################
+if ! zgenom saved; then
+    echo "Saving zgenom static script"
 
-zgenom load zsh-users/zsh-autosuggestions
-zgenom load zsh-users/zsh-completions
-zgenom load zsh-users/zsh-syntax-highlighting
-zgenom load zsh-users/zsh-history-substring-search
+    ######################
+    # Themes and Plugins #
+    ######################
+    # Load common zsh modules
+    zgenom ohmyzsh
+    zgenom ohmyzsh plugins/composer
+    zgenom ohmyzsh plugins/git
+    zgenom ohmyzsh plugins/golang
+    zgenom ohmyzsh plugins/jump
+    zgenom ohmyzsh plugins/thefuck
+    zgenom ohmyzsh plugins/composer
+    zgenom ohmyzsh plugins/z
 
+    zgenom prezto
+    zgenom prezto command-not-found
+    zgenom prezto history
+    zgenom prezto terminal
 
+    zgenom load zsh-users/zsh-autosuggestions
+    zgenom load zsh-users/zsh-completions
+    zgenom load zsh-users/zsh-syntax-highlighting
+    zgenom load zsh-users/zsh-history-substring-search
 
-# Load P10K theme
-zgenom load romkatv/powerlevel10k powerlevel10k
-zgenom load ${GENERALCONFIG}/p10k-config-lean.zsh
+    # Load P10K theme
+    zgenom load romkatv/powerlevel10k powerlevel10k
+    zgenom load ${GENERALCONFIG}/p10k-config-lean.zsh
 
-# Enable completion for zsh-z
-autoload -U compinit && compinit
+    # Load fzf keybindings
+    [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Load fzf keybindings
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+    # Auto terminal title
+    zstyle ':prezto:module:terminal' auto-title 'yes'
+    zstyle ':prezto:module:terminal:window-title' format '%s'
+    zstyle ':prezto:module:terminal:tab-title' format '%s'
+    zstyle ':prezto:module:terminal:multiplexer-title' format '%s'
 
-# Auto terminal title
-zstyle ':prezto:module:terminal' auto-title 'yes'
-zstyle ':prezto:module:terminal:window-title' format '%s'
-zstyle ':prezto:module:terminal:tab-title' format '%s'
-zstyle ':prezto:module:terminal:multiplexer-title' format '%s'
+    # Load specific distro plugins
+    OS_CONFIG_PATH="$DOTFILEPATH/$CURRENT_OS/$CURRENT_OS.zshrc"
+    source "$OS_CONFIG_PATH"
 
-# Load specific distro plugins
-OS_CONFIG_PATH="$DOTFILEPATH/$CURRENT_OS/$CURRENT_OS.zshrc"
-source "$OS_CONFIG_PATH"
+    zgenom save
+    zgenom compile "${DOTFILEPATH}/.zshrc"
+    zgenom compile "${OS_CONFIG_PATH}"
+fi
 
 # Load extra cowfiles if exist
-EXTRACOWS="$GENERALCONFIG/cowfiles"
+EXTRACOWS="${GENERALCONFIG}/cowfiles"
 test -d "${EXTRACOWS}" && export COWPATH="${EXTRACOWS}:$COWPATH"
 
 ###########
@@ -130,7 +143,6 @@ export EDITOR
 
 # system aliases
 alias ll='ls -laF'
-alias reload='exec zsh'
 
 # git aliases
 alias gs='git status '
