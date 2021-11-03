@@ -51,6 +51,7 @@ function update_packages() {
 }
 
 function pkg_up() {
+    CURRENT_PATH=`pwd`
     echo "UPDATING SYSTEM PACKAGES"
     update_packages
 
@@ -63,9 +64,12 @@ function pkg_up() {
     zgenom selfupdate
     zgenom update
     zgenom clean
+    zgenom save
+    zgenom compile "${DOTFILEPATH}/.zshrc"
+    zgenom compile "${OS_CONFIG_PATH}"
 
     echo "FINISH UPDATING. GOING BACK TO PREVIOUS DIRECTORY"
-    cd -
+    cd $CURRENT_PATH
     echo "CURRENTLY AT $(pwd)"
 }
 
