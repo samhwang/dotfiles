@@ -138,12 +138,12 @@ test -d "${EXTRACOWS}" && export COWPATH="${EXTRACOWS}:$COWPATH"
 ###########
 # Aliases #
 ###########
-# Preferred editor for local and remote sessions
-EDITOR='code --wait'
-if [[ -n $SSH_CONNECTION ]]; then
-    EDITOR='vim'
+# Replace vim with nvim
+if type nvim >/dev/null 2>&1; then
+    alias vim='nvim'
 fi
-export EDITOR
+# Preferred editor for local and remote sessions
+export EDITOR='vim'
 
 # system aliases
 alias ll='ls -laF'
@@ -152,11 +152,6 @@ alias ll='ls -laF'
 alias gs='git status '
 alias got='git '
 alias get='git '
-
-# Replace vim with nvim
-if type nvim >/dev/null 2>&1; then
-    alias vim='nvim'
-fi
 
 ###########
 # Cleanup #
