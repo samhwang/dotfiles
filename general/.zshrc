@@ -50,40 +50,7 @@ function update_packages() {
     fi
 }
 
-function pkg_up() {
-    CURRENT_PATH=`pwd`
-    echo "UPDATING SYSTEM PACKAGES"
-    update_packages
-
-    echo "GOING TO DOTFILES DIRECTORY"
-    cd $DOTFILEPATH
-    echo "CURRENTLY AT $(pwd)"
-
-    echo "UPDATING DOTFILES SUBMODULES"
-    git submodule update --recursive --remote
-    zgenom selfupdate
-    zgenom update
-    zgenom clean
-    zgenom save
-    zgenom compile "${DOTFILEPATH}/.zshrc"
-    zgenom compile "${OS_CONFIG_PATH}"
-
-    echo "FINISH UPDATING. GOING BACK TO PREVIOUS DIRECTORY"
-    cd $CURRENT_PATH
-    echo "CURRENTLY AT $(pwd)"
-}
-
-function reload() {
-    echo "Saving zgenom static script"
-    zgenom save
-    exec zsh
-    echo "Reload complete!"
-}
-
-###################################
-# Loading scripts for environment #
-###################################
-if ! zgenom saved; then
+function load_zsh_modules() {
     echo "Saving zgenom static script"
 
     ######################
@@ -129,6 +96,36 @@ if ! zgenom saved; then
     zgenom save
     zgenom compile "${DOTFILEPATH}/.zshrc"
     zgenom compile "${OS_CONFIG_PATH}"
+}
+
+function pkg_up() {
+    CURRENT_PATH=`pwd`
+    echo "UPDATING SYSTEM PACKAGES"
+    update_packages
+
+    echo "GOING TO DOTFILES DIRECTORY"
+    cd $DOTFILEPATH
+    echo "CURRENTLY AT $(pwd)"
+
+    echo "UPDATING DOTFILES SUBMODULES"
+    git submodule update --recursive --remote
+    zgenom selfupdate
+    zgenom update
+    zgenom clean
+    zgenom save
+    zgenom compile "${DOTFILEPATH}/.zshrc"
+    zgenom compile "${OS_CONFIG_PATH}"
+
+    echo "FINISH UPDATING. GOING BACK TO PREVIOUS DIRECTORY"
+    cd $CURRENT_PATH
+    echo "CURRENTLY AT $(pwd)"
+}
+
+###################################
+# Loading scripts for environment #
+###################################
+if ! zgenom saved; then
+    load_zsh_modules
 fi
 
 # Load extra cowfiles if exist
@@ -152,6 +149,9 @@ alias ll='ls -laF'
 alias gs='git status '
 alias got='git '
 alias get='git '
+
+# reload zsh modules
+alias reload="load_zsh_modules"
 
 ###########
 # Cleanup #
