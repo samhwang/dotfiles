@@ -46,3 +46,5 @@ export NVM_DIR="/Users/samhwang/.nvm"
 if type byobu > /dev/null 2>&1; then
   _byobu_sourced=1 . `which byobu-launch` 2>/dev/null || true
 fi
+
+complete -C /usr/local/bin/terraform terraform
