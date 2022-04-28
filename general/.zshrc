@@ -31,7 +31,7 @@ fi
 export PATH="$PYPI_PATH:$PATH"
 
 # PATH for nvm
-export NVM_DIR="$HOME/.nvm"
+export NVM_DIR="$GENERALCONFIG/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && source $NVM_DIR/nvm.sh --no-use
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 

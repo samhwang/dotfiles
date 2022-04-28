@@ -11,3 +11,6 @@
 [submodule "general/zgenom"]
 	path = general/zgenom
 	url = git@github.com:jandamm/zgenom.git
+[submodule "general/nvm"]
+	path = general/nvm
+	url = git@github.com:nvm-sh/nvm.git
