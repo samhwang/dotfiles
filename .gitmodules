@@ -5,9 +5,6 @@
 [submodule "general/.vim/pack/default/start/gruvbox"]
 	path = general/.vim/pack/default/start/gruvbox
 	url = git@github.com:morhetz/gruvbox.git
-[submodule "Linux/gnome-terminal-colors"]
-	path = Linux/gnome-terminal-colors
-	url = git@github.com:metalelf0/gnome-terminal-colors.git
 [submodule "general/zgenom"]
 	path = general/zgenom
 	url = git@github.com:jandamm/zgenom.git
