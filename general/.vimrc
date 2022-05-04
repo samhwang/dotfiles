@@ -1,5 +1,4 @@
-let g:gruvbox_italic=1
 set background=dark
 set termguicolors
-autocmd vimenter * ++nested colorscheme gruvbox
+autocmd vimenter * ++nested colorscheme nord
 set rtp+=/usr/local/opt/fzf

@@ -14,3 +14,6 @@
 	path = general/nvm
 	url = git@github.com:nvm-sh/nvm.git
 	ignore = dirty
+[submodule "general/nord-vim"]
+	path = general/nord-vim
+	url = https://github.com/arcticicestudio/nord-vim
