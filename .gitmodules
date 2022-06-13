@@ -16,4 +16,4 @@
 	ignore = dirty
 [submodule "general/nord-vim"]
 	path = general/nord-vim
-	url = https://github.com/arcticicestudio/nord-vim
+	url = git@github.com:arcticicestudio/nord-vim.git
