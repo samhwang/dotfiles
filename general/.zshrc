@@ -128,6 +128,10 @@ if ! zgenom saved; then
     load_zsh_modules
 fi
 
+# Bind key for zsh history substring search
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+
 # Load extra cowfiles if exist
 EXTRACOWS="${GENERALCONFIG}/cowfiles"
 test -d "${EXTRACOWS}" && export COWPATH="${EXTRACOWS}:$COWPATH"
