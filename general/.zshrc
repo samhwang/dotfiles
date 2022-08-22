@@ -57,20 +57,11 @@ function load_zsh_modules() {
     # Themes and Plugins #
     ######################
     # Load common zsh modules
-    zgenom ohmyzsh
-    zgenom ohmyzsh plugins/composer
-    zgenom ohmyzsh plugins/git
-    zgenom ohmyzsh plugins/golang
-    zgenom ohmyzsh plugins/jump
-    zgenom ohmyzsh plugins/thefuck
-    zgenom ohmyzsh plugins/composer
-    zgenom ohmyzsh plugins/z
-
     zgenom prezto
     zgenom prezto command-not-found
     zgenom prezto history
-    zgenom prezto terminal
 
+    zgenom load agkozak/zsh-z
     zgenom load zsh-users/zsh-autosuggestions
     zgenom load zsh-users/zsh-completions
     zgenom load zsh-users/zsh-syntax-highlighting
@@ -83,6 +74,10 @@ function load_zsh_modules() {
     # Load fzf keybindings
     [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+    # Z settings
+    autoload -U compinit && compinit
+    zstyle ':completion:*' menu select
+
     # Auto terminal title
     zstyle ':prezto:module:terminal' auto-title 'yes'
     zstyle ':prezto:module:terminal:window-title' format '%s'
@@ -93,6 +88,7 @@ function load_zsh_modules() {
     OS_CONFIG_PATH="$DOTFILEPATH/$CURRENT_OS/$CURRENT_OS.zshrc"
     source "$OS_CONFIG_PATH"
 
+    zgenom reset
     zgenom save
     zgenom compile "${DOTFILEPATH}/.zshrc"
     zgenom compile "${OS_CONFIG_PATH}"
