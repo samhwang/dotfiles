@@ -132,6 +132,9 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 EXTRACOWS="${GENERALCONFIG}/cowfiles"
 test -d "${EXTRACOWS}" && export COWPATH="${EXTRACOWS}:$COWPATH"
 
+# Load Starship
+eval "$(starship init zsh)"
+
 ###########
 # Aliases #
 ###########
