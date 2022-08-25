@@ -135,6 +135,9 @@ test -d "${EXTRACOWS}" && export COWPATH="${EXTRACOWS}:$COWPATH"
 # Load Starship
 eval "$(starship init zsh)"
 
+# Load thefuck
+eval $(thefuck --alias)
+
 ###########
 # Aliases #
 ###########
