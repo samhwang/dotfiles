@@ -59,11 +59,11 @@ function load_zsh_modules() {
     # Load common zsh modules
     zgenom prezto
     zgenom prezto command-not-found
-    zgenom prezto history
+    # zgenom prezto history
 
     zgenom load agkozak/zsh-z
-    zgenom load zsh-users/zsh-autosuggestions
-    zgenom load zsh-users/zsh-completions
+    # zgenom load zsh-users/zsh-autosuggestions
+    # zgenom load zsh-users/zsh-completions
     zgenom load zsh-users/zsh-syntax-highlighting
     zgenom load zsh-users/zsh-history-substring-search
 
