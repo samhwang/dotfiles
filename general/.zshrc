@@ -68,8 +68,8 @@ function load_zsh_modules() {
     zgenom load zsh-users/zsh-history-substring-search
 
     # Load P10K theme
-    zgenom load romkatv/powerlevel10k powerlevel10k
-    zgenom load ${GENERALCONFIG}/p10k-config-lean.zsh
+    # zgenom load romkatv/powerlevel10k powerlevel10k
+    # zgenom load ${GENERALCONFIG}/p10k-config-lean.zsh
 
     # Load fzf keybindings
     [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

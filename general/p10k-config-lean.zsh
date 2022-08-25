@@ -31,7 +31,6 @@ fi
   typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
     # =========================[ Line #1 ]=========================
     status
-    root_indicator
     command_execution_time
     background_jobs
     context
