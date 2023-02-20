@@ -29,5 +29,8 @@ sso() {
   fi
 }
 
-alias sso-newprod="sso hh-prod 'Web ASG / drupal-app-prod-au-drupal'"
-alias sso-dev="sso hh-dev 'Web ASG / drupal-app-dev1-drupal'"
+alias sso-newprod="sso prod 'Web ASG / drupal-app-prod-au-drupal'"
+alias sso-dev="sso dev 'Web ASG / drupal-app-dev1-drupal'"
+
+# Path for MAMP
+export PATH=$PATH:/Applications/MAMP/Library/bin
