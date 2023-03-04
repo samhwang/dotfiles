@@ -75,14 +75,17 @@ fi
 export PATH="$PYPI_PATH:$PATH"
 
 # PATH for nvm
-export NVM_DIR="$GENERALCONFIG/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && source $NVM_DIR/nvm.sh --no-use
+# export NVM_DIR="$GENERALCONFIG/nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && source $NVM_DIR/nvm.sh --no-use
 
 # Load Starship
 eval "$(starship init zsh)"
 
 # Load thefuck
 eval $(thefuck --alias)
+
+# Load fnm
+eval $(fnm env)
 
 ###########
 # Aliases #
@@ -91,6 +94,22 @@ eval $(thefuck --alias)
 if type nvim >/dev/null 2>&1; then
     alias vim='nvim'
 fi
+
+# Replace cat with bat
+if type bat >/dev/null 2>&1; then
+    alias cat="bat"
+fi
+
+# Replace ls with exa
+if type exa >/dev/null 2>&1; then
+    alias ls="exa"
+fi
+
+# Replace grep with ripgrep
+if type rg >/dev/null 2>&1; then
+    alias grep="rg"
+fi
+
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
 
