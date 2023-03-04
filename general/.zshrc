@@ -13,27 +13,8 @@ DEFAULT_USER='samhwang'
 DISABLE_MAGIC_FUNCTIONS=true # Make copying into zsh faster
 zle_highlight=('paste:none') # Disable highlight
 
-# Enable Byobu on startup
-if type byobu >/dev/null 2>&1; then
-    _byobu_sourced=1 . $(which byobu-launch) 2>/dev/null || true
-fi
-
 # Load zgenom
 source $GENERALCONFIG/zgenom/zgenom.zsh
-
-# PATH for PyPI
-PYPI_PATH=""
-if [ $CURRENT_OS = "Darwin" ]; then
-    PYPI_PATH="${HOME}/Library/Python/3.9/bin"
-elif [ $CURRENT_OS = "Linux" ]; then
-    PYPI_PATH="$HOME/.local/bin"
-fi
-export PATH="$PYPI_PATH:$PATH"
-
-# PATH for nvm
-export NVM_DIR="$GENERALCONFIG/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && source $NVM_DIR/nvm.sh --no-use
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 ####################################
 # Functions for updating utilities #
@@ -131,6 +112,20 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 # Load extra cowfiles if exist
 EXTRACOWS="${GENERALCONFIG}/cowfiles"
 test -d "${EXTRACOWS}" && export COWPATH="${EXTRACOWS}:$COWPATH"
+
+# PATH for PyPI
+PYPI_PATH=""
+if [ $CURRENT_OS = "Darwin" ]; then
+    PYPI_PATH="${HOME}/Library/Python/3.9/bin"
+elif [ $CURRENT_OS = "Linux" ]; then
+    PYPI_PATH="$HOME/.local/bin"
+fi
+export PATH="$PYPI_PATH:$PATH"
+
+# PATH for nvm
+export NVM_DIR="$GENERALCONFIG/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && source $NVM_DIR/nvm.sh --no-use
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Load Starship
 eval "$(starship init zsh)"
