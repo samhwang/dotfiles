@@ -10,9 +10,6 @@
 	path = general/nvm
 	url = git@github.com:nvm-sh/nvm.git
 	ignore = dirty
-[submodule "general/nord-vim"]
-	path = general/nord-vim
-	url = git@github.com:arcticicestudio/nord-vim.git
 [submodule "general/ohmyzsh"]
 	path = general/ohmyzsh
 	url = git@github.com:ohmyzsh/ohmyzsh.git
