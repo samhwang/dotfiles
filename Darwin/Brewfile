@@ -23,7 +23,7 @@ brew "xz"
 brew "python@3.8", link: false
 brew "python@3.9", link: false
 brew "python@3.10"
-brew "python-tk@3.10"
+brew "python-tk@3.11"
 brew "asciinema"
 brew "autoconf"
 brew "automake"
