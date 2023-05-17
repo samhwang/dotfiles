@@ -74,10 +74,6 @@ elif [ $CURRENT_OS = "Linux" ]; then
 fi
 export PATH="$PYPI_PATH:$PATH"
 
-# PATH for nvm
-# export NVM_DIR="$GENERALCONFIG/nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && source $NVM_DIR/nvm.sh --no-use
-
 # Load Starship
 eval "$(starship init zsh)"
 
