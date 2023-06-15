@@ -2,7 +2,7 @@
 	path = ~/.config/delta/themes/catpuccin.gitconfig
 [user]
 	name = Sam Huynh
-	email = samhwang2112.dev@gmail.com
+	email = sam.huynh@lyka.com.au
 [alias]
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
@@ -74,6 +74,7 @@
 	clean = git-lfs clean -- %f
 [init]
 	defaultBranch = master
+	templateDir = ~/.git-template
 [merge]
 	conflictstyle = zdiff3
 [pull]
