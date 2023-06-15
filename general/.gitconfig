@@ -1,6 +1,6 @@
 [user]
 	name = Sam Huynh
-	email = samhwang2112.dev@gmail.com
+	email = sam.huynh@lyka.com.au
 [alias]
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
@@ -56,3 +56,4 @@
 	rebase = false
 [init]
 	defaultBranch = master
+	templateDir = ~/.git-template
