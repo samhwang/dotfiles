@@ -129,6 +129,7 @@ cask "google-chrome"
 cask "google-drive"
 cask "gpg-suite-no-mail"
 cask "iterm2"
+cask "kindle"
 cask "logi-options-plus"
 cask "logitech-g-hub"
 cask "maccy"
@@ -147,6 +148,13 @@ cask "virtualbox"
 cask "visual-studio-code"
 cask "zalo"
 cask "zoom"
+
+mas "1Password for Safari", id: 1569813296
+mas "Brother iPrint&Scan", id: 1193539993
+mas "GarageBand", id: 682658836
+mas "Genki Arcade", id: 1555925018
+mas "Pages", id: 409201541
+mas "iMovie", id: 408981434
 
 vscode "Catppuccin.catppuccin-vsc"
 vscode "Catppuccin.catppuccin-vsc-icons"
@@ -205,7 +213,6 @@ vscode "ms-toolsai.vscode-jupyter-cell-tags"
 vscode "ms-toolsai.vscode-jupyter-slideshow"
 vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode-remote.remote-wsl"
-vscode "ms-vsliveshare.vsliveshare"
 vscode "msjsdiag.vscode-react-native"
 vscode "neilbrayfield.php-docblocker"
 vscode "octref.vetur"
