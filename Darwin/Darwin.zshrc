@@ -13,3 +13,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
+
+# LazyGit & LazyDocker
+alias lg="lazygit"
+alias lzd="lazydocker"
