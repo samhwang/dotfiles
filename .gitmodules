@@ -2,10 +2,6 @@
 	path = general/cowfiles
 	url = git@github.com:samhwang/cowfiles.git
 	branch = mycows
-[submodule "general/.vim/pack/default/start/gruvbox"]
-	path = general/.vim/pack/default/start/gruvbox
-	url = git@github.com:morhetz/gruvbox.git
-	ignore = dirty
 [submodule "general/ohmyzsh"]
 	path = general/ohmyzsh
 	url = git@github.com:ohmyzsh/ohmyzsh.git
