@@ -148,6 +148,7 @@ cask "spotify"
 cask "tableplus"
 cask "via"
 cask "visual-studio-code"
+cask "warp"
 cask "zalo"
 cask "zoom"
 
