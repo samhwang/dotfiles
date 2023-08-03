@@ -1,5 +1,9 @@
 return {
   "neovim/nvim-lspconfig",
+  dependencies = {
+    "b0o/SchemaStore.nvim",
+    version = false,
+  },
   opts = {
     servers = {
       dockerls = {},
@@ -43,6 +47,21 @@ return {
             staticcheck = true,
             directoryFilters = { "-.git", "-.vscode", "-.idea", "-.vscode-test", "-node_modules" },
             semanticTokens = true,
+          },
+        },
+      },
+      jsonls = {
+        -- lazy-load schemastore when needed
+        on_new_config = function(new_config)
+          new_config.settings.json.schemas = new_config.settings.json.schemas or {}
+          vim.list_extend(new_config.settings.json.schemas, require("schemastore").json.schemas())
+        end,
+        settings = {
+          json = {
+            format = {
+              enable = true,
+            },
+            validate = { enable = true },
           },
         },
       },

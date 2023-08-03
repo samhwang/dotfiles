@@ -6,7 +6,10 @@ return {
         "dockerfile",
         "gomod",
         "gowork",
-        "gosum"
+        "gosum",
+        "json",
+        "json5",
+        "jsonc"
       })
     end
   end
