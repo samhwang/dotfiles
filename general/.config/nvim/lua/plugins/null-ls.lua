@@ -10,12 +10,13 @@ return {
       nls.builtins.formatting.gofumpt,
       nls.builtins.formatting.goimports_reviser,
     })
+    table.insert(opts.sources, require("typescript.extensions.null-ls.code-actions"))
   end,
   dependencies = {
     "mason.nvim",
     opts = function(_, opts)
       opts.ensure_installed = opts.ensure_installed or {}
-      vim.list_extend(opts.ensure_installed, { "hadolint", "codelldb" })
+      vim.list_extend(opts.ensure_installed, { "hadolint", "codelldb", "js-debug-adapter" })
     end,
   },
 }

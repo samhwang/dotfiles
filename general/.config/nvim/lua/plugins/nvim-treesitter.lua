@@ -12,7 +12,9 @@ return {
         "jsonc",
         "ron",
         "rust",
-        "toml"
+        "toml",
+        "typescript",
+        "tsx",
       })
     end
   end
