@@ -110,6 +110,9 @@ return {
           },
         },
       },
+      tailwindcss = {
+        filetypes_exclude = { "markdown" },
+      }
     },
     setup = {
       gopls = function(_, opts)
@@ -136,6 +139,13 @@ return {
         local rust_tools_opts = require("lazyvim.util").opts("rust-tools.nvim")
         require("rust-tools").setup(vim.tbl_deep_extend("force", rust_tools_opts or {}, { server = opts }))
         return true
+      end,
+      tailwindcss = function(_, opts)
+        local tw = require("lspconfig.server_configurations.tailwindcss")
+        --- @param ft string
+        opts.filetypes = vim.tbl_filter(function(ft)
+          return not vim.tbl_contains(opts.filetypes_exclude or {}, ft)
+        end, tw.default_config.filetypes)
       end,
     },
   },
