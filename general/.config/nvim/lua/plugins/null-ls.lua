@@ -5,6 +5,10 @@ return {
     opts.sources = opts.sources or {}
     vim.list_extend(opts.sources, {
       nls.builtins.diagnostics.hadolint,
+      nls.builtins.code_actions.gomodifytags,
+      nls.builtins.code_actions.impl,
+      nls.builtins.formatting.gofumpt,
+      nls.builtins.formatting.goimports_reviser,
     })
   end,
   dependencies = {
