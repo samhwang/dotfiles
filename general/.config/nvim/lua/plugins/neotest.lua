@@ -3,6 +3,7 @@ return {
   opts = {
     adapters = {
       ["neotest-go"] = {},
+      ["neotest-rust"] = {},
     },
   },
 }

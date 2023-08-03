@@ -9,7 +9,10 @@ return {
         "gosum",
         "json",
         "json5",
-        "jsonc"
+        "jsonc",
+        "ron",
+        "rust",
+        "toml"
       })
     end
   end
