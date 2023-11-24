@@ -19,6 +19,8 @@ alias sso-vait="aws ssm start-session --target i-09bfcbbea7ac38621 --profile vai
 # Composer path
 export PATH="${HOME}/.composer/vendor/bin:$PATH"
 
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+
 # Lyka Alias
 # LYKAPROJECTSPATH="${PROJECTS}/lyka"
 # alias sail="[ -f sail ] && bash sail || bash vendor/bin/sail"
