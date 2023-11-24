@@ -3,6 +3,8 @@ complete -o nospace -C /usr/local/bin/terraform terraform
 # Composer path
 export PATH="${HOME}/.composer/vendor/bin:$PATH"
 
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+
 # Lyka Alias
 # LYKAPROJECTSPATH="${PROJECTS}/lyka"
 # alias sail="[ -f sail ] && bash sail || bash vendor/bin/sail"
