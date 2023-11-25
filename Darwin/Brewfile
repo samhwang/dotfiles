@@ -58,6 +58,7 @@ brew "libedit"
 brew "libffi"
 brew "libgcrypt"
 brew "libgpg-error"
+brew "libheif"
 brew "libiconv"
 brew "libidn"
 brew "libidn2"
@@ -66,6 +67,7 @@ brew "libpsl"
 brew "libtool"
 brew "libunistring"
 brew "libyaml"
+brew "lima"
 brew "lnav"
 brew "lolcat"
 brew "mas"
@@ -83,15 +85,14 @@ brew "planetscale/tap/pscale"
 brew "popt"
 brew "postgresql@15", link: true
 brew "python-tk@3.11"
-brew "python@3.10"
+brew "python@3.10", link: false
 brew "python@3.8", link: false
 brew "python@3.9", link: false
-brew "readline"
+brew "qemu"
 brew "ripgrep"
 brew "rsync"
 brew "ruby"
 brew "rust"
-brew "sqlite"
 brew "starship"
 brew "thefuck"
 brew "tldr"
@@ -156,6 +157,7 @@ mas "Brother iPrint&Scan", id: 1193539993
 mas "GarageBand", id: 682658836
 mas "Genki Arcade", id: 1555925018
 mas "Keynote", id: 409183694
+mas "Notability", id: 360593530
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "iMovie", id: 408981434
