@@ -81,8 +81,14 @@ eval "$(starship init zsh)"
 # Load thefuck
 eval $(thefuck --alias)
 
+# Load mcfly
+eval "$(mcfly init zsh)"
+
 # Load fnm
 eval $(fnm env)
+
+# Load broot
+source ~/.config/broot/launcher/bash/br
 
 ###########
 # Aliases #
@@ -98,13 +104,18 @@ if type bat >/dev/null 2>&1; then
 fi
 
 # Replace ls with exa
-if type exa >/dev/null 2>&1; then
-    alias ls="exa"
+if type eza >/dev/null 2>&1; then
+    alias ls="eza"
 fi
 
 # Replace grep with ripgrep
 if type rg >/dev/null 2>&1; then
     alias grep="rg"
+fi
+
+# Replace df with duf
+if type duf >/dev/null 2>&1; then
+    alias df="duf"
 fi
 
 # Preferred editor for local and remote sessions
