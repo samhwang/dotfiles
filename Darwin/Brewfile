@@ -84,9 +84,6 @@ brew "planetscale/tap/pscale"
 brew "popt"
 brew "postgresql@15", link: true
 brew "python-tk@3.11"
-brew "python@3.10", link: false
-brew "python@3.8", link: false
-brew "python@3.9", link: false
 brew "qemu"
 brew "ripgrep"
 brew "rsync"
