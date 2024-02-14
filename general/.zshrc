@@ -67,13 +67,9 @@ EXTRACOWS="${GENERALCONFIG}/cowfiles"
 test -d "${EXTRACOWS}" && export COWPATH="${EXTRACOWS}:$COWPATH"
 
 # PATH for PyPI
-PYPI_PATH=""
-if [ $CURRENT_OS = "Darwin" ]; then
-    PYPI_PATH="${HOME}/Library/Python/3.9/bin"
-elif [ $CURRENT_OS = "Linux" ]; then
-    PYPI_PATH="$HOME/.local/bin"
-fi
-export PATH="$PYPI_PATH:$PATH"
+PYPI_PATH="$HOME/.local/bin"
+export PATH="$PATH:$PYPI_PATH"
+eval "$(register-python-argcomplete pipx)"
 
 # Load Starship
 eval "$(starship init zsh)"
