@@ -86,6 +86,9 @@ eval $(fnm env)
 # Load broot
 source ~/.config/broot/launcher/bash/br
 
+# Load console ninja
+PATH=~/.console-ninja/.bin:$PATH
+
 ###########
 # Aliases #
 ###########
