@@ -151,6 +151,7 @@ cask "zed"
 cask "zoom"
 
 mas "1Password for Safari", id: 1569813296
+mas "Bear", id: 1091189122
 mas "Brother iPrint&Scan", id: 1193539993
 mas "GarageBand", id: 682658836
 mas "Genki Arcade", id: 1555925018
