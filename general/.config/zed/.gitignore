@@ -1,0 +1,4 @@
+.tmp*
+prompts
+embeddings
+conversations
