@@ -28,3 +28,9 @@ export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 # alias cake="cd ${LYKAPROJECTSPATH}/lyka-backend && bin/cake server --host 0.0.0.0"
 # alias vue="cd ${LYKAPROJECTSPATH}/lyka-frontend && php -S 0.0.0.0:8000"
 # alias nuxt="cd ${LYKAPROJECTSPATH}/lyka-com-au && yarn nuxt"
+
+# Private configurations
+function load_private_config() {
+    source "${OS_CONFIG_PATH}/private.zshrc"
+}
+load_private_config
