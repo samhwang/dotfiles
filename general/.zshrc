@@ -10,7 +10,8 @@ GENERALCONFIG="$DOTFILEPATH/general"
 export ZSH="$GENERALCONFIG/ohmyzsh"
 ZSH_CUSTOM="$GENERALCONFIG/custom-omz"
 export CURRENT_OS=$(uname)
-OS_CONFIG_PATH="$DOTFILEPATH/$CURRENT_OS/$CURRENT_OS.zshrc"
+OS_CONFIG_PATH="$DOTFILEPATH/$CURRENT_OS"
+OS_CONFIG_FILE="$OS_CONFIG_PATH/$CURRENT_OS.zshrc"
 HISTFILE=$HOME/.zsh_history
 DEFAULT_USER='samhwang'
 DISABLE_MAGIC_FUNCTIONS=true # Make copying into zsh faster
@@ -56,7 +57,7 @@ function pkg_up() {
 # compinit loading
 autoload -Uz compinit && compinit
 
-source "$OS_CONFIG_PATH"
+source "$OS_CONFIG_FILE"
 source "$ZSH/oh-my-zsh.sh"
 
 # Load fzf keybindings
