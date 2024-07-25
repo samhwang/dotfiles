@@ -25,7 +25,7 @@ function update_packages() {
     if [ $CURRENT_OS = "Darwin" ]; then
         brew update
         brew upgrade
-        brew cu
+        brew cu -ay
         brew cleanup
     elif [ $CURRENT_OS = "Linux" ]; then
         sudo apt update
