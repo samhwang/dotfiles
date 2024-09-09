@@ -2,12 +2,3 @@
 	path = general/cowfiles
 	url = git@github.com:samhwang/cowfiles.git
 	branch = mycows
-[submodule "general/ohmyzsh"]
-	path = general/ohmyzsh
-	url = git@github.com:ohmyzsh/ohmyzsh.git
-[submodule "general/custom-omz/plugins/zsh-autosuggestions"]
-	path = general/custom-omz/plugins/zsh-autosuggestions
-	url = git@github.com:zsh-users/zsh-autosuggestions.git
-[submodule "general/custom-omz/plugins/zsh-syntax-highlighting"]
-	path = general/custom-omz/plugins/zsh-syntax-highlighting
-	url = git@github.com:zsh-users/zsh-syntax-highlighting.git

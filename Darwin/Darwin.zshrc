@@ -1,13 +1,3 @@
-# Load OMZ modules
-plugins=(
-  command-not-found
-  z
-  history-substring-search
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-)
-
-autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
 
 # LazyGit & LazyDocker
