@@ -7,6 +7,7 @@ export TERM="xterm-256color"
 export PROJECTS="${ZDOTDIR:-${HOME}}/projects"
 DOTFILEPATH="${PROJECTS}/dotfiles"
 GENERALCONFIG="$DOTFILEPATH/general"
+ZSHCONFIG="${HOME}/.config/zsh"
 
 export CURRENT_OS=$(uname)
 OS_CONFIG_PATH="$DOTFILEPATH/$CURRENT_OS"
@@ -19,7 +20,7 @@ DEFAULT_USER='samhwang'
 ####################################
 # Functions for updating utilities #
 ####################################
-source "${GENERALCONFIG}/upgrade.zshrc"
+source "${ZSHCONFIG}/upgrade.zshrc"
 
 ###################################
 # Loading scripts for environment #
@@ -30,7 +31,7 @@ autoload -U +X bashcompinit && bashcompinit
 
 # Load Sheldon
 eval "$(sheldon source)"
-source "${GENERALCONFIG}/sheldon-completions.zshrc"
+source "${ZSHCONFIG}/sheldon-completions.zshrc"
 
 # Load fzf keybindings
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -57,16 +58,16 @@ eval "$(mcfly init zsh)"
 eval $(fnm env)
 
 # Load broot
-source ~/.config/broot/launcher/bash/br
+source "${HOME}/.config/broot/launcher/bash/br"
 
 # Load console ninja
-CONSOLE_NINJA_PATH="$HOME/.console-ninja/.bin"
+CONSOLE_NINJA_PATH="${HOME}/.console-ninja/.bin"
 PATH="$CONSOLE_NINJA_PATH:$PATH"
 
 ###########
 # Aliases #
 ###########
-source "${GENERALCONFIG}/alias.zshrc"
+source "${ZSHCONFIG}/alias.zshrc"
 
 ###########
 # Cleanup #
