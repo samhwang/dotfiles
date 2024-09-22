@@ -4,15 +4,13 @@
 export LANG=en_US.UTF-8
 export SSH_KEY_PATH="$HOME/.ssh/id_rsa"
 export TERM="xterm-256color"
-export PROJECTS="${ZDOTDIR:-${HOME}}/projects"
-DOTFILEPATH="${PROJECTS}/dotfiles"
-GENERALCONFIG="$DOTFILEPATH/general"
+
 ZSHCONFIG="${HOME}/.config/zsh"
 
 export CURRENT_OS=$(uname)
 OS_CONFIG_FILE="$ZSHCONFIG/$CURRENT_OS.zshrc"
 
-HISTFILE=$HOME/.zsh_history
+HISTFILE=${HOME}/.zsh_history
 
 DEFAULT_USER='samhwang'
 
@@ -36,7 +34,7 @@ source "${ZSHCONFIG}/sheldon-completions.zshrc"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Load extra cowfiles if exist
-EXTRACOWS="${GENERALCONFIG}/cowfiles"
+EXTRACOWS="${HOME}/.cowsay/cowfiles"
 test -d "${EXTRACOWS}" && export COWPATH="${EXTRACOWS}:$COWPATH"
 
 # PATH for PyPI
