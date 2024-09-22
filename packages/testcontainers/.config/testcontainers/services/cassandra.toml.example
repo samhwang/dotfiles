@@ -1,0 +1,26 @@
+# Testcontainers Desktop allows you to set fixed ports to easily debug development services.
+
+# This example file defines a default cassandra service. For more information, see:
+# https://testcontainers.com/modules/cassandra/
+
+# To get started, simply rename this file to cassandra.toml (or my-cassandra-service.toml).
+# When at least one container created from the cassandra image is running, Testcontainers Desktop dynamically forwards port 9042 to it.
+# You can then connect to this container at localhost:9042.
+
+# The `ports` variable defines how to proxy the service's ports:
+# `local-port` configures on which port on your machine the service is exposed. System ports (0 to 1023) are not supported.
+# `container-port` indicates which port inside the container to proxy. If not set explicitly, the value defaults to `local-port`.
+ports = [
+  {local-port = 9042, container-port = 9042},
+]
+
+# The `selector` variable defines the criteria based on which running containers join the service.
+# `selector.image-name` defines an array of image names.
+# Containers match the selector if they were created from any image in the array, regardless of version.
+selector.image-names = ["cassandra"]
+
+# Sometimes, `selector.image-name` isn't detailed enough. For example, you might be running 2 separate services based on the same image,
+# or you might want to target the leader and replicas separately.
+# `selector.labels` defines an array of container labels. Containers match the selector if they contain the label. Here's an example:
+# [selector.labels]
+# "com.testcontainers.desktop.service" = "my-cassandra-service"
