@@ -5,3 +5,7 @@ alias lg="lazygit"
 alias lzd="lazydocker"
 
 alias sso-vait="aws ssm start-session --target i-09bfcbbea7ac38621 --profile vait"
+
+# Private configurations
+PRIVATE_CONFIG="${ZSHCONFIG}/private.zshrc"
+test -d "${PRIVATE_CONFIG}" && source "${PRIVATE_CONFIG}"
