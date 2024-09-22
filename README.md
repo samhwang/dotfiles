@@ -22,5 +22,6 @@ brew bundle --verbose --cleanup
 cd ..
 
 # Stow to restore config
-stow --target=$HOME --dotfile root
+cd packages
+stow --target=$HOME --dotfile git vim zsh
 ```
