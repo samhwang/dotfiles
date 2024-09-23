@@ -1,4 +1,4 @@
-[submodule "packages/cowsay/dot-cowsay"]
-	path = packages/cowsay/dot-cowsay
+[submodule "packages/cowsay/.cowsay"]
+	path = packages/cowsay/.cowsay
 	url = git@github.com:samhwang/cowfiles.git
 	branch = mycows

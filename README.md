@@ -19,7 +19,7 @@ brew install stow
 
 # Stow to restore config
 cd .dotfiles/packages
-stow --target=$HOME --dotfile *
+stow --target=$HOME *
 
 # Install the rest
 cd ~/.config/brewfile
