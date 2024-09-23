@@ -31,7 +31,7 @@ eval "$(sheldon source)"
 source "${ZSHCONFIG}/sheldon-completions.zshrc"
 
 # Load fzf keybindings
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 
 # Load extra cowfiles if exist
 EXTRACOWS="${HOME}/.cowsay/cowfiles"
