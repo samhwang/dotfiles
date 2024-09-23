@@ -1,3 +1,5 @@
+[include]
+    path = ~/.config/delta/themes/catpuccin.gitconfig
 [user]
 	name = Sam Huynh
 	email = samhwang2112.dev@gmail.com
@@ -39,6 +41,7 @@
 	inspect-raw-lines = false
 	line-numbers = true
 	# side-by-side = true
+	features = catppuccin-mocha
 [interactive]
 	diffFilter = delta --color-only
 [diff]
