@@ -23,5 +23,5 @@ cd ..
 
 # Stow to restore config
 cd packages
-stow --target=$HOME --dotfile brewfile broot cowsay fastfetch gh git nvim sheldon starship testcontainers thefuck vim zed zsh
+stow --target=$HOME --dotfile brewfile broot cowsay fastfetch gh git nvim sheldon starship testcontainers thefuck vim warp zed zsh
 ```
