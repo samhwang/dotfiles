@@ -135,7 +135,6 @@ cask "fork"
 cask "google-chrome"
 cask "google-drive"
 cask "gpg-suite-no-mail"
-cask "kindle"
 cask "logi-options+"
 cask "logitech-g-hub"
 cask "messenger"
@@ -164,6 +163,7 @@ mas "Brother iPrint&Scan", id: 1193539993
 mas "GarageBand", id: 682658836
 mas "Genki Arcade", id: 1555925018
 mas "Keynote", id: 409183694
+mas "Kindle", id: 302584613
 mas "Notability", id: 360593530
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
