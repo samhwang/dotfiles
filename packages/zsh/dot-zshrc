@@ -35,7 +35,7 @@ source "${ZSHCONFIG}/sheldon-completions.zshrc"
 
 # Load extra cowfiles if exist
 EXTRACOWS="${HOME}/.cowsay/cowfiles"
-test -d "${EXTRACOWS}" && export COWPATH="${EXTRACOWS}:$COWPATH"
+[ -d "${EXTRACOWS}" ] && export COWPATH="${EXTRACOWS}:$COWPATH"
 
 # PATH for PyPI
 PYPI_PATH="$HOME/.local/bin"
