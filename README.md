@@ -34,6 +34,7 @@ stow --target=$HOME --dotfile \
     nvim \
     sheldon \
     starship \
+    stow \
     testcontainers \
     thefuck \
     vim \
