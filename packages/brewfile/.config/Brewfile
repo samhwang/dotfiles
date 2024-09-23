@@ -17,6 +17,7 @@ tap "rcmdnk/file"
 tap "tursodatabase/tap"
 
 brew "ack"
+brew "act"
 brew "autoconf"
 brew "automake"
 brew "aws-sam-cli"
