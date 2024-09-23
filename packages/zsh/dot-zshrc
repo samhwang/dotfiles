@@ -28,7 +28,7 @@ autoload -U +X bashcompinit && bashcompinit
 
 # Load Sheldon
 eval "$(sheldon source)"
-source "${ZSHCONFIG}/sheldon-completions.zshrc"
+source <(sheldon completions --shell zsh)
 
 # Load fzf keybindings
 source <(fzf --zsh)
