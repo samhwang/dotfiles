@@ -1,8 +1,6 @@
 # Dotfile
 
-My bash and git config file.
-
-This is my usual dev environment setup. It didn't exist before due to me not knowing I can store files in a repo and then symlink it out for uses back then.
+Setting myself up for success, this will bootstrap any macOS machine that I come across. The name of the game is `Lean, mean, fighting machine`.
 
 ## macOS Quick Start
 
@@ -14,14 +12,16 @@ xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Clone this repo
-git clone git@github.com:samhwang/dotfiles.git
+git clone git@github.com:samhwang/dotfiles.git ~/.dotfiles
 
-# Brew bundle to install packages
-cd Darwin
-brew bundle --verbose --cleanup
-cd ..
+# Install stow to then work with other packages
+brew install stow
 
 # Stow to restore config
-cd packages
+cd .dotfiles/packages
 stow --target=$HOME --dotfile *
+
+# Install the rest
+cd ~/.config/brewfile
+brew bundle --verbose --force --cleanup
 ```
