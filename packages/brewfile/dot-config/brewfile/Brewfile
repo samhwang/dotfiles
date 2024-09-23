@@ -108,6 +108,7 @@ brew "vim"
 brew "wget"
 brew "yq"
 brew "zlib"
+brew "zoxide"
 brew "zsh"
 
 cask "1password"

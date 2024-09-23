@@ -75,3 +75,6 @@ source "${ZSHCONFIG}/alias.zshrc"
 
 # Load OS Specific config
 source "$OS_CONFIG_FILE"
+
+# Load zoxide
+eval "$(zoxide init zsh)"
