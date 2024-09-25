@@ -8,7 +8,7 @@ export TERM="xterm-256color"
 ZSHCONFIG="${HOME}/.config/zsh"
 
 export CURRENT_OS=$(uname)
-OS_CONFIG_FILE="$ZSHCONFIG/$CURRENT_OS.zshrc"
+OS_CONFIG_FILE="$ZSHCONFIG/os/$CURRENT_OS.zshrc"
 
 HISTFILE=${HOME}/.zsh_history
 
@@ -75,6 +75,10 @@ source "${ZSHCONFIG}/alias.zshrc"
 
 # Load OS Specific config
 source "$OS_CONFIG_FILE"
+
+# Private configurations
+PRIVATE_CONFIG="${ZSHCONFIG}/private.zshrc"
+[ -f "${PRIVATE_CONFIG}" ] && source "${PRIVATE_CONFIG}"
 
 # Load zoxide
 eval "$(zoxide init zsh)"
