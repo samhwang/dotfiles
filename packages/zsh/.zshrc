@@ -7,17 +7,9 @@ export TERM="xterm-256color"
 
 ZSHCONFIG="${HOME}/.config/zsh"
 
-export CURRENT_OS=$(uname)
-OS_CONFIG_FILE="$ZSHCONFIG/os/$CURRENT_OS.zshrc"
-
 HISTFILE=${HOME}/.zsh_history
 
 DEFAULT_USER='samhwang'
-
-####################################
-# Functions for updating utilities #
-####################################
-source "${ZSHCONFIG}/upgrade.zshrc"
 
 ###################################
 # Loading scripts for environment #
@@ -64,21 +56,21 @@ PATH="$CONSOLE_NINJA_PATH:$PATH"
 # Load brew-wrap
 # source "${ZSHCONFIG}/brew-wrap.zshrc"
 
-###########
-# Aliases #
-###########
-source "${ZSHCONFIG}/alias.zshrc"
+# Load zoxide
+eval "$(zoxide init zsh)"
 
-###########
-# Cleanup #
-###########
+# Functions for updating utilities
+UPGRADE_FUNC="${ZSHCONFIG}/upgrade.zshrc"
+[ -f "${UPGRADE_FUNC}" ] && source "${UPGRADE_FUNC}"
 
-# Load OS Specific config
-source "$OS_CONFIG_FILE"
+# Aliases
+ALIAS_CONFIG="${ZSHCONFIG}/alias.zshrc"
+[ -f "${ALIAS_CONFIG}" ] && source "${ALIAS_CONFIG}"
+
+# Load Profile config
+PROFILE_CONFIG="${ZSHCONFIG}/profile.zshrc"
+[ -f "${PROFILE_CONFIG}" ] && source "${PROFILE_CONFIG}"
 
 # Private configurations
 PRIVATE_CONFIG="${ZSHCONFIG}/private.zshrc"
 [ -f "${PRIVATE_CONFIG}" ] && source "${PRIVATE_CONFIG}"
-
-# Load zoxide
-eval "$(zoxide init zsh)"
