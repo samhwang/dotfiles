@@ -23,7 +23,7 @@ function pkg_up() {
     update_packages
 
     echo "GOING TO DOTFILES DIRECTORY"
-    cd $DOTFILEPATH
+    cd "${HOME}/.dotfiles"
     echo "CURRENTLY AT $(pwd)"
 
     echo "UPDATING DOTFILES SUBMODULES"
