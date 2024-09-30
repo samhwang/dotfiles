@@ -1,6 +1,9 @@
 ####################################
 # Functions for updating utilities #
 ####################################
+
+CURRENT_OS=$(uname)
+
 function update_packages() {
     if [ $CURRENT_OS = "Darwin" ]; then
         brew update
