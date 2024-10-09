@@ -67,10 +67,16 @@ UPGRADE_FUNC="${ZSHCONFIG}/upgrade.zshrc"
 ALIAS_CONFIG="${ZSHCONFIG}/alias.zshrc"
 [ -f "${ALIAS_CONFIG}" ] && source "${ALIAS_CONFIG}"
 
-# Load Profile config
-PROFILE_CONFIG="${ZSHCONFIG}/profile.zshrc"
-[ -f "${PROFILE_CONFIG}" ] && source "${PROFILE_CONFIG}"
-
 # Private configurations
 PRIVATE_CONFIG="${ZSHCONFIG}/private.zshrc"
 [ -f "${PRIVATE_CONFIG}" ] && source "${PRIVATE_CONFIG}"
+
+### PROFILES
+# Load Profile config
+export PROFILE_CONFIG_PATH="${HOME}/.config/profiles"
+PROFILE_CONFIG="${PROFILE_CONFIG_PATH}/profile.zshrc"
+[ -f "${PROFILE_CONFIG}" ] && source "${PROFILE_CONFIG}"
+
+# Load private profile config
+PRIVATE_PROFILE_CONFIG="${PROFILE_CONFIG_PATH}/private.zshrc"
+[ -f "${PRIVATE_PROFILE_CONFIG}" ] && source "${PRIVATE_PROFILE_CONFIG}"
