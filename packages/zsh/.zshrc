@@ -53,6 +53,9 @@ PATH="$CONSOLE_NINJA_PATH:$PATH"
 # Load brew-wrap
 # source "${ZSHCONFIG}/brew-wrap.zshrc"
 
+# Load yazi
+source "${ZSHCONFIG}/yazi.zshrc"
+
 # Load zoxide
 eval "$(zoxide init zsh)"
 
