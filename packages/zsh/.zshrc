@@ -46,9 +46,6 @@ eval "$(mcfly init zsh)"
 # Load fnm
 eval $(fnm env)
 
-# Load broot
-source "${HOME}/.config/broot/launcher/bash/br"
-
 # Load console ninja
 CONSOLE_NINJA_PATH="${HOME}/.console-ninja/.bin"
 PATH="$CONSOLE_NINJA_PATH:$PATH"
