@@ -2,3 +2,6 @@
 	path = packages/cowsay/.cowsay
 	url = git@github.com:samhwang/cowfiles.git
 	branch = mycows
+[submodule "packages/nvim/.config/nvim"]
+	path = packages/nvim/.config/nvim
+	url = git@github.com:samhwang/sam-kickstart.nvim.git
