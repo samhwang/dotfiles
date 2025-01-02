@@ -11,7 +11,3 @@ use = ["{{ name }}.zsh"]
 
 [plugins.zsh-syntax-highlighting]
 github = "zsh-users/zsh-syntax-highlighting"
-
-[plugins.wezterm]
-github = "wez/wezterm"
-use = ["assets/shell-integration/wezterm.sh"]
