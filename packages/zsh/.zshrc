@@ -37,9 +37,6 @@ eval "$(register-python-argcomplete pipx)"
 # Load Starship
 eval "$(starship init zsh)"
 
-# Load thefuck
-eval $(thefuck --alias)
-
 # Load mcfly
 eval "$(mcfly init zsh)"
 
