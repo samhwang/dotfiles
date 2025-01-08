@@ -21,6 +21,7 @@ git clone git@github.com:samhwang/dotfiles.git ~/.dotfiles
 cd .dotfiles
 
 cd profiles
+OP_ACCOUNT=my.1password.com op inject -i macos-lyka/.config/profiles/private.zshrc.tpl -o macos-lyka/.config/profiles/private.zshrc
 stow --target=$HOME macos-lyka
 cd ..
 
