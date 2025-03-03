@@ -1,5 +1,5 @@
 [include]
-    path = ~/.config/delta/themes/catpuccin.gitconfig
+	path = ~/.config/delta/themes/catpuccin.gitconfig
 [user]
 	name = Sam Huynh
 	email = samhwang2112.dev@gmail.com
@@ -13,6 +13,8 @@
 	hist = log --pretty=format:"\"%h %ad | %s%d [%an]\"" --graph --date=short
 	type = cat-file -t
 	dump = cat-file -p
+[branch]
+	sort = -committerdate
 [color]
 	interactive = auto
 	ui = true
@@ -29,10 +31,16 @@
 	added = yellow
 	changed = green
 	untracked = cyan
+[column]
+	ui = auto
+[commit]
+	verbose = true
 [core]
 	editor = $EDITOR
 	excludesfile = ~/.gitexclude
 	pager = delta --diff-so-fancy
+	# fsmonitor = true
+	# untrackedCache = true
 [delta]
 	plus-style = "syntax #012800"
 	minus-style = "syntax #340001"
@@ -42,10 +50,19 @@
 	line-numbers = true
 	# side-by-side = true
 	features = catppuccin-mocha
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[help]
+	autocorrect = prompt
 [interactive]
 	diffFilter = delta --color-only
 [diff]
-	colorMoved = default
+	algorithm = histogram
+	colorMoved = plain
+	renames = true
+	mnemonicPrefix = true
 [filter "hawser"]
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
@@ -57,5 +74,18 @@
 	clean = git-lfs clean -- %f
 [init]
 	defaultBranch = master
+[merge]
+	conflictstyle = zdiff3
 [pull]
-	rebase = false
+	rebase = true
+[push]
+	default = simple
+	autoSetupRemote = true
+	followTags = true
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
+[rerere]
+	enabled = true
+	autoupdate = true
