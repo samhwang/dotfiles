@@ -55,7 +55,7 @@
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
-[pull]
-	rebase = false
 [init]
 	defaultBranch = master
+[pull]
+	rebase = false
