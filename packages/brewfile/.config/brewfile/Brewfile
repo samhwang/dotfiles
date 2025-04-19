@@ -167,6 +167,7 @@ cask "vial"
 cask "visual-studio-code"
 cask "zalo"
 cask "zed"
+cask "zen-browser"
 cask "zoom"
 
 mas "1Password for Safari", id: 1569813296
