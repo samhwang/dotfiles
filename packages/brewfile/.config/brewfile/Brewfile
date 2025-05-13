@@ -289,7 +289,7 @@ cask 'vial'
 cask 'visual-studio-code'
 cask 'zalo'
 cask 'zed'
-cask 'zen-browser'
+cask 'zen'
 cask 'zoom'
 
 tap 'homebrew/bundle'
