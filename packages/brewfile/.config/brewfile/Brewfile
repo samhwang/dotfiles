@@ -69,7 +69,6 @@ brew 'helix'
 brew 'highway'
 brew 'htop'
 brew 'icu4c@75'
-brew 'icu4c@76'
 brew 'icu4c@77'
 brew 'ifstat'
 brew 'imagemagick'
@@ -143,6 +142,7 @@ brew 'libyaml'
 brew 'libzip'
 brew 'little-cms2'
 brew 'lld@19'
+brew 'llvm'
 brew 'llvm@19'
 brew 'lnav'
 brew 'lpeg'
@@ -186,8 +186,10 @@ brew 'poppler'
 brew 'popt'
 brew 'postgresql@15'
 brew 'pycparser'
+brew 'python'
 brew 'python-packaging'
 brew 'python-setuptools'
+brew 'python-tk'
 brew 'python@3.12'
 brew 'qemu'
 brew 'rav1e'
@@ -233,6 +235,7 @@ brew 'xxhash'
 brew 'xz'
 brew 'yazi'
 brew 'yq'
+brew 'z3'
 brew 'zellij'
 brew 'zeromq'
 brew 'zig'
@@ -329,19 +332,15 @@ brew 'brew-file'
 tap 'tursodatabase/tap'
 brew 'turso'
 
-# Other Homebrew packages
-brew 'python'
-brew 'python-tk'
-
 # App Store applications
-mas '1Password for Safari (8.10.70)', id: 1569813296
-mas 'Amazon Kindle (7.30)', id: 302584613
-mas 'Bear (2.3.12)', id: 1091189122
+mas '1Password for Safari (8.10.76)', id: 1569813296
+mas 'Amazon Kindle (7.32)', id: 302584613
+mas 'Bear (2.4.4)', id: 1091189122
 mas 'Brother iPrint&Scan (12.2.1)', id: 1193539993
 mas 'GarageBand (10.4.12)', id: 682658836
 mas 'Genki Arcade (1.3.2)', id: 1555925018
 mas 'iMovie (10.4.3)', id: 408981434
 mas 'Keynote (14.4)', id: 409183694
-mas 'Notability (14.11.8)', id: 360593530
+mas 'Notability (14.11.13)', id: 360593530
 mas 'Numbers (14.4)', id: 409203825
 mas 'Pages (14.4)', id: 409201541
