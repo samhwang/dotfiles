@@ -53,6 +53,9 @@ source "${ZSHCONFIG}/brew-wrap.zshrc"
 # Load yazi
 source "${ZSHCONFIG}/yazi.zshrc"
 
+# Load Docker completions
+source "${ZSHCONFIG}/docker-desktop.zshrc"
+
 # Load zoxide
 eval "$(zoxide init zsh)"
 
