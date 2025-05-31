@@ -10,7 +10,7 @@
   "features": {
     "edit_prediction_provider": "none"
   },
-  "assistant": {
+  "agent": {
     "enabled": false,
     "version": "2"
   },
