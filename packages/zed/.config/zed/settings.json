@@ -22,5 +22,43 @@
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "format_on_save": "off",
   "vim_mode": true,
-  "relative_line_numbers": true
+  "relative_line_numbers": true,
+  "auto_install_extensions": {
+    "astro": true,
+    "biome": true,
+    "catppuccin-icons": true,
+    "catppuccin": true,
+    "deno": true,
+    "docker-compose": true,
+    "dockerfile": true,
+    "env": true,
+    "git-firefly": true,
+    "graphql": true,
+    "html": true,
+    "log": true,
+    "make": true,
+    "prisma": true,
+    "scss": true,
+    "sql": true,
+    "svelte": true,
+    "terraform": true,
+    "toml": true,
+    "vue": true,
+    "zig": true
+  },
+  "language_servers": ["!biome", "..."],
+  "lsp": {
+    "biome": {
+      "settings": {
+        "require_config_file": true
+      }
+    },
+    "deno": {
+      "settings": {
+        "deno": {
+          "enable": false
+        }
+      }
+    }
+  }
 }
