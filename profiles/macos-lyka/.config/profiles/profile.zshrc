@@ -15,3 +15,5 @@ export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 # alias cake="cd ${LYKAPROJECTSPATH}/lyka-backend && bin/cake server --host 0.0.0.0"
 # alias vue="cd ${LYKAPROJECTSPATH}/lyka-frontend && php -S 0.0.0.0:8000"
 # alias nuxt="cd ${LYKAPROJECTSPATH}/lyka-com-au && yarn nuxt"
+
+export LOCALSTACK_VOLUME_DIR="${HOME}/Library/Caches/localstack/volume"
