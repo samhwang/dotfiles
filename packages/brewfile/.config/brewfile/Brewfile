@@ -320,6 +320,9 @@ tap 'hashicorp/tap'
 tap 'libsql/sqld'
 brew 'sqld'
 
+tap 'localstack/tap'
+brew 'localstack-cli'
+
 tap 'nikolaeu/numi'
 brew 'numi-cli'
 
