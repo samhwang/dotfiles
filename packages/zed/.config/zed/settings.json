@@ -11,6 +11,10 @@
     "edit_prediction_provider": "none"
   },
   "agent": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4"
+    },
     "enabled": false,
     "version": "2"
   },
