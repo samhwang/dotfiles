@@ -218,6 +218,7 @@ brew 'tldr'
 brew 'tmux'
 brew 'tree'
 brew 'tree-sitter'
+brew 'turso'
 brew 'unbound'
 brew 'unibilium'
 brew 'utf8proc'
@@ -331,7 +332,6 @@ tap 'rcmdnk/file'
 brew 'brew-file'
 
 tap 'tursodatabase/tap'
-brew 'turso'
 
 # App Store applications
 mas '1Password for Safari (8.10.82)', id: 1569813296
