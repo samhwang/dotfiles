@@ -322,6 +322,9 @@ brew 'sqld'
 tap 'localstack/tap'
 brew 'localstack-cli'
 
+tap 'nikitabobko/tap'
+cask 'aerospace'
+
 tap 'nikolaeu/numi'
 brew 'numi-cli'
 
