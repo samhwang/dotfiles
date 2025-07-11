@@ -8,15 +8,18 @@
 // from the command palette or from `Zed` application menu.
 {
   "features": {
-    "edit_prediction_provider": "none"
+    "edit_prediction_provider": "zed"
   },
   "agent": {
     "default_model": {
       "provider": "zed.dev",
       "model": "claude-sonnet-4-thinking"
     },
-    "enabled": false,
-    "version": "2"
+    "enabled": false
+  },
+  "edit_predictions": {
+    "mode": "subtle",
+    "disabled_globs": ["**/.env"]
   },
   "icon_theme": "Catppuccin Mocha",
   "theme": "Catppuccin Mocha",
