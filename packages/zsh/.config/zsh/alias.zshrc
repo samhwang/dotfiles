@@ -1,25 +1,25 @@
 # Replace vim with nvim
-if type nvim >/dev/null 2>&1; then
+if type nvim > /dev/null; then
     alias vim='nvim'
 fi
 
 # Replace cat with bat
-if type bat >/dev/null 2>&1; then
+if type bat > /dev/null; then
     alias cat="bat"
 fi
 
 # Replace ls with exa
-if type eza >/dev/null 2>&1; then
+if type eza > /dev/null; then
     alias ls="eza"
 fi
 
 # Replace grep with ripgrep
-if type rg >/dev/null 2>&1; then
+if type rg > /dev/null; then
     alias grep="rg"
 fi
 
 # Replace df with duf
-if type duf >/dev/null 2>&1; then
+if type duf > /dev/null; then
     alias df="duf"
 fi
 

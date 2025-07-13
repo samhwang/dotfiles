@@ -48,7 +48,9 @@ CONSOLE_NINJA_PATH="${HOME}/.console-ninja/.bin"
 PATH="$CONSOLE_NINJA_PATH:$PATH"
 
 # Load brew-wrap
-source "${ZSHCONFIG}/brew-wrap.zshrc"
+if type brew > /dev/null; then
+    source "${ZSHCONFIG}/brew-wrap.zshrc"
+fi
 
 # Load yazi
 source "${ZSHCONFIG}/yazi.zshrc"

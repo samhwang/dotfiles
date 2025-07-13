@@ -11,9 +11,13 @@ function update_packages() {
         brew cu -ay
         brew cleanup
     elif [ $CURRENT_OS = "Linux" ]; then
-        sudo apt update
-        sudo apt upgrade --yes
-        sudo apt autoremove --yes
+        if type apt > /dev/null; then
+            sudo apt update
+            sudo apt upgrade --yes
+            sudo apt autoremove --yes
+        elif type pacman > /dev/null; then
+            yay
+        fi
     fi
 }
 
