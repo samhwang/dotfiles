@@ -20,12 +20,13 @@ git clone git@github.com:samhwang/dotfiles.git ~/.dotfiles
 # Use stow to restore config
 cd .dotfiles
 
+cd packages
+stow --target=$HOME *
+cd ..
+
 cd profiles
 stow --target=$HOME macos
 cd ..
-
-cd packages
-stow --target=$HOME *
 
 # Install the rest
 cd ~/.config/brewfile

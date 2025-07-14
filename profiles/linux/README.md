@@ -16,12 +16,13 @@ git clone git@github.com:samhwang/dotfiles.git ~/.dotfiles
 # Use stow to restore config
 cd .dotfiles
 
-cd profiles
-stow --target=$HOME linux
-cd ..
-
 cd packages
 stow --target=$HOME *
+cd ..
+
+cd profiles
+stow --target=$HOME macos
+cd ..
 
 # Install the rest of deps
 ```
