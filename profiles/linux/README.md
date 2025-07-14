@@ -12,5 +12,5 @@ ssh-keygen -t ed25519
 git clone git@github.com:samhwang/dotfiles.git ~/.dotfiles
 
 # Run install script
-curl -fsSL https://raw.githubusercontent.com/samhwang/dotfiles/master/profiles/linux/scripts/install.sh | bash
+bash ~/.dotfiles/profiles/linux/scripts/install.sh
 ```
