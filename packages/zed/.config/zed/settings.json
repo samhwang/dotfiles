@@ -15,7 +15,7 @@
       "provider": "zed.dev",
       "model": "claude-sonnet-4-thinking"
     },
-    "enabled": false
+    "enabled": true
   },
   "edit_predictions": {
     "mode": "subtle",
@@ -28,6 +28,7 @@
   "buffer_font_size": 16,
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "format_on_save": "off",
+  "base_keymap": "VSCode",
   "vim_mode": true,
   "relative_line_numbers": true,
   "auto_install_extensions": {
