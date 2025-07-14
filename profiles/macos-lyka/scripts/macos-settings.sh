@@ -1,0 +1,1 @@
+../../macos/scripts/macos-settings.sh
