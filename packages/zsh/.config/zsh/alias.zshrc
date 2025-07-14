@@ -1,6 +1,10 @@
+# Preferred editor for local and remote sessions
+export EDITOR='vim'
+
 # Replace vim with nvim
 if type nvim > /dev/null; then
     alias vim='nvim'
+    export EDITOR='nvim'
 fi
 
 # Replace cat with bat
@@ -22,9 +26,6 @@ fi
 if type duf > /dev/null; then
     alias df="duf"
 fi
-
-# Preferred editor for local and remote sessions
-export EDITOR='vim'
 
 # system aliases
 alias ll='ls -laF'
