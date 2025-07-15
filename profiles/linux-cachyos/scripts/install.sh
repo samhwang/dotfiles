@@ -28,6 +28,7 @@ yay -Syu --noconfirm go \
     rustup \
     zig-bin \
     nodejs \
+    npm \
     deno \
     bun \
     fnm
