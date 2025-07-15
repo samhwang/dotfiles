@@ -10,7 +10,8 @@ sudo pacman -S git \
 yay -Syu --noconfirm stow \
     1password \
     1password-cli \
-    gnome-keyring
+    gnome-keyring \
+    pass
 
 # Use stow to restore config
 cd ~/.dotfiles/packages
@@ -18,7 +19,7 @@ stow --target=$HOME *
 cd ..
 
 cd ~/.dotfiles/profiles
-stow --target=$HOME macos
+stow --target=$HOME linux-cachyos
 cd ..
 
 # Install the rest
