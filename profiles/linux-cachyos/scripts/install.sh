@@ -9,7 +9,8 @@ sudo pacman -S git \
     yay
 yay -Syu --noconfirm stow \
     1password \
-    1password-cli
+    1password-cli \
+    gnome-keyring
 
 # Use stow to restore config
 cd ~/.dotfiles/packages
