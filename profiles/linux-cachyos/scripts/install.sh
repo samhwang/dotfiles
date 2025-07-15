@@ -54,6 +54,7 @@ yay -Syu --noconfirm zsh \
     eza \
     fzf \
     rsync \
+    mcfly \
     zoxide \
     tealdeer \
     yazi \
