@@ -55,7 +55,9 @@ yay -Syu --noconfirm zsh \
     zoxide \
     tealdeer \
     yazi \
-    bottom
+    bottom \
+    github-cli \
+    act
 
 
 # Editor Tools
