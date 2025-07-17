@@ -62,7 +62,6 @@ yay -Syu --noconfirm zsh \
     github-cli \
     act
 
-
 # Editor Tools
 yay -Syu --noconfirm vim \
     neovim \
@@ -74,10 +73,10 @@ yay -Syu --noconfirm vim \
     docker-desktop
 
 # Browsers
-yay -Syu --noconfirm discord \
+yay -Syu --noconfirm discord_arch_electron \
     google-chrome \
-    slack-desktop \
-    spotify \
+    slack-electron \
+    spotify-electron-bin \
     obs-studio
 
 # Gaming Apps
