@@ -74,7 +74,7 @@ yay -Syu --noconfirm vim \
     docker-desktop
 
 # Browsers
-yay -Syu --noconfirm discord \
+yay -Syu --noconfirm discord_arch_electron \
     google-chrome \
     slack-desktop \
     spotify \
