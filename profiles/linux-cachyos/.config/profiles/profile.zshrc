@@ -6,3 +6,6 @@ export MANPATH="/usr/local/man:$MANPATH"
 
 # Link `zeditor` back to zed because muscle memory
 alias zed='zeditor'
+
+# System link for XWayland Applications to type Vietnamese
+export XMODIFIERS="@im=fcitx"
