@@ -32,7 +32,9 @@ yay -Syu --noconfirm go \
     npm \
     deno \
     bun \
-    fnm
+    fnm \
+    python \
+    python-pipx
 
 # Fonts
 yay -Syu --noconfirm ttf-jetbrains-mono \
