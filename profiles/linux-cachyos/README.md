@@ -1,6 +1,7 @@
 # CachyOS specific setup
 
-This package contains CachyOS specific setups.
+This package contains CachyOS specific setups, and is meant to be run on a clean
+installation with KDE Plasma as the default DE.
 
 ## Quick Start
 
