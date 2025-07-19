@@ -16,7 +16,8 @@ function update_packages() {
             sudo apt upgrade --yes
             sudo apt autoremove --yes
         elif type pacman > /dev/null; then
-            yay
+            yay -Syu
+            yay -Yc
         fi
     fi
 }
