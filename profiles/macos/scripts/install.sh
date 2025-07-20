@@ -21,3 +21,6 @@ cd ..
 # Install the rest
 cd ~/.config/brewfile
 brew bundle --verbose --force --cleanup
+
+# Install macos settings
+source ./macos-settings.sh
