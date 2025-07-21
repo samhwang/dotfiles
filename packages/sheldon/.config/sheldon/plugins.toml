@@ -1,6 +1,14 @@
 shell = "zsh"
 
+[templates]
+
+defer = "{{ hooks?.pre | nl }}{% for file in files %}zsh-defer source \"{{ file }}\"\n{% endfor %}{{ hooks?.post | nl }}"
+
+
 [plugins]
+
+[plugins.zsh-defer]
+github = "romkatv/zsh-defer"
 
 [plugins.base16]
 github = "chriskempson/base16-shell"
@@ -9,5 +17,13 @@ github = "chriskempson/base16-shell"
 github = "zsh-users/zsh-autosuggestions"
 use = ["{{ name }}.zsh"]
 
+[plugins.zsh-completions]
+github = "zsh-users/zsh-completions"
+use = ["{{ name }}.plugin.zsh"]
+
 [plugins.zsh-syntax-highlighting]
 github = "zsh-users/zsh-syntax-highlighting"
+
+[plugins.zsh-history-substring-search]
+github = "zsh-users/zsh-history-substring-search"
+apply = ["defer"]
