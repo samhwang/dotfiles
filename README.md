@@ -1,6 +1,6 @@
 # Dotfile
 
-Setting myself up for success, this will bootstrap any macOS machine that I come across. The name of the game is `Lean, mean, fighting machine`.
+Setting myself up for success, this will bootstrap any Linux/macOS machine that I come across. The name of the game is `Lean, mean, fighting machine`.
 
 ## Quick Start
 
