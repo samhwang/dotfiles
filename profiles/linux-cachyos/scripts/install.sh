@@ -7,7 +7,7 @@ chsh -s $(which zsh)
 sudo pacman -S git \
     base-devel \
     yay
-yay -Syu --noconfirm stow \
+yay -S --noconfirm stow \
     1password \
     1password-cli \
     gnome-keyring \
@@ -25,7 +25,7 @@ cd ..
 # Install the rest
 
 # Programming Languages
-yay -Syu --noconfirm go \
+yay -S --noconfirm go \
     rustup \
     zig-bin \
     nodejs \
@@ -37,11 +37,11 @@ yay -Syu --noconfirm go \
     python-pipx
 
 # Fonts
-yay -Syu --noconfirm ttf-jetbrains-mono \
+yay -S --noconfirm ttf-jetbrains-mono \
     ttf-jetbrains-mono-nerd
 
 # Command Line Tools
-yay -Syu --noconfirm zsh \
+yay -S --noconfirm zsh \
     tmux \
     zellij \
     starship \
@@ -65,7 +65,7 @@ yay -Syu --noconfirm zsh \
     act
 
 # Editor Tools
-yay -Syu --noconfirm vim \
+yay -S --noconfirm vim \
     neovim \
     zed \
     ghostty \
@@ -75,15 +75,15 @@ yay -Syu --noconfirm vim \
     docker-desktop
 
 # Browsers
-yay -Syu --noconfirm discord_arch_electron \
+yay -S --noconfirm discord_arch_electron \
     google-chrome \
     slack-electron \
     spotify-electron-bin \
     obs-studio
 
 # Gaming Apps
-yay -Syu --noconfirm cachyos-gaming-meta \
+yay -S --noconfirm cachyos-gaming-meta \
     cachyos-gaming-applications
 
 # System
-yay -Syu --noconfirm snapper
+yay -S --noconfirm snapper
