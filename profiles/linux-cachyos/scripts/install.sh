@@ -72,7 +72,8 @@ yay -S --noconfirm vim \
     postman-bin \
     bruno-bin \
     docker \
-    docker-desktop
+    docker-desktop \
+    opencode
 
 # Browsers
 yay -S --noconfirm discord_arch_electron \

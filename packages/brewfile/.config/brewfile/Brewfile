@@ -168,6 +168,9 @@ brew 'oven-sh/bun/bun'
 tap 'rcmdnk/file'
 brew 'rcmdnk/file/brew-file'
 
+tap 'sst/tap'
+brew 'sst/tap/opencode'
+
 tap 'tursodatabase/tap'
 brew 'tursodatabase/tap/turso'
 
