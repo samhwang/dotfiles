@@ -87,4 +87,5 @@ yay -S --noconfirm cachyos-gaming-meta \
     cachyos-gaming-applications
 
 # System
-yay -S --noconfirm snapper
+yay -S --noconfirm snapper \
+    solaar
