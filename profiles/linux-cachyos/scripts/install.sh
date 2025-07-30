@@ -75,12 +75,13 @@ yay -S --noconfirm vim \
     docker-desktop \
     opencode
 
-# Browsers
+# Browsers and other GUI apps
 yay -S --noconfirm discord_arch_electron \
     google-chrome \
     slack-electron \
     spotify-electron-bin \
-    obs-studio
+    obs-studio \
+    balena-etcher
 
 # Gaming Apps
 yay -S --noconfirm cachyos-gaming-meta \
