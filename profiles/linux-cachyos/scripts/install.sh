@@ -6,8 +6,9 @@ chsh -s $(which zsh)
 # Install pre-requisite
 sudo pacman -S git \
     base-devel \
-    yay
-yay -S --noconfirm stow \
+    yay \
+    paru
+paru -S --noconfirm stow \
     1password \
     1password-cli \
     gnome-keyring \
@@ -25,7 +26,7 @@ cd ..
 # Install the rest
 
 # Programming Languages
-yay -S --noconfirm go \
+paru -S --noconfirm go \
     rustup \
     zig-bin \
     nodejs \
@@ -37,11 +38,11 @@ yay -S --noconfirm go \
     python-pipx
 
 # Fonts
-yay -S --noconfirm ttf-jetbrains-mono \
+paru -S --noconfirm ttf-jetbrains-mono \
     ttf-jetbrains-mono-nerd
 
 # Command Line Tools
-yay -S --noconfirm zsh \
+paru -S --noconfirm zsh \
     tmux \
     zellij \
     starship \
@@ -65,7 +66,7 @@ yay -S --noconfirm zsh \
     act
 
 # Editor Tools
-yay -S --noconfirm vim \
+paru -S --noconfirm vim \
     neovim \
     zed \
     ghostty \
@@ -76,7 +77,7 @@ yay -S --noconfirm vim \
     opencode
 
 # Browsers and other GUI apps
-yay -S --noconfirm discord_arch_electron \
+paru -S --noconfirm discord_arch_electron \
     google-chrome \
     slack-electron \
     spotify-electron-bin \
@@ -84,9 +85,9 @@ yay -S --noconfirm discord_arch_electron \
     balena-etcher
 
 # Gaming Apps
-yay -S --noconfirm cachyos-gaming-meta \
+paru -S --noconfirm cachyos-gaming-meta \
     cachyos-gaming-applications
 
 # System
-yay -S --noconfirm snapper \
+paru -S --noconfirm snapper \
     solaar
