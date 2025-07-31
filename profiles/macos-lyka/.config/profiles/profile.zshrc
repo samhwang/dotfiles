@@ -17,3 +17,6 @@ export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 # alias nuxt="cd ${LYKAPROJECTSPATH}/lyka-com-au && yarn nuxt"
 
 export LOCALSTACK_VOLUME_DIR="${HOME}/Library/Caches/localstack/volume"
+
+# Granted Assume to access to AWS resources on CLI
+alias assume=". assume"
