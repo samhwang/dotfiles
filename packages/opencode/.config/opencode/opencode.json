@@ -1,5 +1,13 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "theme": "catppuccin",
-  "autoupdate": true
+  "autoupdate": true,
+  "provider": {
+    "anthropic": {
+      "models": {},
+      "options": {
+        "apiKey": "{env:ANTHROPIC_API_KEY}"
+      }
+    }
+  }
 }
