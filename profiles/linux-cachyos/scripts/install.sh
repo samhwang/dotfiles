@@ -20,6 +20,7 @@ stow --target=$HOME *
 cd ..
 
 cd ~/.dotfiles/profiles
+OP_ACCOUNT=my.1password.com op inject -i linux-cachyos/.config/profiles/private.zshrc.tpl -o linux-cachyos/.config/profiles/private.zshrc
 stow --target=$HOME linux-cachyos
 cd ..
 

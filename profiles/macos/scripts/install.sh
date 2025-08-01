@@ -15,6 +15,7 @@ stow --target=$HOME *
 cd ..
 
 cd ~/.dotfiles/profiles
+OP_ACCOUNT=my.1password.com op inject -i macos/.config/profiles/private.zshrc.tpl -o macos/.config/profiles/private.zshrc
 stow --target=$HOME macos
 cd ..
 

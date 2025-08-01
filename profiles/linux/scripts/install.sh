@@ -8,7 +8,8 @@ stow --target=$HOME *
 cd ..
 
 cd ~/.dotfiles/profiles
-stow --target=$HOME macos
+OP_ACCOUNT=my.1password.com op inject -i linux/.config/profiles/private.zshrc.tpl -o linux/.config/profiles/private.zshrc
+stow --target=$HOME linux
 cd ..
 
 # Install the rest
