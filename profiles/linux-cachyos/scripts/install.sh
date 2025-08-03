@@ -83,7 +83,10 @@ paru -S --noconfirm discord_arch_electron \
     slack-electron \
     spotify-electron-bin \
     obs-studio \
-    balena-etcher
+    balena-etcher \
+    gimp \
+    darktable \
+    rawtherapee
 
 # Gaming Apps
 paru -S --noconfirm cachyos-gaming-meta \
