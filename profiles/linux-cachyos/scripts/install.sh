@@ -86,7 +86,8 @@ paru -S --noconfirm discord_arch_electron \
     balena-etcher \
     gimp \
     darktable \
-    rawtherapee
+    rawtherapee \
+    davinci-resolve
 
 # Gaming Apps
 paru -S --noconfirm cachyos-gaming-meta \
