@@ -87,6 +87,7 @@ paru -S --noconfirm discord_arch_electron \
     gimp \
     darktable \
     rawtherapee \
+    rapidraw-bin \
     davinci-resolve
 
 # Gaming Apps
