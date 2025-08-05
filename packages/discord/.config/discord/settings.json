@@ -4,5 +4,11 @@
   "IS_MAXIMIZED": false,
   "IS_MINIMIZED": false,
   "BACKGROUND_COLOR": "#121214",
-  "SKIP_HOST_UPDATE": true
+  "SKIP_HOST_UPDATE": true,
+  "WINDOW_BOUNDS": {
+    "x": 0,
+    "y": 0,
+    "width": 1719,
+    "height": 1412
+  }
 }
