@@ -64,7 +64,8 @@ paru -S --noconfirm zsh \
     yazi \
     bottom \
     github-cli \
-    act
+    act \
+    nvtop
 
 # Editor Tools
 paru -S --noconfirm vim \
@@ -88,7 +89,8 @@ paru -S --noconfirm discord_arch_electron \
     darktable \
     rawtherapee \
     rapidraw-bin \
-    davinci-resolve
+    davinci-resolve \
+    vial-appimage
 
 # Gaming Apps
 paru -S --noconfirm cachyos-gaming-meta \
