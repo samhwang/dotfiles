@@ -4,12 +4,26 @@
 
 # Use stow to restore config
 cd ~/.dotfiles/packages
-stow --target=$HOME *
+# Generic packages
+stow --target=$HOME act \
+    bat \
+    delta \
+    git \
+    gitui \
+    opencode \
+    sheldon \
+    starship \
+    stow \
+    vim \
+    zed \
+    zsh
+# Linux packages
+stow --target=$HOME discord \
+    lsfg-vk
 cd ..
 
 cd ~/.dotfiles/profiles
-OP_ACCOUNT=my.1password.com op inject -i linux/.config/profiles/private.zshrc.tpl -o linux/.config/profiles/private.zshrc
-stow --target=$HOME linux
+stow --target=$HOME linux-cachyos-handheld
 cd ..
 
 # Install the rest
