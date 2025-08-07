@@ -34,7 +34,6 @@ stow --target=$HOME act \
     stow \
     testcontainers \
     vim \
-    yazi \
     zed \
     zellij \
     zsh
@@ -86,7 +85,6 @@ paru -S --noconfirm zsh \
     mcfly \
     zoxide \
     tealdeer \
-    yazi \
     bottom \
     github-cli \
     act \

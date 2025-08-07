@@ -29,7 +29,6 @@ stow --target=$HOME act \
     stow \
     testcontainers \
     vim \
-    yazi \
     zed \
     zellij \
     zsh

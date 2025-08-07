@@ -66,9 +66,6 @@ if type brew > /dev/null; then
     source "${ZSHCONFIG}/brew-wrap.zshrc"
 fi
 
-# Load yazi
-source "${ZSHCONFIG}/yazi.zshrc"
-
 # Load Docker completions
 if type docker > /dev/null; then
     source "${ZSHCONFIG}/docker-desktop.zshrc"
