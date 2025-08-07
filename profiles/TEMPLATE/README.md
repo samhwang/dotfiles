@@ -12,5 +12,5 @@ ssh-keygen -t ed25519
 git clone git@github.com:samhwang/dotfiles.git ~/.dotfiles
 
 # Run install script
-bash ~/.dotfiles/profiles/linux/scripts/install.sh
+bash ~/.dotfiles/profiles/TEMPLATE/scripts/install.sh
 ```
