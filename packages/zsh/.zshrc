@@ -19,29 +19,43 @@ autoload -Uz compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
 
 # Load Sheldon
-eval "$(sheldon source)"
-source <(sheldon completions --shell zsh)
+if type sheldon > /dev/null; then
+    eval "$(sheldon source)"
+    source <(sheldon completions --shell zsh)
+fi
 
 # Load fzf keybindings
-source <(fzf --zsh)
+if type fzf > /dev/null; then
+    source <(fzf --zsh)
+fi
 
 # Load extra cowfiles if exist
-EXTRACOWS="${HOME}/.cowsay/cowfiles"
-[ -d "${EXTRACOWS}" ] && export COWPATH="${EXTRACOWS}:$COWPATH"
+if type cowsay > /dev/null; then
+    EXTRACOWS="${HOME}/.cowsay/cowfiles"
+    [ -d "${EXTRACOWS}" ] && export COWPATH="${EXTRACOWS}:$COWPATH"
+fi
 
 # PATH for PyPI
 PYPI_PATH="$HOME/.local/bin"
 export PATH="$PATH:$PYPI_PATH"
-eval "$(register-python-argcomplete pipx)"
+if type pipx > /dev/null; then
+    eval "$(register-python-argcomplete pipx)"
+fi
 
 # Load Starship
-eval "$(starship init zsh)"
+if type starship > /dev/null; then
+    eval "$(starship init zsh)"
+fi
 
 # Load mcfly
-eval "$(mcfly init zsh)"
+if type mcfly > /dev/null; then
+    eval "$(mcfly init zsh)"
+fi
 
 # Load fnm
-eval $(fnm env)
+if type fnm > /dev/null; then
+    eval $(fnm env)
+fi
 
 # Load console ninja
 CONSOLE_NINJA_PATH="${HOME}/.console-ninja/.bin"
@@ -56,10 +70,14 @@ fi
 source "${ZSHCONFIG}/yazi.zshrc"
 
 # Load Docker completions
-source "${ZSHCONFIG}/docker-desktop.zshrc"
+if type docker > /dev/null; then
+    source "${ZSHCONFIG}/docker-desktop.zshrc"
+fi
 
 # Load zoxide
-eval "$(zoxide init zsh)"
+if type zoxide > /dev/null; then
+    eval "$(zoxide init zsh)"
+fi
 
 # Functions for updating utilities
 UPGRADE_FUNC="${ZSHCONFIG}/upgrade.zshrc"
