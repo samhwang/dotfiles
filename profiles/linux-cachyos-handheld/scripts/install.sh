@@ -9,13 +9,9 @@ stow --target=$HOME act \
     bat \
     delta \
     git \
-    gitui \
-    opencode \
     sheldon \
     starship \
     stow \
-    vim \
-    zed \
     zsh
 # Linux packages
 stow --target=$HOME discord \
