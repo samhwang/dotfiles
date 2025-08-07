@@ -4,7 +4,35 @@
 
 # Use stow to restore config
 cd ~/.dotfiles/packages
-stow --target=$HOME *
+# Generic packages
+stow --target=$HOME act \
+    bat \
+    bottom \
+    cowsay \
+    delta \
+    fastfetch \
+    gh \
+    ghostty \
+    git \
+    gitui \
+    nvim \
+    opencode \
+    sheldon \
+    starship \
+    stow \
+    testcontainers \
+    vim \
+    yazi \
+    zed \
+    zellij \
+    zsh
+# UNCOMMENT ONE OF THESE BLOCKS FOR THE OS THAT IS INSTALLED ON
+# Linux packages
+# stow --target=$HOME discord \
+#     hypr \
+#     lsfg-vk
+# # macOS packages
+# stow --target=$HOME aerospace
 cd ..
 
 cd ~/.dotfiles/profiles

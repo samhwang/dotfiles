@@ -11,7 +11,30 @@ brew install --cask 1password
 
 # Use stow to restore config
 cd ~/.dotfiles/packages
-stow --target=$HOME *
+# Generic packages
+stow --target=$HOME act \
+    bat \
+    bottom \
+    cowsay \
+    delta \
+    fastfetch \
+    gh \
+    ghostty \
+    git \
+    gitui \
+    nvim \
+    opencode \
+    sheldon \
+    starship \
+    stow \
+    testcontainers \
+    vim \
+    yazi \
+    zed \
+    zellij \
+    zsh
+# macOS packages
+stow --target=$HOME aerospace
 cd ..
 
 cd ~/.dotfiles/profiles

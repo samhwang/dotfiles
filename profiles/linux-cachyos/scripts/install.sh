@@ -16,7 +16,32 @@ paru -S --noconfirm stow \
 
 # Use stow to restore config
 cd ~/.dotfiles/packages
-stow --target=$HOME *
+# Generic packages
+stow --target=$HOME act \
+    bat \
+    bottom \
+    cowsay \
+    delta \
+    fastfetch \
+    gh \
+    ghostty \
+    git \
+    gitui \
+    nvim \
+    opencode \
+    sheldon \
+    starship \
+    stow \
+    testcontainers \
+    vim \
+    yazi \
+    zed \
+    zellij \
+    zsh
+# Linux packages
+stow --target=$HOME discord \
+    hypr \
+    lsfg-vk
 cd ..
 
 cd ~/.dotfiles/profiles
