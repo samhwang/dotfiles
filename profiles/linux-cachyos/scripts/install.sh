@@ -99,13 +99,14 @@ paru -S --noconfirm vim \
     bruno-bin \
     docker \
     docker-desktop \
-    opencode
+    opencode \
+    beekeeper-studio-bin
 
 # Browsers and other GUI apps
 paru -S --noconfirm discord_arch_electron \
     google-chrome \
     slack-electron \
-    spotify-electron-bin \
+    spotify \
     obs-studio \
     balena-etcher \
     gimp \
@@ -113,7 +114,8 @@ paru -S --noconfirm discord_arch_electron \
     rawtherapee \
     rapidraw-bin \
     davinci-resolve \
-    vial-appimage
+    vial-appimage \
+    zoom
 
 # Gaming Apps
 paru -S --noconfirm cachyos-gaming-meta \
