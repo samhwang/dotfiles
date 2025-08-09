@@ -100,7 +100,8 @@ paru -S --noconfirm vim \
     docker \
     docker-desktop \
     opencode \
-    beekeeper-studio-bin
+    beekeeper-studio-bin \
+    aws-cli-v2
 
 # Browsers and other GUI apps
 paru -S --noconfirm discord_arch_electron \
