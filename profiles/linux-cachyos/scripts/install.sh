@@ -120,7 +120,8 @@ paru -S --noconfirm discord_arch_electron \
 
 # Gaming Apps
 paru -S --noconfirm cachyos-gaming-meta \
-    cachyos-gaming-applications
+    cachyos-gaming-applications \
+    lsfg-vk
 
 # System
 paru -S --noconfirm snapper \

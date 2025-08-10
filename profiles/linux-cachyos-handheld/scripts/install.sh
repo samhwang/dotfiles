@@ -22,4 +22,8 @@ cd ~/.dotfiles/profiles
 stow --target=$HOME linux-cachyos-handheld
 cd ..
 
-# Install the rest
+# Gaming Apps
+paru -S --noconfirm cachyos-gaming-meta \
+    cachyos-gaming-applications \
+    discord \
+    lsfg-vk
