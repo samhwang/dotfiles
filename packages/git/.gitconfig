@@ -88,11 +88,11 @@
 
 # USER CONFIGURATION
 [user]
-    name = Sam Huynh
-    email = samhwang2112.dev@gmail.com
+	name = Sam Huynh
+	email = samhwang2112.dev@gmail.com
 
 [includeIf "gitdir:~/projects/lyka/"]
-    path = ~/.config/profile/.gitconfig-lyka
+	path = ~/.config/profile/.gitconfig-lyka
 
 # CATPPUCCIN THEME FOR GIT DELTA
 [include]
