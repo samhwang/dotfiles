@@ -20,3 +20,6 @@ export LOCALSTACK_VOLUME_DIR="${HOME}/Library/Caches/localstack/volume"
 
 # Granted Assume to access to AWS resources on CLI
 alias assume=". assume"
+
+# Custom brewfile for Lyka profile
+export HOMEBREW_BREWFILE="${HOME}/.config/profiles/Brewfile"
