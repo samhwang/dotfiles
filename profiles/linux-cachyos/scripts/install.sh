@@ -115,6 +115,7 @@ paru -S --noconfirm discord_arch_electron \
     rawtherapee \
     rapidraw-bin \
     davinci-resolve \
+    handbrake \
     vial-appimage \
     zoom
 
