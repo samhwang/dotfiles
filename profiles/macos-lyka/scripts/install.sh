@@ -28,6 +28,7 @@ stow --target=$HOME act \
     starship \
     stow \
     testcontainers \
+    tmux \
     vim \
     zed \
     zellij \
