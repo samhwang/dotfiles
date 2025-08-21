@@ -5,4 +5,4 @@
 
 # GIT TEMPLATE
 [init]
-    templateDir = ~/.config/profile/.git-template
+    templateDir = ~/.config/profiles/.git-template
