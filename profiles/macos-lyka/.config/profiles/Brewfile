@@ -154,7 +154,7 @@ tap atomicjar/tap
 cask atomicjar/tap/testcontainers-desktop
 
 tap axiomhq/tap
-brew axiomhq/tap/axiom
+cask axiomhq/tap/axiom
 
 tap beeftornado/rmtree
 
@@ -194,7 +194,7 @@ tap tursodatabase/tap
 brew tursodatabase/tap/turso
 
 # App Store applications
-appstore 1569813296 1Password for Safari (8.10.82)
+appstore 1569813296 1Password for Safari (8.11.7)
 appstore 302584613 Amazon Kindle (7.38.1)
 appstore 1091189122 Bear (2.5.1)
 appstore 1193539993 Brother iPrint&Scan (12.2.1)
@@ -202,7 +202,7 @@ appstore 682658836 GarageBand (10.4.12)
 appstore 1555925018 Genki Arcade (1.3.2)
 appstore 408981434 iMovie (10.4.3)
 appstore 409183694 Keynote (14.4)
-appstore 360593530 Notability (14.12.9)
+appstore 360593530 Notability (15.0.0)
 appstore 409203825 Numbers (14.4)
-appstore 490179405 Okta Verify (9.46.1)
+appstore 490179405 Okta Verify (9.48.0)
 appstore 409201541 Pages (14.4)
