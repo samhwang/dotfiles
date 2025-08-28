@@ -19,17 +19,17 @@ hdr_mode = false
 experimental_present_mode = "fifo"
 
 [[game]]
-exe = "vkcube"
-multiplier = 4
-flow_scale = 0.7
+exe = "dota2"
+multiplier = 1
+flow_scale = 1.0
 performance_mode = true
 hdr_mode = false
 experimental_present_mode = "fifo"
 
 [[game]]
-exe = "dota2"
+exe = "vkcube"
 multiplier = 4
-flow_scale = 1.0
+flow_scale = 0.7
 performance_mode = true
 hdr_mode = false
 experimental_present_mode = "fifo"
