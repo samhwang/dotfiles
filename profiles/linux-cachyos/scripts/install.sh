@@ -127,7 +127,8 @@ paru -S --noconfirm cachyos-gaming-meta \
 
 # System
 paru -S --noconfirm snapper \
-    solaar
+    solaar \
+    brother-mfc-l2750dw
 
 # For Ergodox EZ
 paru -S --noconfirm zsa-keymapp-bin
