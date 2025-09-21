@@ -102,7 +102,8 @@ paru -S --noconfirm vim \
     docker-desktop \
     opencode \
     beekeeper-studio-bin \
-    aws-cli-v2
+    aws-cli-v2 \
+    aws-session-manager-plugin
 
 # Browsers and other GUI apps
 paru -S --noconfirm discord_arch_electron \
@@ -126,9 +127,14 @@ paru -S --noconfirm cachyos-gaming-meta \
     lsfg-vk
 
 # System
-paru -S --noconfirm snapper \
-    solaar \
-    brother-mfc-l2750dw
+paru -S --noconfirm snapper
+
+# For Logitech mice
+paru -S --noconfirm solaar
 
 # For Ergodox EZ
 paru -S --noconfirm zsa-keymapp-bin
+
+# For Brother printer & scanner
+paru -S --noconfirm simple-scan \
+    brother-mfc-l2750dw
