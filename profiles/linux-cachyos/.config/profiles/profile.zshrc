@@ -9,3 +9,5 @@ alias zed='zeditor'
 
 # System link for XWayland Applications to type Vietnamese
 export XMODIFIERS="@im=fcitx"
+
+alias sso-vait="aws ssm start-session --target i-09bfcbbea7ac38621 --profile vait"
