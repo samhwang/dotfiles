@@ -1,4 +1,4 @@
 font-size = 20
 font-family = "JetBrainsMono Nerd Font Mono"
-theme = catppuccin-mocha
+theme = Catppuccin Mocha
 keybind = shift+enter=text:\n
