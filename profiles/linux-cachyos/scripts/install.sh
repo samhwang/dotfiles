@@ -127,7 +127,8 @@ paru -S --noconfirm cachyos-gaming-meta \
     lsfg-vk
 
 # System
-paru -S --noconfirm snapper
+paru -S --noconfirm snapper \
+    simple-scan
 
 # For Logitech mice
 paru -S --noconfirm solaar
@@ -136,5 +137,4 @@ paru -S --noconfirm solaar
 paru -S --noconfirm zsa-keymapp-bin
 
 # For Brother printer & scanner
-paru -S --noconfirm simple-scan \
-    brother-mfc-l2750dw
+paru -S --noconfirm brother-mfc-l2750dw
