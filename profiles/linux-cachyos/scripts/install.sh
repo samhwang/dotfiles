@@ -28,6 +28,7 @@ stow --target=$HOME act \
     git \
     gitui \
     kanata \
+    lact \
     nvim \
     opencode \
     sheldon \
