@@ -1,0 +1,20 @@
+(defcfg
+  process-unmapped-keys yes
+)
+
+(defsrc
+  caps
+)
+
+(defvar
+  tap-time 100
+  hold-time 100
+)
+
+(defalias
+  escctrl (tap-hold $tap-time $hold-time esc lctl)
+)
+
+(deflayer base
+  @escctrl
+)
