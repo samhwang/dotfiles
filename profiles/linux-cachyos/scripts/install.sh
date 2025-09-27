@@ -128,7 +128,8 @@ paru -S --noconfirm cachyos-gaming-meta \
 
 # System
 paru -S --noconfirm snapper \
-    simple-scan
+    simple-scan \
+    kanata
 
 # For Logitech mice
 paru -S --noconfirm solaar
