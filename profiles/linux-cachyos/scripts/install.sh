@@ -115,6 +115,7 @@ paru -S --noconfirm discord_arch_electron \
     obs-studio \
     balena-etcher \
     vial-appimage \
+    vivaldi \
     zoom
 
 # Gaming Apps
