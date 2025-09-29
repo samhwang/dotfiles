@@ -114,12 +114,6 @@ paru -S --noconfirm discord_arch_electron \
     spotify \
     obs-studio \
     balena-etcher \
-    gimp \
-    darktable \
-    rawtherapee \
-    rapidraw-bin \
-    davinci-resolve \
-    handbrake \
     vial-appimage \
     zoom
 
@@ -141,3 +135,12 @@ paru -S --noconfirm zsa-keymapp-bin
 
 # For Brother printer & scanner
 paru -S --noconfirm brother-mfc-l2750dw
+
+# Photography apps
+paru -S --noconfirm gimp \
+    darktable \
+    rawtherapee \
+    rapidraw-bin \
+    davinci-resolve \
+    handbrake \
+    vuescan-bin
