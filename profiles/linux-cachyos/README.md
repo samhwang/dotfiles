@@ -18,7 +18,7 @@ bash ~/.dotfiles/profiles/linux-cachyos/scripts/install.sh
 
 ## Install Lossless Framegen
 - Login Steam, download [`Lossless Scaling`](https://store.steampowered.com/app/993090/Lossless_Scaling/)
-- Then in GitHub, go to [`lsfg-vk`](https://github.com/PancakeTAS/lsfg-vk] => Releases => Download the file with `.tar.zst` suffix
+- Then in GitHub, go to [`lsfg-vk`](https://github.com/PancakeTAS/lsfg-vk) => Releases => Download the file with `.tar.zst` suffix
 - Open Terminal, Go to the downloads folder => Run:
 
 ```shell
