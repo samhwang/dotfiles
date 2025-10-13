@@ -13,8 +13,8 @@
   "agent": {
     "default_profile": "ask",
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-sonnet-4-thinking"
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-5-thinking-latest"
     },
     "enabled": true
   },
@@ -22,8 +22,16 @@
     "mode": "subtle",
     "disabled_globs": ["**/.env"]
   },
-  "icon_theme": "Catppuccin Mocha",
-  "theme": "Catppuccin Mocha",
+  "icon_theme": {
+    "mode": "system",
+    "light": "Catppuccin Mocha",
+    "dark": "Catppuccin Mocha"
+  },
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Mocha",
+    "dark": "Catppuccin Mocha"
+  },
   "ui_font_size": 16,
   "ui_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_size": 16,
