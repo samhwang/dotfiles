@@ -94,6 +94,9 @@
 [includeIf "gitdir:~/projects/lyka/"]
 	path = ~/.config/profile/.gitconfig-lyka
 
+[includeIf "gitdir:~/projects/rosterfy/"]
+	path = ~/.config/profile/.gitconfig-rosterfy
+
 # CATPPUCCIN THEME FOR GIT DELTA
 [include]
 	path = ~/.config/delta/themes/catpuccin.gitconfig
