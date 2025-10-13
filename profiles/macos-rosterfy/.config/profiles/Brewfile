@@ -139,8 +139,6 @@ cask 'visual-studio-code'
 cask 'zed'
 cask 'zulu@17'
 
-tap 'homebrew/cask-versions'
-
 tap 'atomicjar/tap'
 cask 'atomicjar/tap/testcontainers-desktop'
 
