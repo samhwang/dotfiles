@@ -1,3 +1,6 @@
+export SSH_KEY_PATH="$HOME/.ssh/id_ed25519"
+DEFAULT_USER="sam.huynh"
+
 complete -o nospace -C /usr/local/bin/terraform terraform
 
 # Composer path
