@@ -76,6 +76,11 @@ if type zoxide > /dev/null; then
     eval "$(zoxide init zsh)"
 fi
 
+# Load direnv
+if type direnv > /dev/null; then
+    eval "$(direnv hook zsh)"
+fi
+
 # Functions for updating utilities
 UPGRADE_FUNC="${ZSHCONFIG}/upgrade.zshrc"
 [ -f "${UPGRADE_FUNC}" ] && source "${UPGRADE_FUNC}"
