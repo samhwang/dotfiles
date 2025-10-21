@@ -91,10 +91,10 @@
 	email = samhwang2112.dev@gmail.com
 
 [includeIf "gitdir:~/projects/lyka/"]
-	path = ~/.config/profile/.gitconfig-lyka
+	path = ~/.config/profiles/.gitconfig-lyka
 
 [includeIf "gitdir:~/projects/rosterfy/"]
-	path = ~/.config/profile/.gitconfig-rosterfy
+	path = ~/.config/profiles/.gitconfig-rosterfy
 
 # CATPPUCCIN THEME FOR GIT DELTA
 [include]
