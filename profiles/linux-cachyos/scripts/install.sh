@@ -91,7 +91,8 @@ paru -S --noconfirm zsh \
     bottom \
     github-cli \
     act \
-    nvtop
+    nvtop \
+    direnv
 
 # Editor Tools
 paru -S --noconfirm vim \

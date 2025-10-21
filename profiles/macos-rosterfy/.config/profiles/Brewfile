@@ -196,7 +196,7 @@ brew 'tursodatabase/tap/turso'
 tap 'weaveworks/tap'
 
 # App Store applications
-mas '1Password for Safari (8.11.12)', id: 1569813296
+mas '1Password for Safari (8.11.15)', id: 1569813296
 mas 'Amazon Kindle (7.43)', id: 302584613
 mas 'Bear (2.6.3)', id: 1091189122
 mas 'Brother iPrint&Scan (14.0)', id: 1193539993
