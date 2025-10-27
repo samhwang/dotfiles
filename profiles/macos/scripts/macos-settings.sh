@@ -191,6 +191,16 @@ defaults write com.apple.dock showhidden -bool true
 # Don’t show recent applications in Dock
 defaults write com.apple.dock show-recents -bool false
 
+##############################
+# Aerospace related settings #
+##############################
+
+# Move windows by dragging any part of the window
+defaults write -g NSWindowShouldDragOnGesture -bool true
+
+# Disable windows opening animations
+defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
+
 ##########################
 # Kill all affected apps #
 ##########################
