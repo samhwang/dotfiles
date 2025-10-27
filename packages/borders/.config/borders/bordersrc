@@ -1,8 +1,9 @@
 #!/bin/bash
 
 options=(
-    active_color=0xffe1e3e4
-    inactive_color=0xffe1e3e4
+    style=round
+    active_color=0xffcba6f7
+    inactive_color=0xffcba6f7
     width=5.0
 )
 
