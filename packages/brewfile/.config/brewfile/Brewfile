@@ -152,6 +152,10 @@ tap 'github/gh'
 tap 'hashicorp/tap'
 brew 'hashicorp/tap/terraform'
 
+tap 'felixkratz/formulae'
+brew 'felixkratz/formulae/borders'
+brew 'felixkratz/formulae/sketchybar'
+
 tap 'libsql/sqld'
 
 tap 'localstack/tap'
