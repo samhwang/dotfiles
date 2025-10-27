@@ -2,28 +2,60 @@ CONFIG_DIR="${HOME}/.config/sketchybar"
 PLUGIN_DIR="${CONFIG_DIR}/plugins"
 FONT="JetBrainsMono Nerd Font"
 
+# Ensure mode file exists
+if [ ! -f "${CONFIG_DIR}/.bar_mode" ]; then
+    echo "normal" > ".bar_mode"
+fi
+MODE=$(cat "${CONFIG_DIR}/.bar_mode")
+
+AEROSPACE_FOCUSED_MONITOR_NO=$(aerospace list-workspaces --focused)
+AEROSPACE_LIST_OF_WINDOWS_IN_FOCUSED_MONITOR=$(aerospace list-windows --workspace $AEROSPACE_FOCUSED_MONITOR_NO | awk -F'|' '{gsub(/^ *| *$/, "", $2); print $2}')
+
 ##### Bar Appearance #####
 
-sketchybar --bar position=top height=40 blur_radius=30 color=0x40000000
+sketchybar --bar position=top \
+    height=$([ "$MODE" = "compact" ] && echo 22 || echo 45) \
+    padding_left=$([ "$MODE" = "compact" ] && echo 0 || echo 4) \
+    padding_right=$([ "$MODE" = "compact" ] && echo 0 || echo 4) \
+    y_offset=0 \
+    blur_radius=0 \
+    position=top \
+    margin=0 \
+    corner_radius=0 \
+    color=0xff1e1d2e \
+    shadow=on
 
-##### Changing Defaults #####
-# We now change some default values, which are applied to all further items.
-# For a full list of all available item properties see:
-# https://felixkratz.github.io/SketchyBar/config/items
+##### Defaults #####
 
 default=(
-  padding_left=5
-  padding_right=5
-  icon.font="${FONT}:Bold:17.0"
-  label.font="${FONT}:Bold:14.0"
-  icon.color=0xffffffff
-  label.color=0xffffffff
-  icon.padding_left=4
-  icon.padding_right=4
-  label.padding_left=4
-  label.padding_right=4
+    icon.font="$([ "${MODE}" = "compact" ] && echo "${FONT}:Bold:14.0" || echo "${FONT}:Bold:16.0")"
+    label.font="${FONT}:Bold:14.0"
+    icon.font="${FONT}:Bold:17.0"
+    icon.color=0xffECEFF4
+    icon.highlight_color=0xffE48FA8
+    label.color=0xffECEFF4
+    background.corner_radius=5
+    background.height=30
 )
 sketchybar --default "${default[@]}"
+
+sketchybar --add item logo left \
+    --set logo icon= \
+    icon.color=0xff010101 \
+    icon.padding_left=16 \
+    icon.padding_right=16 \
+    background.color=0xffA5E0D5 \
+    background.padding_right="$([ "${MODE}" = "compact" ] && echo 0 || echo 8)" \
+    background.padding_left="$([ "${MODE}" = "compact" ] && echo 0 || echo 4)" \
+    click_script="sketchybar --update"
+
+sketchybar --add item space_separator left \
+    --set space_separator icon= \
+    background.padding_left=23 \
+    background.padding_right=23 \
+    label.drawing=off \
+    icon.color=0xff92B3F5 \
+    click_script="$CONFIG_DIR/toggle_bar_mode.sh"
 
 ##### Space Indicators #####
 sketchybar --add event aerospace_workspace_change
