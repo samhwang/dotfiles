@@ -32,7 +32,9 @@ stow --target=$HOME act \
 #     hypr \
 #     lsfg-vk
 # # macOS packages
-# stow --target=$HOME aerospace
+# stow --target=$HOME aerospace \
+#     borders \
+#     sketchybar
 cd ..
 
 cd ~/.dotfiles/profiles

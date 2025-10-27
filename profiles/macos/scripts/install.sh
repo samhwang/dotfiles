@@ -35,7 +35,9 @@ stow --target=$HOME act \
     zellij \
     zsh
 # macOS packages
-stow --target=$HOME aerospace
+stow --target=$HOME aerospace \
+    borders \
+    sketchybar
 cd ..
 
 cd ~/.dotfiles/profiles
