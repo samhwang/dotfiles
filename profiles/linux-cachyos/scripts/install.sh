@@ -27,7 +27,6 @@ stow --target=$HOME act \
     ghostty \
     git \
     gitui \
-    kanata \
     lact \
     nvim \
     opencode \
@@ -126,8 +125,7 @@ paru -S --noconfirm cachyos-gaming-meta \
 
 # System
 paru -S --noconfirm snapper \
-    simple-scan \
-    kanata
+    simple-scan
 
 # For Logitech mice
 paru -S --noconfirm solaar
