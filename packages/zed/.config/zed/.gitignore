@@ -1,4 +1,9 @@
 .tmp*
+
+# Zed AI Stuff
 prompts
 embeddings
 conversations
+
+# Intelephense
+intelephense_key.txt
