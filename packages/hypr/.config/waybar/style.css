@@ -1,7 +1,7 @@
 @import "catppuccin-mocha.css";
 
 * {
-    font-family: JetBrainsMono Nerd Font;
+    font-family: "JetBrainsMono Nerd Font";
 }
 
 #waybar {
