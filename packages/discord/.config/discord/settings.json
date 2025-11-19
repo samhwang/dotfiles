@@ -11,5 +11,6 @@
     "width": 1720,
     "height": 1412
   },
-  "enableHardwareAcceleration": true
+  "enableHardwareAcceleration": true,
+  "asyncVideoInputDeviceInit": false
 }
