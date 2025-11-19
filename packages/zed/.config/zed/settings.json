@@ -11,12 +11,11 @@
     "edit_prediction_provider": "zed"
   },
   "agent": {
-    "default_profile": "ask",
     "default_model": {
       "provider": "anthropic",
       "model": "claude-sonnet-4-5-thinking-latest"
     },
-    "enabled": true
+    "model_parameters": []
   },
   "edit_predictions": {
     "mode": "subtle",
@@ -39,7 +38,7 @@
   "format_on_save": "off",
   "base_keymap": "VSCode",
   "vim_mode": true,
-  "relative_line_numbers": true,
+  "relative_line_numbers": "enabled",
   "auto_install_extensions": {
     "astro": true,
     "biome": true,
