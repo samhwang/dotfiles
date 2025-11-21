@@ -144,3 +144,8 @@ paru -S --noconfirm gimp \
     davinci-resolve \
     handbrake \
     vuescan-bin
+
+# VPN things
+paru -S --noconfirm tailscale \
+    nordvpn-bin \
+    nordvpn-gui
