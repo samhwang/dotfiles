@@ -85,6 +85,10 @@ fi
 UPGRADE_FUNC="${ZSHCONFIG}/upgrade.zshrc"
 [ -f "${UPGRADE_FUNC}" ] && source "${UPGRADE_FUNC}"
 
+# Bypass Apple Quarantine scripts
+BYPASS_SCRIPT="${ZSHCONFIG}/bypass-quarantine.zshrc"
+[ -f "${BYPASS_SCRIPT}" ] && source "${BYPASS_SCRIPT}"
+
 # Aliases
 ALIAS_CONFIG="${ZSHCONFIG}/alias.zshrc"
 [ -f "${ALIAS_CONFIG}" ] && source "${ALIAS_CONFIG}"
