@@ -149,3 +149,12 @@ paru -S --noconfirm gimp \
 paru -S --noconfirm tailscale \
     nordvpn-bin \
     nordvpn-gui
+
+# Hyprland packages
+paru -S --noconfirm hyprland \
+    hyprpaper \
+    rofi \
+    waybar \
+    dunst \
+    pipewire \
+    wireplumber
