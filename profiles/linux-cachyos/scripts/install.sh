@@ -153,8 +153,11 @@ paru -S --noconfirm tailscale \
 # Hyprland packages
 paru -S --noconfirm hyprland \
     hyprpaper \
+    hyprpolkitagent \
     rofi \
     waybar \
     dunst \
     pipewire \
-    wireplumber
+    wireplumber \
+    qt5-wayland \
+    qt6-wayland
