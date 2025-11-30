@@ -153,6 +153,8 @@ paru -S --noconfirm tailscale \
 # Hyprland packages
 paru -S --noconfirm hyprland \
     hyprpaper \
+    hyprlock \
+    hypridle \
     hyprpolkitagent \
     xdg-desktop-portal-hyprland \
     rofi \
