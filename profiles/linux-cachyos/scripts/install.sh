@@ -154,6 +154,7 @@ paru -S --noconfirm tailscale \
 paru -S --noconfirm hyprland \
     hyprpaper \
     hyprpolkitagent \
+    xdg-desktop-portal-hyprland \
     rofi \
     waybar \
     dunst \
