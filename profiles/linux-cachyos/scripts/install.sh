@@ -155,6 +155,7 @@ paru -S --noconfirm hyprland \
     hyprpaper \
     hyprlock \
     hypridle \
+    hyprpicker \
     hyprpolkitagent \
     xdg-desktop-portal-hyprland \
     rofi \
