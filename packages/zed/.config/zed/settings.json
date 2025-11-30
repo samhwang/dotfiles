@@ -12,8 +12,8 @@
   },
   "agent": {
     "default_model": {
-      "provider": "anthropic",
-      "model": "claude-sonnet-4-5-thinking-latest"
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
     },
     "model_parameters": []
   },
@@ -33,7 +33,7 @@
   },
   "ui_font_size": 16,
   "ui_font_family": "JetBrainsMono Nerd Font",
-  "buffer_font_size": 16,
+  "buffer_font_size": 16.0,
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "format_on_save": "off",
   "base_keymap": "VSCode",
