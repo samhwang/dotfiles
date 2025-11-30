@@ -56,6 +56,7 @@ brew maven
 brew mcfly
 brew neonctl
 brew neovim
+brew net-snmp
 brew ollama
 brew openssl@1.1
 brew openvpn
@@ -202,7 +203,7 @@ brew wix/brew/applesimutils
 
 # App Store applications
 appstore 1569813296 1Password for Safari (8.11.18)
-appstore 302584613 Amazon Kindle (7.45.1)
+appstore 302584613 Amazon Kindle (7.46.1)
 appstore 1091189122 Bear (2.6.5)
 appstore 1193539993 Brother iPrint&Scan (14.0)
 appstore 682658836 GarageBand (10.4.12)
