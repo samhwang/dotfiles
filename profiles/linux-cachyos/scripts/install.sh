@@ -160,6 +160,7 @@ paru -S --noconfirm hyprland \
     xdg-desktop-portal-hyprland \
     rofi \
     waybar \
+    wlogout \
     dunst \
     pipewire \
     wireplumber \
