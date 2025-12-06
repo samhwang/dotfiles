@@ -158,6 +158,7 @@ paru -S --noconfirm hyprland \
     hyprpicker \
     hyprpolkitagent \
     xdg-desktop-portal-hyprland \
+    hyprsunset \
     rofi \
     waybar \
     wlogout \
