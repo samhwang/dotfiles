@@ -166,4 +166,10 @@ paru -S --noconfirm hyprland \
     pipewire \
     wireplumber \
     qt5-wayland \
-    qt6-wayland
+    qt6-wayland \
+    grim \
+    slurp \
+    wl-clipboard \
+    grimblast \
+    cliphist \
+    playerctl
