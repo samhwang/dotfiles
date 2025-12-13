@@ -173,4 +173,6 @@ paru -S --noconfirm hyprland \
     wl-clipboard \
     grimblast \
     cliphist \
-    playerctl
+    playerctl \
+    udiskie
+
