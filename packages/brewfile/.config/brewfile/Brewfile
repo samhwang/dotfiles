@@ -28,6 +28,7 @@ brew fd
 brew ffmpegthumbnailer
 brew fnm
 brew fzf
+brew gemini-cli
 brew gh
 brew ghostscript
 brew git
@@ -88,6 +89,7 @@ cask bruno
 cask caffeine
 cask calibre
 cask canva
+cask claude-code
 cask discord
 cask docker-desktop
 cask evkey

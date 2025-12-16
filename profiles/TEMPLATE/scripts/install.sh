@@ -8,9 +8,11 @@ cd ~/.dotfiles/packages
 stow --target=$HOME act \
     bat \
     bottom \
+    claude-clode \
     cowsay \
     delta \
     fastfetch \
+    gemini \
     gh \
     ghostty \
     git \

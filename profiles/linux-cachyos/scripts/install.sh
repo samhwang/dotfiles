@@ -20,9 +20,11 @@ cd ~/.dotfiles/packages
 stow --target=$HOME act \
     bat \
     bottom \
+    claude-code \
     cowsay \
     delta \
     fastfetch \
+    gemini \
     gh \
     ghostty \
     git \
@@ -103,6 +105,8 @@ paru -S --noconfirm vim \
     docker \
     docker-desktop \
     opencode \
+    claude-code \
+    gemini-cli \
     beekeeper-studio-bin \
     aws-cli-v2 \
     aws-session-manager-plugin

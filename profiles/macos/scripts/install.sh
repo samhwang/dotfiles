@@ -15,9 +15,11 @@ cd ~/.dotfiles/packages
 stow --target=$HOME act \
     bat \
     bottom \
+    claude-code \
     cowsay \
     delta \
     fastfetch \
+    gemini \
     gh \
     ghostty \
     git \
