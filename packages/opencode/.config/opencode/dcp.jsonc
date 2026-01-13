@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/Opencode-DCP/opencode-dynamic-context-pruning/master/dcp.schema.json",
   // Enable or disable the plugin
   "enabled": true,
   // Enable debug logging to ~/.config/opencode/logs/dcp/
@@ -10,6 +11,9 @@
     "enabled": false,
     "turns": 4
   },
+  // Protect file operations from pruning via glob patterns
+  // Patterns match tool parameters.filePath (e.g. read/write/edit)
+  "protectedFilePatterns": [],
   // LLM-driven context pruning tools
   "tools": {
     // Shared settings for all prune tools
@@ -41,19 +45,15 @@
     },
     // Prune write tool inputs when the file has been subsequently read
     "supersedeWrites": {
-      "enabled": true
+      "enabled": false
     },
-    // (Legacy) Run an LLM to analyze what tool calls are no longer relevant on idle
-    "onIdle": {
-      "enabled": false,
+    // Prune tool inputs for errored tools after X turns
+    "purgeErrors": {
+      "enabled": true,
+      // Number of turns before errored tool inputs are pruned
+      "turns": 4,
       // Additional tools to protect from pruning
-      "protectedTools": [],
-      // Override model for analysis (format: "provider/model")
-      // "model": "anthropic/claude-haiku-4-5",
-      // Show toast notifications when model selection fails
-      "showModelErrorToasts": true,
-      // When true, fallback models are not permitted
-      "strictModelSelection": false
+      "protectedTools": []
     }
   }
 }
