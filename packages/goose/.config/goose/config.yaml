@@ -1,0 +1,4 @@
+GOOSE_PROVIDER: anthropic
+GOOSE_MODEL: claude-4.5-sonnet
+GOOSE_MODE: auto
+GOOSE_TELEMETRY_ENABLED: true

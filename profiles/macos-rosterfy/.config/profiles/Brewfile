@@ -8,6 +8,7 @@ brew automake
 brew awscli
 brew bash-completion
 brew bat
+brew block-goose-cli
 brew bottom
 brew bzip2
 brew cmatrix

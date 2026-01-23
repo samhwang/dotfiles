@@ -9,6 +9,7 @@ brew awscli
 brew bash
 brew bash-completion
 brew bat
+brew block-goose-cli
 brew bottom
 brew bzip2
 brew certifi

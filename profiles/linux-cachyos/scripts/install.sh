@@ -108,6 +108,7 @@ paru -S --noconfirm vim \
     claude-code \
     gemini-cli \
     beekeeper-studio-bin \
+    codename-goose-bin \
     aws-cli-v2 \
     aws-session-manager-plugin
 
