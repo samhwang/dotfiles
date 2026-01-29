@@ -46,7 +46,7 @@ stow --target=$HOME macos
 cd ..
 
 # Install the rest
-cd ~/.config/brewfile
+cd ~/.config/profiles
 brew bundle --verbose --force --cleanup
 
 # Install macos settings

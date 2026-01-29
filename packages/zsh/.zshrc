@@ -106,3 +106,6 @@ PROFILE_CONFIG="${PROFILE_CONFIG_PATH}/profile.zshrc"
 # Load private profile config
 PRIVATE_PROFILE_CONFIG="${PROFILE_CONFIG_PATH}/private.zshrc"
 [ -f "${PRIVATE_PROFILE_CONFIG}" ] && source "${PRIVATE_PROFILE_CONFIG}"
+
+# Custom brewfile for each individual profile
+export HOMEBREW_BREWFILE="${HOME}/.config/profiles/Brewfile"

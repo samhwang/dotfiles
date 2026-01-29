@@ -1,1 +1,2 @@
-private.zshrc
+**/private.zshrc
+**/Brewfile.lock.json

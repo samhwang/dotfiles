@@ -11,9 +11,6 @@ export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 # Granted Assume to access to AWS resources on CLI
 alias assume=". assume"
 
-# Custom brewfile for Rosterfy profile
-export HOMEBREW_BREWFILE="${HOME}/.config/profiles/Brewfile"
-
 # Added by `rbenv init` on Thu Oct 16 11:11:52 AEDT 2025
 eval "$(rbenv init - --no-rehash zsh)"
 
