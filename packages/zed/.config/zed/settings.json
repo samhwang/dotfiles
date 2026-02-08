@@ -7,17 +7,15 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "features": {
-    "edit_prediction_provider": "zed"
-  },
   "agent": {
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1"
+      "provider": "anthropic",
+      "model": "claude-opus-4-6-latest"
     },
     "model_parameters": []
   },
   "edit_predictions": {
+    "provider": "zed",
     "mode": "subtle",
     "disabled_globs": ["**/.env"]
   },
