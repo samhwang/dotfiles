@@ -124,6 +124,7 @@ cask 'phpstorm'
 cask 'postman'
 cask 'reactotron'
 cask 'rectangle'
+cask 'sequel-ace'
 cask 'slack'
 cask 'spotify'
 cask 'stats'
@@ -146,6 +147,9 @@ tap 'buo/cask-upgrade'
 
 tap 'cargo-lambda/cargo-lambda'
 brew 'cargo-lambda/cargo-lambda/cargo-lambda'
+
+tap 'common-fate/granted'
+brew 'common-fate/granted/granted'
 
 tap 'cowsay-org/cowsay'
 
@@ -202,15 +206,15 @@ tap 'wix/brew'
 brew 'wix/brew/applesimutils'
 
 # App Store applications
-mas '1Password for Safari (8.11.29)', id: 1569813296
+mas '1Password for Safari (8.12.0)', id: 1569813296
 mas 'Amazon Kindle (7.51)', id: 302584613
 mas 'Bear (2.6.6)', id: 1091189122
-mas 'Brother iPrint&Scan (14.1.1)', id: 1193539993
+mas 'Brother iPrint&Scan (15.0.0)', id: 1193539993
 mas 'GarageBand (10.4.13)', id: 682658836
 mas 'Genki Arcade (1.3.4)', id: 1555925018
 mas 'iMovie (10.4.4)', id: 408981434
 mas 'Keynote (14.5)', id: 409183694
-mas 'Notability (15.3.6)', id: 360593530
+mas 'Notability (15.3.7)', id: 360593530
 mas 'Numbers (14.5)', id: 409203825
 mas 'Pages (14.5)', id: 409201541
 mas 'TestFlight (4.1.0)', id: 899247664
