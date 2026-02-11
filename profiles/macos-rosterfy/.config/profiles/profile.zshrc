@@ -16,3 +16,9 @@ eval "$(rbenv init - --no-rehash zsh)"
 
 export ANDROID_HOME="${HOME}/Library/Android/sdk"
 export PATH="${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${PATH}"
+
+function bastion() {
+    # This function assumes that AWS Profile and kubectl are already setup.
+    kubectx r2-qa-au
+    kubectl port-forward -n bastion service/bastion 2222:22
+}
