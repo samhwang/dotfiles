@@ -64,7 +64,10 @@ paru -S --noconfirm go \
     bun \
     fnm \
     python \
-    python-pipx
+    python-pipx \
+    docker \
+    docker-compose \
+    docker-buildx
 
 # Fonts
 paru -S --noconfirm ttf-jetbrains-mono \
@@ -103,7 +106,6 @@ paru -S --noconfirm vim \
     postman-bin \
     bruno-bin \
     docker \
-    docker-desktop \
     opencode \
     claude-code \
     gemini-cli \
