@@ -32,6 +32,7 @@ function pkg_up() {
     echo "CURRENTLY AT $(pwd)"
 
     echo "UPDATING DOTFILES SUBMODULES"
+    git pull
     git submodule update --recursive --remote
 
     echo "FINISH UPDATING. GOING BACK TO PREVIOUS DIRECTORY"
