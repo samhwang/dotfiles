@@ -1,6 +1,5 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "theme": "catppuccin",
   "autoupdate": true,
   "plugin": [
     "opencode-gemini-auth@latest",
