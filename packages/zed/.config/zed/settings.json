@@ -19,6 +19,13 @@
     "mode": "subtle",
     "disabled_globs": ["**/.env"]
   },
+  "agent_servers": {
+    "OpenCode": {
+      "command": "opencode",
+      "args": ["acp"],
+      "type": "custom"
+    }
+  },
   "icon_theme": {
     "mode": "system",
     "light": "Catppuccin Mocha",
