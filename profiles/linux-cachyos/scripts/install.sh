@@ -44,8 +44,7 @@ stow --target=$HOME act \
 # Linux packages
 stow --target=$HOME discord \
     hypr \
-    lsfg-vk \
-    noctalia-shell
+    lsfg-vk
 cd ..
 
 cd ~/.dotfiles/profiles
@@ -184,3 +183,12 @@ paru -S --noconfirm hyprland \
     cliphist \
     playerctl \
     udiskie
+
+# DankLinux packages
+paru -S --noconfirm dms-shell-bin \
+    quickshell \
+    dms-greeter \
+    matugen \
+    dgop \
+    dsearch \
+    uwsm
