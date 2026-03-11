@@ -1,7 +1,7 @@
 
 # tap repositories and their packages
 
-# tap 'homebrew/core'
+tap 'homebrew/core'
 brew 'ack'
 brew 'act'
 brew 'automake'
@@ -91,12 +91,13 @@ brew 'zlib'
 brew 'zoxide'
 brew 'zsh'
 
-# tap 'homebrew/cask'
+tap 'homebrew/cask'
 cask '1password'
 cask '1password-cli'
 cask 'android-studio'
 cask 'bruno'
 cask 'claude-code'
+cask 'discord'
 cask 'docker-desktop'
 cask 'firefox'
 cask 'font-jetbrains-mono'
@@ -196,8 +197,9 @@ brew 'wix/brew/applesimutils'
 brew 'openssl@1.1'
 
 # App Store applications
-mas '1Password for Safari (8.12.4)', id: 1569813296
+mas '1Password for Safari (8.12.5)', id: 1569813296
 mas 'Brother iPrint&Scan (15.0.0)', id: 1193539993
+mas 'Genki Arcade (1.3.4)', id: 1555925018
 mas 'Keynote (14.5)', id: 409183694
 mas 'TestFlight (4.1.0)', id: 899247664
 mas 'Xcode (26.3)', id: 497799835
