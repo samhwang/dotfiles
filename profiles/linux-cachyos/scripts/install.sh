@@ -43,7 +43,7 @@ stow --target=$HOME act \
     zsh
 # Linux packages
 stow --target=$HOME discord \
-    hypr \
+    hypr-noctalia \
     lsfg-vk
 cd ..
 
@@ -182,13 +182,7 @@ paru -S --noconfirm hyprland \
     grimblast \
     cliphist \
     playerctl \
-    udiskie
-
-# DankLinux packages
-paru -S --noconfirm dms-shell-bin \
+    udiskie \
+    uwsm \
     quickshell \
-    dms-greeter \
-    matugen \
-    dgop \
-    dsearch \
-    uwsm
+    noctalia-shell
