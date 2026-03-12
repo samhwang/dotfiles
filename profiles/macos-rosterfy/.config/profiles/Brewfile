@@ -126,9 +126,6 @@ cask 'zulu@17'
 tap 'atomicjar/tap'
 cask 'atomicjar/tap/testcontainers-desktop'
 
-tap 'axiomhq/tap'
-cask 'axiomhq/tap/axiom'
-
 tap 'beeftornado/rmtree'
 
 tap 'buo/cask-upgrade'
