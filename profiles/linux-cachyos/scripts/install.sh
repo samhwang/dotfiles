@@ -74,6 +74,11 @@ paru -S --noconfirm go \
 paru -S --noconfirm ttf-jetbrains-mono \
     ttf-jetbrains-mono-nerd
 
+# Vietnamese keyboard
+paru -S --noconfirm fcitx5 \
+    fcitx5-gtk \
+    fctix5-bamboo
+
 # Command Line Tools
 paru -S --noconfirm zsh \
     tmux \
@@ -116,7 +121,7 @@ paru -S --noconfirm vim \
     aws-session-manager-plugin
 
 # Browsers and other GUI apps
-paru -S --noconfirm discord_arch_electron \
+paru -S --noconfirm discord \
     google-chrome \
     slack-electron \
     spotify \
