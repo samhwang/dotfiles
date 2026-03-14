@@ -115,6 +115,7 @@ paru -S --noconfirm vim \
     opencode \
     claude-code \
     gemini-cli \
+    github-copilot-cli \
     beekeeper-studio-bin \
     codename-goose-bin \
     aws-cli-v2 \
