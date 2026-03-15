@@ -20,6 +20,9 @@
     "disabled_globs": ["**/.env"]
   },
   "agent_servers": {
+    "claude-acp": {
+      "type": "registry"
+    },
     "OpenCode": {
       "command": "opencode",
       "args": ["acp"],
