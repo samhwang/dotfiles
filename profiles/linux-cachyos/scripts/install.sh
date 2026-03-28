@@ -191,4 +191,6 @@ paru -S --noconfirm hyprland \
     udiskie \
     uwsm \
     quickshell \
-    noctalia-shell
+    noctalia-shell \
+    vlc \
+    vlc-plugins-all
