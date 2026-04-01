@@ -150,6 +150,9 @@ tap 'homebrew/command-not-found'
 
 tap 'homebrew/services'
 
+tap 'anomalyco/tap'
+brew 'anomalyco/tap/opencode'
+
 tap 'atomicjar/tap'
 cask 'atomicjar/tap/testcontainers-desktop'
 
@@ -186,9 +189,6 @@ brew 'oven-sh/bun/bun'
 
 tap 'rcmdnk/file'
 brew 'rcmdnk/file/brew-file'
-
-tap 'sst/tap'
-brew 'sst/tap/opencode'
 
 tap 'tursodatabase/tap'
 brew 'tursodatabase/tap/turso'

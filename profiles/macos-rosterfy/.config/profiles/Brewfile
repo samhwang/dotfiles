@@ -124,6 +124,9 @@ cask 'visual-studio-code'
 cask 'zed'
 cask 'zulu@17'
 
+tap 'anomalyco/tap'
+brew 'anomalyco/tap/opencode'
+
 tap 'atomicjar/tap'
 cask 'atomicjar/tap/testcontainers-desktop'
 
@@ -179,9 +182,6 @@ brew 'rcmdnk/file/brew-file'
 
 tap 'shivammathur/php'
 brew 'shivammathur/php/php@8.3'
-
-tap 'sst/tap'
-brew 'sst/tap/opencode'
 
 tap 'tursodatabase/tap'
 brew 'tursodatabase/tap/turso'
