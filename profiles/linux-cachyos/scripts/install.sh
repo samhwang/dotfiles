@@ -67,8 +67,7 @@ paru -S --noconfirm go \
     python-pipx \
     docker \
     docker-compose \
-    docker-buildx \
-    docker-desktop
+    docker-buildx
 
 # Fonts
 paru -S --noconfirm ttf-jetbrains-mono \
