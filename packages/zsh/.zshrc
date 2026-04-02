@@ -108,3 +108,7 @@ PRIVATE_PROFILE_CONFIG="${PROFILE_CONFIG_PATH}/private.zshrc"
 
 # Custom brewfile for each individual profile
 export HOMEBREW_BREWFILE="${HOME}/.config/profiles/Brewfile"
+
+# Load Zellij only if we're running Ghostty
+ZELLIJ_AUTOLOAD="${ZSHCONFIG}/zellij.zshrc"
+[ -f "${ZELLIJ_AUTOLOAD}" ] && source "${ZELLIJ_AUTOLOAD}"
