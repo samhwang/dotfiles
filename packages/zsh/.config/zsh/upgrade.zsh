@@ -35,7 +35,7 @@ function pkg_up() {
     git pull
     git submodule update --recursive --remote
 
-    if type television > /dev/null; then
+    if type tv > /dev/null; then
         echo "UPDATE TELEVISION CHANNELS"
         tv update-channels
     fi
