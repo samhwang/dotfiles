@@ -35,6 +35,11 @@ function pkg_up() {
     git pull
     git submodule update --recursive --remote
 
+    if type television > /dev/null; then
+        echo "UPDATE TELEVISION CHANNELS"
+        tv update-channels
+    fi
+
     echo "FINISH UPDATING. GOING BACK TO PREVIOUS DIRECTORY"
     cd $CURRENT_PATH
     echo "CURRENTLY AT $(pwd)"
