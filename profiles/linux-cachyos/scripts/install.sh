@@ -35,6 +35,7 @@ stow --target=$HOME act \
     sheldon \
     starship \
     stow \
+    television \
     testcontainers \
     tmux \
     vim \
@@ -101,7 +102,8 @@ paru -S --noconfirm zsh \
     github-cli \
     act \
     nvtop \
-    direnv
+    direnv \
+    television
 
 # Editor Tools
 paru -S --noconfirm vim \

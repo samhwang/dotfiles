@@ -23,6 +23,7 @@ stow --target=$HOME act \
     sheldon \
     starship \
     stow \
+    television \
     testcontainers \
     tmux \
     vim \
