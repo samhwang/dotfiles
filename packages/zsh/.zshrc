@@ -112,3 +112,6 @@ export HOMEBREW_BREWFILE="${HOME}/.config/profiles/Brewfile"
 # Load Zellij only if we're running Ghostty
 ZELLIJ_AUTOLOAD="${ZSHCONFIG}/zellij.zsh"
 [ -f "${ZELLIJ_AUTOLOAD}" ] && source "${ZELLIJ_AUTOLOAD}"
+
+TELEVISION_CONFIG="${ZSHCONFIG}/television.zsh"
+[ -f "${TELEVISION_CONFIG}" ] && source "${TELEVISION_CONFIG}"
