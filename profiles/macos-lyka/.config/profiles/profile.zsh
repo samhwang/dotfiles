@@ -1,7 +1,7 @@
 complete -o nospace -C /usr/local/bin/terraform terraform
 
 # Load herd injected configs
-source "${PROFILE_CONFIG_PATH}/herd.zshrc"
+source "${PROFILE_CONFIG_PATH}/herd.zsh"
 
 # Composer path
 export PATH="${HOME}/.composer/vendor/bin:$PATH"

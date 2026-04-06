@@ -40,7 +40,7 @@ stow --target=$HOME act \
 cd ..
 
 cd ~/.dotfiles/profiles
-OP_ACCOUNT=my.1password.com op inject -i TEMPLATE/.config/profiles/private.zshrc.tpl -o TEMPLATE/.config/profiles/private.zshrc
+OP_ACCOUNT=my.1password.com op inject -i TEMPLATE/.config/profiles/private.zsh.tpl -o TEMPLATE/.config/profiles/private.zsh
 stow --target=$HOME TEMPLATE
 cd ..
 

@@ -49,7 +49,7 @@ stow --target=$HOME discord \
 cd ..
 
 cd ~/.dotfiles/profiles
-OP_ACCOUNT=my.1password.com op inject -i linux-cachyos/.config/profiles/private.zshrc.tpl -o linux-cachyos/.config/profiles/private.zshrc
+OP_ACCOUNT=my.1password.com op inject -i linux-cachyos/.config/profiles/private.zsh.tpl -o linux-cachyos/.config/profiles/private.zsh
 stow --target=$HOME linux-cachyos
 cd ..
 

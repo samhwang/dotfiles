@@ -42,7 +42,7 @@ stow --target=$HOME aerospace
 cd ..
 
 cd ~/.dotfiles/profiles
-OP_ACCOUNT=my.1password.com op inject -i macos-rosterfy/.config/profiles/private.zshrc.tpl -o macos-rosterfy/.config/profiles/private.zshrc
+OP_ACCOUNT=my.1password.com op inject -i macos-rosterfy/.config/profiles/private.zsh.tpl -o macos-rosterfy/.config/profiles/private.zsh
 stow --target=$HOME macos-rosterfy
 cd ..
 

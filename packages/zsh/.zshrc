@@ -62,12 +62,12 @@ PATH="$CONSOLE_NINJA_PATH:$PATH"
 
 # Load brew-wrap
 if type brew > /dev/null; then
-    source "${ZSHCONFIG}/brew-wrap.zshrc"
+    source "${ZSHCONFIG}/brew-wrap.zsh"
 fi
 
 # Load Docker completions
 if type docker > /dev/null; then
-    source "${ZSHCONFIG}/docker-desktop.zshrc"
+    source "${ZSHCONFIG}/docker-desktop.zsh"
 fi
 
 # Load zoxide
@@ -81,34 +81,34 @@ if type direnv > /dev/null; then
 fi
 
 # Functions for updating utilities
-UPGRADE_FUNC="${ZSHCONFIG}/upgrade.zshrc"
+UPGRADE_FUNC="${ZSHCONFIG}/upgrade.zsh"
 [ -f "${UPGRADE_FUNC}" ] && source "${UPGRADE_FUNC}"
 
 # Bypass Apple Quarantine scripts
-BYPASS_SCRIPT="${ZSHCONFIG}/bypass-quarantine.zshrc"
+BYPASS_SCRIPT="${ZSHCONFIG}/bypass-quarantine.zsh"
 [ -f "${BYPASS_SCRIPT}" ] && source "${BYPASS_SCRIPT}"
 
 # Aliases
-ALIAS_CONFIG="${ZSHCONFIG}/alias.zshrc"
+ALIAS_CONFIG="${ZSHCONFIG}/alias.zsh"
 [ -f "${ALIAS_CONFIG}" ] && source "${ALIAS_CONFIG}"
 
 # Private configurations
-PRIVATE_CONFIG="${ZSHCONFIG}/private.zshrc"
+PRIVATE_CONFIG="${ZSHCONFIG}/private.zsh"
 [ -f "${PRIVATE_CONFIG}" ] && source "${PRIVATE_CONFIG}"
 
 ### PROFILES
 # Load Profile config
 export PROFILE_CONFIG_PATH="${HOME}/.config/profiles"
-PROFILE_CONFIG="${PROFILE_CONFIG_PATH}/profile.zshrc"
+PROFILE_CONFIG="${PROFILE_CONFIG_PATH}/profile.zsh"
 [ -f "${PROFILE_CONFIG}" ] && source "${PROFILE_CONFIG}"
 
 # Load private profile config
-PRIVATE_PROFILE_CONFIG="${PROFILE_CONFIG_PATH}/private.zshrc"
+PRIVATE_PROFILE_CONFIG="${PROFILE_CONFIG_PATH}/private.zsh"
 [ -f "${PRIVATE_PROFILE_CONFIG}" ] && source "${PRIVATE_PROFILE_CONFIG}"
 
 # Custom brewfile for each individual profile
 export HOMEBREW_BREWFILE="${HOME}/.config/profiles/Brewfile"
 
 # Load Zellij only if we're running Ghostty
-ZELLIJ_AUTOLOAD="${ZSHCONFIG}/zellij.zshrc"
+ZELLIJ_AUTOLOAD="${ZSHCONFIG}/zellij.zsh"
 [ -f "${ZELLIJ_AUTOLOAD}" ] && source "${ZELLIJ_AUTOLOAD}"
