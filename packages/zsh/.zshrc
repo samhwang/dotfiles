@@ -17,68 +17,34 @@ DEFAULT_USER='samhwang'
 autoload -Uz compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
 
-# Load Sheldon
-if type sheldon > /dev/null; then
-    eval "$(sheldon source)"
-    source <(sheldon completions --shell zsh)
-fi
-
-# Load fzf keybindings
-if type fzf > /dev/null; then
-    source <(fzf --zsh)
-fi
-
-# Load extra cowfiles if exist
-if type cowsay > /dev/null; then
-    EXTRACOWS="${HOME}/.cowsay/cowfiles"
-    [ -d "${EXTRACOWS}" ] && export COWPATH="${EXTRACOWS}:$COWPATH"
-fi
+source "${ZSHCONFIG}/sheldon.zsh"
+source "${ZSHCONFIG}/fzf.zsh"
+source "${ZSHCONFIG}/cowsay.zsh"
+source "${ZSHCONFIG}/starship.zsh"
 
 # PATH for PyPI
 PYPI_PATH="$HOME/.local/bin"
 export PATH="$PATH:$PYPI_PATH"
-if type pipx > /dev/null; then
-    eval "$(register-python-argcomplete pipx)"
-fi
-
-# Load Starship
-if type starship > /dev/null; then
-    eval "$(starship init zsh)"
-fi
+source "${ZSHCONFIG}/pipx.zsh"
 
 # Load mcfly
-if type mcfly > /dev/null; then
-    eval "$(mcfly init zsh)"
-fi
-
-# Load fnm
-if type fnm > /dev/null; then
-    eval $(fnm env)
-fi
+source "${ZSHCONFIG}/mcfly.zsh"
 
 # Load console ninja
 CONSOLE_NINJA_PATH="${HOME}/.console-ninja/.bin"
 PATH="$CONSOLE_NINJA_PATH:$PATH"
 
 # Load brew-wrap
-if type brew > /dev/null; then
-    source "${ZSHCONFIG}/brew-wrap.zsh"
-fi
+source "${ZSHCONFIG}/brew-wrap.zsh"
 
 # Load Docker completions
-if type docker > /dev/null; then
-    source "${ZSHCONFIG}/docker-desktop.zsh"
-fi
+source "${ZSHCONFIG}/docker-desktop.zsh"
 
 # Load zoxide
-if type zoxide > /dev/null; then
-    eval "$(zoxide init zsh)"
-fi
+source "${ZSHCONFIG}/zoxide.zsh"
 
 # Load direnv
-if type direnv > /dev/null; then
-    eval "$(direnv hook zsh)"
-fi
+source "${ZSHCONFIG}/direnv.zsh"
 
 # Functions for updating utilities
 UPGRADE_FUNC="${ZSHCONFIG}/upgrade.zsh"
@@ -105,9 +71,6 @@ PROFILE_CONFIG="${PROFILE_CONFIG_PATH}/profile.zsh"
 # Load private profile config
 PRIVATE_PROFILE_CONFIG="${PROFILE_CONFIG_PATH}/private.zsh"
 [ -f "${PRIVATE_PROFILE_CONFIG}" ] && source "${PRIVATE_PROFILE_CONFIG}"
-
-# Custom brewfile for each individual profile
-export HOMEBREW_BREWFILE="${HOME}/.config/profiles/Brewfile"
 
 # Load Zellij only if we're running Ghostty
 ZELLIJ_AUTOLOAD="${ZSHCONFIG}/zellij.zsh"
