@@ -8,7 +8,7 @@ if type brew > /dev/null; then
         }
     fi
 
-    export HOMEBREW_BREWFILE="${HOME}/.config/brewfile/Brewfile"
+    export HOMEBREW_BREWFILE="${HOME}/.config/profiles/Brewfile"
     export HOMEBREW_BREWFILE_LEAVES=1
     export HOMEBREW_BREWFILE_FULL_NAME=1
     export HOMEBREW_BREWFILE_TOP_PACKAGES=1
