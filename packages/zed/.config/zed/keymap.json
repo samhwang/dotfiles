@@ -2,7 +2,10 @@
   {
     "context": "Workspace",
     "bindings": {
-      "shift shift": "file_finder::Toggle"
-    }
-  }
+      "shift shift": [
+        "task::Spawn",
+        { "task_name": "Television File Finder", "reveal_target": "center" },
+      ],
+    },
+  },
 ]
