@@ -37,7 +37,7 @@ function pkg_up() {
 
     if type tv > /dev/null; then
         echo "UPDATE TELEVISION CHANNELS"
-        tv update-channels
+        tv update-channels --force
     fi
 
     echo "FINISH UPDATING. GOING BACK TO PREVIOUS DIRECTORY"
