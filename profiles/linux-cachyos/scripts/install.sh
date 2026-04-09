@@ -103,7 +103,9 @@ paru -S --noconfirm zsh \
     act \
     nvtop \
     direnv \
-    television
+    television \
+    tree-sitter \
+    tree-sitter-cli
 
 # Editor Tools
 paru -S --noconfirm vim \
