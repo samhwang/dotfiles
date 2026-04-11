@@ -1,1 +1,4 @@
 .claude/settings.local.json
+.claude
+!.claude/CLAUDE.md
+!.claude/settings.json
