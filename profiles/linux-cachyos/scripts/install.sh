@@ -108,7 +108,11 @@ paru -S --noconfirm zsh \
     direnv \
     television \
     tree-sitter \
-    tree-sitter-cli
+    tree-sitter-cli \
+    btop \
+    jq \
+    dust \
+    bluetui
 
 # Editor Tools
 paru -S --noconfirm vim \
