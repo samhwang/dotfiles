@@ -154,7 +154,9 @@ paru -S --noconfirm cachyos-gaming-meta \
 
 # System
 paru -S --noconfirm snapper \
-    simple-scan
+    simple-scan \
+    sddm \
+    plymouth
 
 # For Logitech mice
 paru -S --noconfirm solaar
