@@ -186,13 +186,20 @@ paru -S --noconfirm hyprland \
     hyprpicker \
     hyprpolkitagent \
     xdg-desktop-portal-hyprland \
+    xdg-desktop-portal-gtk \
+    egl-wayland \
     hyprsunset \
     pipewire \
     wireplumber \
+    pipewire-alsa \
+    pipewire-jack \
+    pipewire-pulse \
     qt5-wayland \
     qt6-wayland \
     grim \
     slurp \
+    satty \
+    gpu-screen-recorder \
     wl-clipboard \
     cliphist \
     playerctl \
