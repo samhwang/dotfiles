@@ -205,7 +205,7 @@ paru -S --noconfirm hyprland \
     playerctl \
     udiskie \
     uwsm \
-    quickshell \
+    noctalia-qs \
     noctalia-shell \
     vlc \
     vlc-plugins-all
