@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 # Install pre-requisite: Stow and 1Password
 
