@@ -72,7 +72,10 @@ paru -S --noconfirm go \
 
 # Fonts
 paru -S --noconfirm ttf-jetbrains-mono \
-    ttf-jetbrains-mono-nerd
+    ttf-jetbrains-mono-nerd \
+    noto-fonts \
+    noto-fonts-cjk \
+    noto-fonts-emoji
 
 # Vietnamese keyboard
 paru -S --noconfirm fcitx5 \
