@@ -94,6 +94,7 @@ paru -S --noconfirm zsh \
     tree-sitter \
     gitui \
     git-delta \
+    oxker-bin \
     duf \
     eza \
     fzf \
