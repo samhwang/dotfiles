@@ -140,7 +140,12 @@ paru -S --noconfirm discord \
     balena-etcher \
     vial-appimage \
     vivaldi \
-    zoom
+    zoom \
+    nautilus \
+    mpv \
+    imv \
+    localsend \
+    pinta
 
 # Gaming Apps
 paru -S --noconfirm cachyos-gaming-meta \
