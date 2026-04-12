@@ -44,7 +44,7 @@ stow --target=$HOME act \
     zsh
 # Linux packages
 stow --target=$HOME discord \
-    hypr-noctalia \
+    hypr \
     lsfg-vk
 cd ..
 
@@ -169,18 +169,10 @@ paru -S --noconfirm tailscale \
 
 # Hyprland packages
 paru -S --noconfirm hyprland \
-    hyprpaper \
-    hyprlock \
-    hypridle \
     hyprpicker \
     hyprpolkitagent \
     xdg-desktop-portal-hyprland \
     hyprsunset \
-    hyprshot \
-    rofi \
-    waybar \
-    wlogout \
-    dunst \
     pipewire \
     wireplumber \
     qt5-wayland \
@@ -188,7 +180,6 @@ paru -S --noconfirm hyprland \
     grim \
     slurp \
     wl-clipboard \
-    grimblast \
     cliphist \
     playerctl \
     udiskie \
