@@ -93,8 +93,10 @@ paru -S --noconfirm zsh \
     fd \
     tree-sitter \
     gitui \
+    lazygit \
     git-delta \
     oxker-bin \
+    lazydocker \
     duf \
     eza \
     fzf \

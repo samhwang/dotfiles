@@ -156,6 +156,9 @@ tap 'github/gh'
 tap 'hashicorp/tap'
 brew 'hashicorp/tap/terraform'
 
+tap 'jesseduffield/lazydocker'
+brew 'jesseduffield/lazydocker/lazydocker'
+
 tap 'felixkratz/formulae'
 brew 'felixkratz/formulae/borders'
 brew 'felixkratz/formulae/sketchybar'
