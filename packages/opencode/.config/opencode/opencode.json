@@ -3,9 +3,12 @@
   "autoupdate": true,
   "plugin": [
     "opencode-gemini-auth@latest",
+    "opencode-openai-codex-auth@latest",
     "@nick-vi/opencode-type-inject@latest",
     "@tarquinen/opencode-dcp@latest",
-    "@franlol/opencode-md-table-formatter@latest"
+    "@franlol/opencode-md-table-formatter@latest",
+    "opencode-vibeguard@latest",
+    "opencode-websearch-cited@latest"
   ],
   "provider": {
     "anthropic": {
