@@ -46,17 +46,17 @@ source "${ZSHCONFIG}/zoxide.zsh"
 # Load direnv
 source "${ZSHCONFIG}/direnv.zsh"
 
+# Load fnm
+source "${ZSHCONFIG}/fnm.zsh"
+
 # Functions for updating utilities
-UPGRADE_FUNC="${ZSHCONFIG}/upgrade.zsh"
-[ -f "${UPGRADE_FUNC}" ] && source "${UPGRADE_FUNC}"
+source "${ZSHCONFIG}/upgrade.zsh"
 
 # Bypass Apple Quarantine scripts
-BYPASS_SCRIPT="${ZSHCONFIG}/bypass-quarantine.zsh"
-[ -f "${BYPASS_SCRIPT}" ] && source "${BYPASS_SCRIPT}"
+source "${ZSHCONFIG}/bypass-quarantine.zsh"
 
 # Aliases
-ALIAS_CONFIG="${ZSHCONFIG}/alias.zsh"
-[ -f "${ALIAS_CONFIG}" ] && source "${ALIAS_CONFIG}"
+source "${ZSHCONFIG}/alias.zsh"
 
 # Private configurations
 PRIVATE_CONFIG="${ZSHCONFIG}/private.zsh"
@@ -76,5 +76,4 @@ PRIVATE_PROFILE_CONFIG="${PROFILE_CONFIG_PATH}/private.zsh"
 ZELLIJ_AUTOLOAD="${ZSHCONFIG}/zellij.zsh"
 [ -f "${ZELLIJ_AUTOLOAD}" ] && source "${ZELLIJ_AUTOLOAD}"
 
-TELEVISION_CONFIG="${ZSHCONFIG}/television.zsh"
-[ -f "${TELEVISION_CONFIG}" ] && source "${TELEVISION_CONFIG}"
+source "${ZSHCONFIG}/television.zsh"
