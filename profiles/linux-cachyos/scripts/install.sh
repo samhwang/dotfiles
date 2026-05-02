@@ -148,7 +148,8 @@ paru -S --noconfirm discord \
     mpv \
     imv \
     localsend \
-    pinta
+    pinta \
+    bottles
 
 # Gaming Apps
 paru -S --noconfirm cachyos-gaming-meta \
