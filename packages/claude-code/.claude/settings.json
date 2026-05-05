@@ -5,5 +5,8 @@
   "enabledPlugins": {
     "typescript-lsp@claude-plugins-official": true,
     "php-lsp@claude-plugins-official": true
-  }
+  },
+  "editorMode": "vim",
+  "verbose": true,
+  "preferredNotifChannel": "ghostty"
 }
