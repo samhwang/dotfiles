@@ -115,6 +115,7 @@
       "left": [
         {
           "colorizeSystemIcon": "none",
+          "colorizeSystemText": "none",
           "customIconPath": "",
           "enableColorization": false,
           "icon": "rocket",
@@ -207,6 +208,7 @@
         {
           "colorizeDistroLogo": false,
           "colorizeSystemIcon": "none",
+          "colorizeSystemText": "none",
           "customIconPath": "",
           "enableColorization": false,
           "icon": "noctalia",
@@ -394,12 +396,12 @@
     },
     "language": "",
     "lockOnSuspend": true,
-    "lockScreenAnimations": false,
+    "lockScreenAnimations": true,
     "lockScreenBlur": 0,
     "lockScreenCountdownDuration": 10000,
     "lockScreenMonitors": [],
     "lockScreenTint": 0,
-    "passwordChars": false,
+    "passwordChars": true,
     "radiusRatio": 1,
     "reverseScroll": false,
     "scaleRatio": 1,
