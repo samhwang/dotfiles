@@ -130,7 +130,6 @@ paru -S --noconfirm vim \
     gemini-cli \
     github-copilot-cli \
     beekeeper-studio-bin \
-    codename-goose-bin \
     aws-cli-v2 \
     aws-session-manager-plugin
 
