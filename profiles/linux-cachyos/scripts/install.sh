@@ -138,7 +138,6 @@ paru -S --noconfirm vim \
 paru -S --noconfirm discord \
     google-chrome \
     slack-electron \
-    spotify \
     obs-studio \
     balena-etcher \
     vial-appimage \
