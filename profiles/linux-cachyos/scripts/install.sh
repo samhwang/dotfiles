@@ -125,7 +125,6 @@ paru -S --noconfirm vim \
   docker \
   opencode \
   claude-code \
-  gemini-cli \
   github-copilot-cli \
   beekeeper-studio-bin \
   rtk-bin \

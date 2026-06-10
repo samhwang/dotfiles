@@ -19,7 +19,6 @@ stow --target=$HOME act \
     cowsay \
     delta \
     fastfetch \
-    gemini \
     gh \
     ghostty \
     git \
