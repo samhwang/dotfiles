@@ -25,7 +25,6 @@ source "${ZSHCONFIG}/starship.zsh"
 # PATH for PyPI
 PYPI_PATH="$HOME/.local/bin"
 export PATH="$PATH:$PYPI_PATH"
-source "${ZSHCONFIG}/pipx.zsh"
 
 # Load mcfly
 source "${ZSHCONFIG}/mcfly.zsh"
