@@ -5,7 +5,8 @@
 # Use stow to restore config
 cd ~/.dotfiles/packages
 # Generic packages
-stow --target=$HOME act \
+stow --target=$HOME agents \
+    act \
     bat \
     bottom \
     claude-clode \

@@ -5,8 +5,7 @@
 # Use stow to restore config
 cd ~/.dotfiles/packages
 # Generic packages
-stow --target=$HOME act \
-    bat \
+stow --target=$HOME bat \
     delta \
     git \
     sheldon \
