@@ -19,6 +19,20 @@ export PATH="${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:${ANDROID_HOME
 
 function bastion() {
     # This function assumes that AWS Profile and kubectl are already setup.
-    kubectx r2-qa-au
+    local ctx
+
+    if [[ -n "$1" ]]; then
+        ctx="$1"
+        kubectx "$ctx"
+    else
+        ctx="$(kubectx -c 2>/dev/null)"
+        if [[ -z "$ctx" ]]; then
+            echo "Error: No kubectx set. Pass one as argument." >&2
+            echo "Usage: bastion [context-name]" >&2
+            return 1
+        fi
+    fi
+
+    echo "Using kubectx: $ctx"
     kubectl port-forward -n bastion service/bastion 2222:22
 }
