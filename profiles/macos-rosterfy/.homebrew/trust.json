@@ -1,0 +1,31 @@
+{
+  "trustedformulae": [],
+  "trustedcasks": [],
+  "trustedtaps": [
+    "anomalyco/tap",
+    "atomicjar/tap",
+    "beeftornado/rmtree",
+    "buo/cask-upgrade",
+    "cargo-lambda/cargo-lambda",
+    "common-fate/granted",
+    "cowsay-org/cowsay",
+    "derailed/k9s",
+    "facebook/fb",
+    "felixkratz/formulae",
+    "fluxcd/tap",
+    "github/gh",
+    "hashicorp/tap",
+    "jesseduffield/lazydocker",
+    "lacework/tap",
+    "libsql/sqld",
+    "localstack/tap",
+    "nikitabobko/tap",
+    "nikolaeu/numi",
+    "oven-sh/bun",
+    "rcmdnk/file",
+    "shivammathur/php",
+    "tursodatabase/tap",
+    "weaveworks/tap",
+    "wix/brew"
+  ]
+}
