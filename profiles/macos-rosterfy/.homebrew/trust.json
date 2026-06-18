@@ -6,7 +6,7 @@
     "atomicjar/tap",
     "beeftornado/rmtree",
     "buo/cask-upgrade",
-    "cargo-lambda/cargo-lambda",
+    "cargo-lambda/tap",
     "common-fate/granted",
     "cowsay-org/cowsay",
     "derailed/k9s",
@@ -26,6 +26,6 @@
     "shivammathur/php",
     "tursodatabase/tap",
     "weaveworks/tap",
-    "wix/brew"
+    "wix-incubator/brew"
   ]
 }

@@ -117,6 +117,7 @@ cask 'logitech-g-hub'
 cask 'miro'
 cask 'nosql-workbench'
 cask 'openvpn-connect'
+cask 'paintbrush'
 cask 'phpstorm'
 cask 'reactotron'
 cask 'sequel-ace'
@@ -138,8 +139,7 @@ tap 'beeftornado/rmtree'
 
 tap 'buo/cask-upgrade'
 
-tap 'cargo-lambda/cargo-lambda'
-brew 'cargo-lambda/cargo-lambda/cargo-lambda'
+tap 'cargo-lambda/tap'
 
 tap 'common-fate/granted'
 brew 'common-fate/granted/granted'
@@ -195,8 +195,7 @@ brew 'tursodatabase/tap/turso'
 
 tap 'weaveworks/tap'
 
-tap 'wix/brew'
-brew 'wix/brew/applesimutils'
+tap 'wix-incubator/brew'
 
 # App Store applications
 mas '1Password for Safari (8.12.12)', id: 1569813296
