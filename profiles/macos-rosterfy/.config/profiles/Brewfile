@@ -140,6 +140,7 @@ tap 'beeftornado/rmtree'
 tap 'buo/cask-upgrade'
 
 tap 'cargo-lambda/tap'
+brew 'cargo-lambda/tap/cargo-lambda'
 
 tap 'common-fate/granted'
 brew 'common-fate/granted/granted'
@@ -196,9 +197,10 @@ brew 'tursodatabase/tap/turso'
 tap 'weaveworks/tap'
 
 tap 'wix-incubator/brew'
+brew 'wix-incubator/brew/applesimutils'
 
 # App Store applications
-mas '1Password for Safari (8.12.12)', id: 1569813296
+mas '1Password for Safari (8.12.21)', id: 1569813296
 mas 'Brother iPrint&Scan (15.1.0)', id: 1193539993
 mas 'GarageBand (10.4.13)', id: 682658836
 mas 'Genki Arcade (1.3.4)', id: 1555925018
