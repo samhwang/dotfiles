@@ -5,3 +5,6 @@
 [submodule "plugins/ponytail"]
 	path = plugins/ponytail
 	url = https://github.com/DietrichGebert/ponytail
+[submodule "plugins/caveman"]
+	path = plugins/caveman
+	url = https://github.com/JuliusBrussee/caveman.git

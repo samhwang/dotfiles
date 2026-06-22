@@ -9,7 +9,8 @@
     "@franlol/opencode-md-table-formatter@latest",
     "opencode-vibeguard@latest",
     "opencode-websearch-cited@latest",
-    "{env:HOME}/.dotfiles/plugins/ponytail/.opencode/plugins/ponytail.mjs"
+    "{env:HOME}/.dotfiles/plugins/ponytail/.opencode/plugins/ponytail.mjs",
+    "{env:HOME}/.dotfiles/plugins/caveman/src/plugins/opencode/plugin.js"
   ],
   "provider": {
     "anthropic": {
