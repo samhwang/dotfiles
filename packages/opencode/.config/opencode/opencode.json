@@ -8,7 +8,8 @@
     "@tarquinen/opencode-dcp@latest",
     "@franlol/opencode-md-table-formatter@latest",
     "opencode-vibeguard@latest",
-    "opencode-websearch-cited@latest"
+    "opencode-websearch-cited@latest",
+    "{env:HOME}/.dotfiles/plugins/ponytail/.opencode/plugins/ponytail.mjs"
   ],
   "provider": {
     "anthropic": {

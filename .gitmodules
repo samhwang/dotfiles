@@ -2,3 +2,6 @@
 	path = packages/cowsay/.cowsay
 	url = git@github.com:samhwang/cowfiles.git
 	branch = mycows
+[submodule "plugins/ponytail"]
+	path = plugins/ponytail
+	url = https://github.com/DietrichGebert/ponytail
