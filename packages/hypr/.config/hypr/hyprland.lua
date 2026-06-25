@@ -6,10 +6,10 @@
 ------------------
 
 hl.monitor({
-    output = "desc:Xiaomi Corporation Mi Monitor",
-    mode = "highres@highrr",
-    position = "auto",
-    scale = "auto",
+	output = "desc:Xiaomi Corporation Mi Monitor",
+	mode = "highres@highrr",
+	position = "auto",
+	scale = "auto",
 })
 
 ---------------------
@@ -26,14 +26,14 @@ local menu = ipc .. " launcher toggle"
 -------------------
 
 hl.on("hyprland.start", function()
-    hl.exec_cmd("/usr/lib/pam_kwallet_init")
-    hl.exec_cmd("systemctl --user start hyprpolkitagent")
-    hl.exec_cmd("qs -c noctalia-shell")
-    hl.exec_cmd("fcitx5 -d")
-    hl.exec_cmd("wl-paste --type text --watch cliphist store")
-    hl.exec_cmd("wl-paste --type image --watch cliphist store")
-    hl.exec_cmd("udiskie --tray &")
-    hl.exec_cmd("1password")
+	hl.exec_cmd("/usr/lib/pam_kwallet_init")
+	hl.exec_cmd("systemctl --user start hyprpolkitagent")
+	hl.exec_cmd("qs -c noctalia-shell")
+	hl.exec_cmd("fcitx5 -d")
+	hl.exec_cmd("wl-paste --type text --watch cliphist store")
+	hl.exec_cmd("wl-paste --type image --watch cliphist store")
+	hl.exec_cmd("udiskie --tray &")
+	hl.exec_cmd("1password")
 end)
 
 -------------------------------
@@ -48,39 +48,39 @@ hl.env("HYPRCURSOR_SIZE", "24")
 -----------------------
 
 hl.config({
-    general = {
-        gaps_in = 5,
-        gaps_out = 20,
-        border_size = 2,
-        resize_on_border = true,
-        allow_tearing = false,
-        layout = "dwindle",
-    },
+	general = {
+		gaps_in = 5,
+		gaps_out = 20,
+		border_size = 2,
+		resize_on_border = true,
+		allow_tearing = false,
+		layout = "dwindle",
+	},
 
-    decoration = {
-        rounding = 10,
-        rounding_power = 2,
-        active_opacity = 1.0,
-        inactive_opacity = 1.0,
+	decoration = {
+		rounding = 10,
+		rounding_power = 2,
+		active_opacity = 1.0,
+		inactive_opacity = 1.0,
 
-        shadow = {
-            enabled = true,
-            range = 4,
-            render_power = 3,
-            color = 0xee1a1a1a,
-        },
+		shadow = {
+			enabled = true,
+			range = 4,
+			render_power = 3,
+			color = 0xee1a1a1a,
+		},
 
-        blur = {
-            enabled = true,
-            size = 3,
-            passes = 1,
-            vibrancy = 0.1696,
-        },
-    },
+		blur = {
+			enabled = true,
+			size = 3,
+			passes = 1,
+			vibrancy = 0.1696,
+		},
+	},
 
-    animations = {
-        enabled = true,
-    },
+	animations = {
+		enabled = true,
+	},
 })
 
 ------------------
@@ -115,11 +115,11 @@ hl.animation({ leaf = "workspacesOut", enabled = true, speed = 1.94, bezier = "a
 ------------------
 
 hl.layer_rule({
-    name = "noctalia",
-    match = { namespace = "noctalia-background-.*$" },
-    ignore_alpha = 0.5,
-    blur = true,
-    blur_popups = true,
+	name = "noctalia",
+	match = { namespace = "noctalia-background-.*$" },
+	ignore_alpha = 0.5,
+	blur = true,
+	blur_popups = true,
 })
 
 ------------------
@@ -127,9 +127,9 @@ hl.layer_rule({
 ------------------
 
 hl.config({
-    dwindle = {
-        preserve_split = true,
-    },
+	dwindle = {
+		preserve_split = true,
+	},
 })
 
 ------------------
@@ -137,9 +137,9 @@ hl.config({
 ------------------
 
 hl.config({
-    master = {
-        new_status = "master",
-    },
+	master = {
+		new_status = "master",
+	},
 })
 
 ------------------
@@ -147,9 +147,9 @@ hl.config({
 ------------------
 
 hl.config({
-    scrolling = {
-        fullscreen_on_one_column = true,
-    },
+	scrolling = {
+		fullscreen_on_one_column = true,
+	},
 })
 
 ------------------
@@ -157,10 +157,10 @@ hl.config({
 ------------------
 
 hl.config({
-    misc = {
-        force_default_wallpaper = -1,
-        disable_hyprland_logo = false,
-    },
+	misc = {
+		force_default_wallpaper = -1,
+		disable_hyprland_logo = false,
+	},
 })
 
 ---------------
@@ -168,19 +168,19 @@ hl.config({
 ---------------
 
 hl.config({
-    input = {
-        kb_layout = "us",
-        kb_variant = "",
-        kb_model = "",
-        kb_options = "",
-        kb_rules = "",
-        follow_mouse = 1,
-        sensitivity = 0,
+	input = {
+		kb_layout = "us",
+		kb_variant = "",
+		kb_model = "",
+		kb_options = "",
+		kb_rules = "",
+		follow_mouse = 1,
+		sensitivity = 0,
 
-        touchpad = {
-            natural_scroll = false,
-        },
-    },
+		touchpad = {
+			natural_scroll = false,
+		},
+	},
 })
 
 ---------------------
@@ -188,9 +188,9 @@ hl.config({
 ---------------------
 
 hl.config({
-    xwayland = {
-        force_zero_scaling = true,
-    },
+	xwayland = {
+		force_zero_scaling = true,
+	},
 })
 
 ---------------------
@@ -207,14 +207,15 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + space", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
 
 hl.bind(hyperKey .. " + L", function()
-    local current = hl.get_config("general.layout")
-    if current == "dwindle" then
-        hl.config({ general = { layout = "scrolling" } })
-    else
-        hl.config({ general = { layout = "dwindle" } })
-    end
+	local current = hl.get_config("general.layout")
+	if current == "dwindle" then
+		hl.config({ general = { layout = "scrolling" } })
+	else
+		hl.config({ general = { layout = "dwindle" } })
+	end
 end)
 
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
