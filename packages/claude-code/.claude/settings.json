@@ -65,6 +65,7 @@
     }
   },
   "tui": "fullscreen",
+  "autoMemoryEnabled": true,
   "theme": "auto",
   "editorMode": "vim",
   "verbose": true,
