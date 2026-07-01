@@ -108,6 +108,7 @@ cask 'font-jetbrains-mono'
 cask 'font-jetbrains-mono-nerd-font'
 cask 'fork'
 cask 'ghostty'
+cask 'gonhanh'
 cask 'google-chrome'
 cask 'gpg-suite-no-mail'
 cask 'jumpcloud-password-manager'
@@ -208,5 +209,5 @@ mas 'iMovie (10.4.3)', id: 408981434
 mas 'Keynote (14.4)', id: 409183694
 mas 'Numbers (14.4)', id: 409203825
 mas 'Pages (14.4)', id: 409201541
-mas 'TestFlight (4.2.0)', id: 899247664
+mas 'TestFlight (4.2.2)', id: 899247664
 mas 'Xcode (26.5)', id: 497799835
