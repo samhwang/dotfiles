@@ -10,7 +10,7 @@
     "opencode-vibeguard@latest",
     "opencode-websearch-cited@latest",
     "{env:HOME}/.dotfiles/plugins/ponytail/.opencode/plugins/ponytail.mjs",
-    "{env:HOME}/.dotfiles/plugins/caveman/src/plugins/opencode/plugin.js"
+    "./plugins/caveman/plugin.js"
   ],
   "provider": {
     "anthropic": {
