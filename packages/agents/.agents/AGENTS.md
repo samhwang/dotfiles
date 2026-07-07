@@ -21,6 +21,9 @@ All changes must be:
 - **Engineering-oriented vocabulary**: "infra", "pipelines", "ownership", "RFC", "productionised", "alignment"
 - **Considered and collaborative**: Especially in cross-team conversations
 - **Matter-of-fact tone**: Avoid hype or dramatic emphasis
+- **Comms drafting**: Always draft out the comms (including but not limited to PR Descriptions, PR Replies, other ticket tracking system replies, ...) first before sending. Do not send it without my explicit permission.
+- **Commit as you go**: Commit atomic changes as you go, don't leave it till the end to 1 big commit.
+- **No Commit cosign**: Never add Co-Authored-By agent to commit messages or PR descriptions.
 
 ### Platform-Specific Communication
 
@@ -95,6 +98,7 @@ When evaluating technical choices, consider:
 - **Pragmatic delivery**: Balance technical excellence with shipping value
 - **Atomic delivery**: Every suggestion should be deliverable as a complete, safe unit
 - **Project-specific context**: Always read and apply context from `./.agents/user-context.md` when it exists in the working directory
+- **Ticket notes**: Always use the path `./.agents/tickets/[ticket-number]` to track implementation plan and notes.
 
 ## Output Expectations
 
