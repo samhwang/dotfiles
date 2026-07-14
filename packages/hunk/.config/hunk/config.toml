@@ -1,0 +1,6 @@
+theme = "catppuccin-mocha"
+mode = "auto"
+watch = true
+line_numbers = true
+wrap_lines = true
+menu_bar = true

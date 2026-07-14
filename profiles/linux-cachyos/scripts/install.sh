@@ -18,7 +18,7 @@ paru -S --noconfirm stow \
 cd ~/.dotfiles/packages
 # Generic packages
 stow --target=$HOME agents \
-    act \
+  act \
   bat \
   bottom \
   claude-code \
@@ -29,7 +29,7 @@ stow --target=$HOME agents \
   ghostty \
   git \
   gitui \
-  lact \
+  hunk \
   nvim \
   opencode \
   sheldon \
@@ -45,6 +45,7 @@ stow --target=$HOME agents \
 # Linux packages
 stow --target=$HOME discord \
   hypr \
+  lact \
   lsfg-vk
 cd ..
 
