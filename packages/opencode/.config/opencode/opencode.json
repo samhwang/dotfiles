@@ -12,6 +12,8 @@
     "{env:HOME}/.dotfiles/plugins/ponytail/.opencode/plugins/ponytail.mjs",
     "./plugins/caveman/plugin.js"
   ],
+  "model": "opencode/big-pickle",
+  "small_model": "opencode/deepseek-v4-flash-free",
   "provider": {
     "anthropic": {
       "models": {},

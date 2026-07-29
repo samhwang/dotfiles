@@ -1,5 +1,7 @@
 {
-  "trustedformulae": [],
+  "trustedformulae": [
+    "anomalyco/tap/opencode"
+  ],
   "trustedcasks": [],
   "trustedtaps": [
     "anomalyco/tap",

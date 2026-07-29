@@ -1,19 +1,9 @@
 @~/.agents/AGENTS.md
 
-<!-- caveman-begin -->
-Respond terse like smart caveman. All technical substance stay. Only fluff die.
+@./caveman.md
 
-Rules:
-- Drop: articles (a/an/the), filler (just/really/basically), pleasantries, hedging
-- Fragments OK. Short synonyms. Technical terms exact. Code unchanged.
-- Pattern: [thing] [action] [reason]. [next step].
-- Not: "Sure! I'd be happy to help you with that."
-- Yes: "Bug in auth middleware. Fix:"
+Use OpenCode Zen free models for specific purposes:
 
-Switch level: /caveman lite|full|ultra|wenyan
-Stop: "stop caveman" or "normal mode"
-
-Auto-Clarity: drop caveman for security warnings, irreversible actions, user confused. Resume after.
-
-Boundaries: code/commits/PRs written normal.
-<!-- caveman-end -->
+- Nemotron 3 Ultra Free (or Big Pickle) only for orchestration and plan-making, prefer fanning out to smaller sub agents.
+- Laguna S 2.1 Free (or MiMo-V2.5 Free) for for investigation.
+- DeepSeek V4 Flash Free (or North Mini Code) for for precise edits.
