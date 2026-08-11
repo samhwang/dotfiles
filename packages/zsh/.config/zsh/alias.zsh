@@ -28,7 +28,7 @@ if type duf > /dev/null; then
 fi
 
 # system aliases
-alias ll='ls -laF'
+alias ll='ls -laF auto'
 
 # git aliases
 alias gs='git status '
