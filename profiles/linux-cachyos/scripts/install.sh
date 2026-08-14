@@ -160,8 +160,9 @@ paru -S --noconfirm cachyos-gaming-meta \
 # System
 paru -S --noconfirm snapper \
   simple-scan \
-  sddm \
-  plymouth
+  plymouth \
+  greetd \
+  accountsservice
 
 # For Logitech mice
 paru -S --noconfirm solaar
@@ -211,5 +212,18 @@ paru -S --noconfirm hyprland \
   udiskie \
   uwsm \
   noctalia \
+  noctalia-greeter \
   vlc \
   vlc-plugins-all
+
+# System configs that live outside $HOME (not stowed; copied to real paths)
+# Same steps as `noctalia-greeter-print-greetd-config`
+sudo useradd -r -s /usr/bin/nologin -d /var/lib/noctalia-greeter greeter 2>/dev/null || true
+sudo cp -a /etc/greetd/config.toml /etc/greetd/config.toml.bak 2>/dev/null || true
+sudo install -Dm644 ~/.dotfiles/packages/hypr/etc/greetd/config.toml /etc/greetd/config.toml
+sudo install -Dm644 ~/.dotfiles/packages/hypr/var/lib/noctalia-greeter/greeter.toml /var/lib/noctalia-greeter/greeter.toml
+sudo chown greeter:greeter /var/lib/noctalia-greeter/greeter.toml
+
+# Replace sddm with greetd as display manager
+sudo systemctl disable --now sddm 2>/dev/null || true
+sudo systemctl enable --now greetd
