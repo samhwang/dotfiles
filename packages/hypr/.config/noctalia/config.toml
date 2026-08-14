@@ -12,6 +12,15 @@ polkit_agent = false
 time_format = "{:%H:%M}"
 date_format = "%A, %x"
 
+[shell.launcher.providers.session]
+global = true
+
+[shell.launcher.providers.wallpaper]
+global = true
+
+[shell.launcher.providers.windows]
+global = true
+
 [osd]
 position = "top_right"
 
