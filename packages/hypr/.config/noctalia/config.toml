@@ -1,0 +1,178 @@
+[theme]
+mode = "dark"
+source = "builtin"
+builtin = "Catppuccin"
+
+[shell]
+avatar_path = "/home/samhwang/.face"
+app_icon_colorize = true
+telemetry_enabled = false
+setup_wizard_enabled = false
+polkit_agent = false
+time_format = "{:%H:%M}"
+date_format = "%A, %x"
+
+[osd]
+position = "top_right"
+
+[notification]
+enable_daemon = true
+position = "top_right"
+
+[location]
+auto_locate = false
+address = "Melbourne, Australia"
+
+[weather]
+enabled = true
+refresh_minutes = 30
+unit = "metric"
+effects = true
+
+[idle]
+behavior_order = ["lock", "screen-off", "suspend"]
+
+[idle.behavior.lock]
+timeout = 660
+action = "lock"
+enabled = true
+
+[idle.behavior.screen-off]
+timeout = 600
+action = "screen_off"
+enabled = true
+
+[idle.behavior.suspend]
+timeout = 1800
+action = "lock_and_suspend"
+enabled = true
+
+[wallpaper]
+enabled = true
+fill_mode = "crop"
+directory = "/home/samhwang/Pictures/Wallpapers"
+transition = ["fade", "disc", "stripes", "wipe", "pixelate", "honeycomb"]
+transition_duration = 1500
+transition_on_startup = true
+
+[wallpaper.automation]
+enabled = true
+interval_seconds = 7200
+order = "random"
+recursive = true
+
+[dock]
+enabled = true
+position = "bottom"
+monitors = ["DP-2"]
+auto_hide = true
+icon_size = 48
+background_opacity = 1.0
+margin_ends = 8
+margin_edge = 8
+concave_edge_corners = false
+show_running = true
+reserve_space = true
+show_dots = false
+magnification = true
+magnification_scale = 1.45
+
+[bar]
+order = ["main"]
+
+[bar.default]
+position = "top"
+background_opacity = 0.93
+radius = 12
+widget_spacing = 6
+padding = 2
+margin_ends = 4
+margin_edge = 4
+capsule = true
+start = ["launcher", "clock", "sysmon-cpu", "sysmon-ram", "active-window"]
+center = ["workspaces", "media"]
+end = ["keyboard-layout", "notifications", "battery", "volume", "brightness", "control-center", "clock-right", "tray"]
+
+[widget.launcher]
+type = "launcher"
+glyph = "rocket"
+
+[widget.clock]
+type = "clock"
+format = "{:%H:%M %a, %b %d}"
+tooltip_format = "{:%H:%M %a, %b %d}"
+
+[widget.clock-right]
+type = "clock"
+format = "{:%H:%M %a, %b %d}"
+tooltip_format = "{:%H:%M %a, %b %d}"
+
+[widget.sysmon-cpu]
+type = "sysmon"
+stat = "cpu_usage"
+visualization = "gauge"
+show_value = true
+
+[widget.sysmon-ram]
+type = "sysmon"
+stat = "ram_used"
+visualization = "gauge"
+show_value = true
+
+[widget.active-window]
+type = "active_window"
+min_length = 80
+max_length = 145
+display = "icon_and_text"
+title_scroll = "on_hover"
+icon_size = 14
+
+[widget.workspaces]
+type = "workspaces"
+style = "regular"
+show_labels = true
+label_source = "id"
+max_label_chars = 2
+pill_scale = 0.6
+focused_color = "primary"
+occupied_color = "secondary"
+labels_only_when_occupied = true
+
+[widget.media]
+type = "media"
+artist_first = true
+min_length = 80
+max_length = 145
+title_scroll = "on_hover"
+
+[widget.keyboard-layout]
+type = "keyboard_layout"
+show_glyph = true
+show_label = true
+
+[widget.notifications]
+type = "notifications"
+hide_when_no_unread = false
+
+[widget.battery]
+type = "battery"
+display_mode = "graphic"
+show_label = true
+label_content = "percent"
+
+[widget.volume]
+type = "volume"
+show_label = true
+
+[widget.brightness]
+type = "brightness"
+show_label = true
+
+[widget.control-center]
+type = "control-center"
+glyph = "noctalia"
+
+[widget.tray]
+type = "tray"
+drawer = true
+drawer_columns = 3

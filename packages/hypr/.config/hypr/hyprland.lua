@@ -18,8 +18,8 @@ hl.monitor({
 
 local terminal = "ghostty"
 local fileManager = "dolphin"
-local ipc = "qs -c noctalia-shell ipc call"
-local menu = ipc .. " launcher toggle"
+local ipc = "noctalia msg"
+local menu = ipc .. " panel-toggle launcher"
 
 -------------------
 ---- AUTOSTART ----
@@ -28,7 +28,7 @@ local menu = ipc .. " launcher toggle"
 hl.on("hyprland.start", function()
 	hl.exec_cmd("/usr/lib/pam_kwallet_init")
 	hl.exec_cmd("systemctl --user start hyprpolkitagent")
-	hl.exec_cmd("qs -c noctalia-shell")
+	hl.exec_cmd("noctalia")
 	hl.exec_cmd("fcitx5 -d")
 	hl.exec_cmd("wl-paste --type text --watch cliphist store")
 	hl.exec_cmd("wl-paste --type image --watch cliphist store")
@@ -116,10 +116,18 @@ hl.animation({ leaf = "workspacesOut", enabled = true, speed = 1.94, bezier = "a
 
 hl.layer_rule({
 	name = "noctalia",
-	match = { namespace = "noctalia-background-.*$" },
+	match = { namespace = "^noctalia-(bar-.+|notification|dock|panel|attached-panel|osd|window-switcher)$" },
+	no_anim = true,
 	ignore_alpha = 0.5,
 	blur = true,
 	blur_popups = true,
+})
+
+hl.window_rule({
+	name = "noctalia-settings",
+	match = { class = "dev.noctalia.Noctalia" },
+	float = true,
+	size = { 1080, 920 },
 })
 
 ------------------
@@ -257,20 +265,20 @@ hl.bind(mainMod .. " + SHIFT + 0", hl.dsp.window.move({ workspace = 10 }))
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
-hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd(ipc .. " volume increase"), { locked = true, repeating = true })
-hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd(ipc .. " volume decrease"), { locked = true, repeating = true })
-hl.bind("XF86AudioMute", hl.dsp.exec_cmd(ipc .. " volume muteOutput"), { locked = true, repeating = true })
-hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd("volume muteInput"), { locked = true, repeating = true })
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd(ipc .. " volume-up"), { locked = true, repeating = true })
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd(ipc .. " volume-down"), { locked = true, repeating = true })
+hl.bind("XF86AudioMute", hl.dsp.exec_cmd(ipc .. " volume-mute"), { locked = true, repeating = true })
+hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd(ipc .. " mic-mute"), { locked = true, repeating = true })
 
 hl.bind("XF86AudioNext", hl.dsp.exec_cmd(ipc .. " media next"))
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd(ipc .. " media pause"))
-hl.bind("XF86AudioPlay", hl.dsp.exec_cmd(ipc .. " media playPause"))
+hl.bind("XF86AudioPlay", hl.dsp.exec_cmd(ipc .. " media toggle"))
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd(ipc .. " media previous"))
 
-hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd(ipc .. " lockScreen lock"))
-hl.bind(mainMod .. " + SHIFT + P", hl.dsp.exec_cmd(ipc .. " sessionMenu lockAndSuspend"))
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd(ipc .. " session lock"))
+hl.bind(mainMod .. " + SHIFT + P", hl.dsp.exec_cmd(ipc .. " session lock-and-suspend"))
 
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("grim - | wl-copy"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd('grim -g "$(slurp -w 0)" - | wl-copy'))
 
-hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(ipc .. " launcher clipboard"))
+hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(ipc .. " panel-toggle clipboard"))
