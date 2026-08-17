@@ -106,11 +106,6 @@ end = ["keyboard-layout", "notifications", "battery", "volume", "brightness", "c
 type = "launcher"
 glyph = "rocket"
 
-[widget.clock]
-type = "clock"
-format = "{:%H:%M %a, %b %d}"
-tooltip_format = "{:%H:%M %a, %b %d}"
-
 [widget.clock-right]
 type = "clock"
 format = "{:%H:%M %a, %b %d}"
