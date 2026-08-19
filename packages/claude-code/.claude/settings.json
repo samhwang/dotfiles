@@ -69,5 +69,6 @@
   "theme": "auto",
   "editorMode": "vim",
   "verbose": true,
-  "preferredNotifChannel": "ghostty"
+  "preferredNotifChannel": "ghostty",
+  "model": "sonnet"
 }
