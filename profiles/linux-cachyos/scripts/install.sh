@@ -157,6 +157,11 @@ paru -S --noconfirm cachyos-gaming-meta \
   cachyos-gaming-applications \
   lsfg-vk
 
+# Statlocker Companion (Deadlock stat manager)
+mkdir -p ~/.local/bin
+curl -fL -o ~/.local/bin/statlocker-companion.AppImage https://updates.statlocker.gg/companion/download/statlocker-companion_amd64.AppImage
+chmod +x ~/.local/bin/statlocker-companion.AppImage
+
 # System
 paru -S --noconfirm snapper \
   simple-scan \
