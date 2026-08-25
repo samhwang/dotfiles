@@ -36,3 +36,17 @@ function bastion() {
     echo "Using kubectx: $ctx"
     kubectl port-forward -n bastion service/bastion 2222:22
 }
+
+function portforward_qadb() {
+    echo "Using kubectx: r2-qa-au"
+    kubectx r2-qa-au
+
+    if [[ -z $1 ]]; then
+        echo "No QA env specified. Exiting..."
+        return 1
+    fi
+
+    local env="$1"
+    echo "Portforwarding to DB on QA env: $env"
+    kubectl port-forward -n "$env" service/mysql 33061:3306
+}
