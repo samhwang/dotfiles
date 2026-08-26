@@ -10,7 +10,7 @@
     "opencode-vibeguard@latest",
     "opencode-websearch-cited@latest",
     "{env:HOME}/.dotfiles/plugins/ponytail/.opencode/plugins/ponytail.mjs",
-    "./plugins/caveman/plugin.js"
+    "{env:HOME}/.dotfiles/plugins/caveman/plugin.js"
   ],
   "model": "opencode/big-pickle",
   "small_model": "opencode/deepseek-v4-flash-free",
