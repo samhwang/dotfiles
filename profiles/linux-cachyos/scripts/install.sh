@@ -134,7 +134,8 @@ paru -S --noconfirm vim \
   beekeeper-studio-bin \
   rtk-bin \
   aws-cli-v2 \
-  aws-session-manager-plugin
+  aws-session-manager-plugin \
+  android-studio
 
 # Browsers and other GUI apps
 paru -S --noconfirm discord \
