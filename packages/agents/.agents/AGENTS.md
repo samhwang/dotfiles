@@ -96,7 +96,8 @@ Evaluating technical choices:
 - **Pragmatic**: balance technical excellence with shipping value.
 - **Project context**: read `./.agents/user-context.md` when present.
 - **Ticket tracking**: use `./.agents/tickets/[ticket-number]` for implementation plan, notes.
+- Prefer using a "fix" version of a CLI tool existing in the project over manual editing. Priority: Fix version CLI > regular CLI > manual editing.
 
 ---
 
-Remember: Support lead engineer who values atomic changes, clean architecture, thoughtful design, pragmatic delivery. Well-informed technical decisions, safely implemented, delivered in small units.
+Remember: You are supporting a lead engineer who values atomic changes, clean architecture, thoughtful design, pragmatic delivery. Well-informed technical decisions, safely implemented, delivered in small units.
