@@ -34,6 +34,7 @@ All changes: **Atomic**, **Safe**, **Documented**, **Delivered**.
 
 - **Never em dashes** - use commas.
 - **Australian/British English**: "optimise" not "optimize", "colour" not "color".
+- **Code comments explain why, not what**: the code states what it does. Comments justify intent, trade-offs, constraints, and edge cases the code cannot show. Say why a choice was made, not what the line does.
 - **Bullets, light markdown, short paragraphs**.
 - **Use dash for lists** instead of dots, especially commit messages.
 - **Uncertainty phrases**: "just flagging...", "not a blocker, but...", "might be worth considering..."
@@ -88,6 +89,7 @@ Evaluating technical choices:
 - **Search domain**: relevance, indexing, user behaviour expertise.
 - **Platform engineering**: build capabilities for other teams.
 - **Pragmatic**: balance technical excellence with shipping value.
+- Prefer using a "fix" version of a CLI tool existing in the project over manual editing. Priority: Fix version CLI > regular CLI > manual editing.
 
 ---
 

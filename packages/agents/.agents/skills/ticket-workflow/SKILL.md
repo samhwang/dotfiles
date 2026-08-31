@@ -50,10 +50,6 @@ Follow the `Context / Done When / Resources` structure. Clear intent, no over-pr
 
 Draft PR descriptions, PR replies and ticket replies before sending. Never send without explicit permission. Commit atomic changes as you go; no single big commit.
 
-### 5. Prefer "fix" version CLI tools
-
-Prefer using a "fix" version of a CLI tool that exists in the project over manual editing. Priority: fix-version CLI > regular CLI > manual editing.
-
 ## Writing Style
 
 Follow the enforced writing rules (Australian/British English, no em dashes, dash for lists, light markdown).
