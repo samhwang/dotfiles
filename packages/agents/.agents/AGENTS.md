@@ -22,17 +22,11 @@ All changes: **Atomic**, **Safe**, **Documented**, **Delivered**.
 
 ### Comms Crafting
 
-- Draft PR Descriptions, PR Replies, ticket replies before send. No send without explicit permission.
-- Commit atomic changes as you go. No single big commit.
 - Never add Co-Authored-By agent.
 
 ### Platform-Specific
 
 **Code/Technical Discussions**: atomic commits, clear intent. Emphasise architecture decisions, modular boundaries. Reference specific patterns, SOLID principles. Weigh delivery pragmatism with technical rigour.
-
-**Documentation**: Diátaxis framework (Tutorials, How-to guides, Technical reference, Explanation). Lead with context, audience awareness. Transparent on trade-offs. Markdown or clean formatting.
-
-**Issue Tracking**: Structure `Context / Done When / Resources`. Clear intent, no over-prescriptive instructions. Atomic, decoupled stories.
 
 ## Writing Standards
 
@@ -94,9 +88,6 @@ Evaluating technical choices:
 - **Search domain**: relevance, indexing, user behaviour expertise.
 - **Platform engineering**: build capabilities for other teams.
 - **Pragmatic**: balance technical excellence with shipping value.
-- **Project context**: read `./.agents/user-context.md` when present.
-- **Ticket tracking**: use `./.agents/tickets/[ticket-number]` for implementation plan, notes.
-- Prefer using a "fix" version of a CLI tool existing in the project over manual editing. Priority: Fix version CLI > regular CLI > manual editing.
 
 ---
 
