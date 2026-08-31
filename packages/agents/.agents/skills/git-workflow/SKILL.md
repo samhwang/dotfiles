@@ -4,8 +4,8 @@ description: >
   Git workflow discipline. Use when making any code change, committing, branching,
   resolving conflicts, opening or reviewing a pull request, pushing to a remote, or
   organizing work. Covers trunk-based development, atomic commits, save points,
-  worktrees, pre-commit hygiene and git debugging. For commit MESSAGE formatting,
-  delegate to the caveman-commit skill.
+  worktrees, pre-commit hygiene and git debugging. Includes Conventional Commits
+  message formatting.
 ---
 
 # Git Workflow
@@ -93,11 +93,19 @@ After modifications, give a structured summary:
 
 ## Commit Message Formatting
 
-Delegate to the `caveman-commit` skill for the actual message string. That skill covers the Conventional Commits format: `<type>(<scope>): <imperative summary>`, with optional body for non-obvious why, breaking changes, or migration notes.
+Write each commit message using the Conventional Commits format, terse and intent-only:
 
-This skill covers WHEN and WHAT to commit. The `caveman-commit` skill covers HOW to phrase the message. Do not duplicate format rules here.
+```
+<type>(<scope>): <imperative summary>
+```
 
-Rationale: single source of truth. The `caveman-commit` skill already enforces the terse conventional format.
+- Types: `feat`, `fix`, `refactor`, `perf`, `docs`, `test`, `chore`, `build`, `ci`, `style`, `revert`. Scope optional.
+- Imperative mood: "add", "fix", "remove", not "added", "adds".
+- Subject ≤50 chars when possible, hard cap 72. No trailing period.
+- Body only when needed: non-obvious *why*, breaking changes, migration notes, linked issues. Wrap at 72. Bullets with `-`, not `*`. Reference issues at the end (`Closes #42`).
+- No em dashes, no AI attribution, no "This commit does X" or "I"/"we".
+
+If the `caveman-commit` skill is present and active, its phrasing rules take precedence for the message string. This skill always governs when and what to commit.
 
 ## Common Rationalizations
 
