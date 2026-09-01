@@ -1,1 +1,1 @@
-/Users/sam.huynh/.dotfiles/plugins/ponytail/.opencode/command/ponytail-audit.md
+../../../../../plugins/ponytail/.opencode/command/ponytail-audit.md

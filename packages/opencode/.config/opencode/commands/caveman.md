@@ -1,1 +1,1 @@
-/Users/sam.huynh/.dotfiles/plugins/caveman/src/plugins/opencode/commands/caveman.md
+../../../../../plugins/caveman/src/plugins/opencode/commands/caveman.md

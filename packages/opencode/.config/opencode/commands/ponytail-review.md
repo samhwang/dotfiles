@@ -1,1 +1,1 @@
-/Users/sam.huynh/.dotfiles/plugins/ponytail/.opencode/command/ponytail-review.md
+../../../../../plugins/ponytail/.opencode/command/ponytail-review.md
