@@ -4,4 +4,13 @@ Setting myself up for success, this will bootstrap any Linux/macOS machine that 
 
 ## Quick Start
 
-For quick start note, check out the `README.md` of the profiles.
+- Clone the repo
+- Clone the submodules
+- Follow the `README.md` in the profile you need
+
+```shell
+git clone git@github.com:samhwang/dotfiles.git .dotfiles
+cd .dotfiles
+git submodule init
+git submodule update --remote --recursive
+```
