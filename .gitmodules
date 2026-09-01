@@ -8,3 +8,6 @@
 [submodule "plugins/caveman"]
 	path = plugins/caveman
 	url = https://github.com/JuliusBrussee/caveman.git
+[submodule "plugins/i-have-adhd"]
+	path = plugins/i-have-adhd
+	url = https://github.com/ayghri/i-have-adhd
