@@ -81,7 +81,7 @@ contexts:
         cluster: arn:aws:eks:eu-central-1:088382618622:cluster/rosterfy
         user: arn:aws:eks:eu-central-1:088382618622:cluster/rosterfy
     name: r2-prod-uefa
-current-context: r2-prod-uefa
+current-context: r2-qa-au
 kind: Config
 preferences: {}
 users:
