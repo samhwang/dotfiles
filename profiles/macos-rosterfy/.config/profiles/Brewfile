@@ -15,6 +15,7 @@ brew 'cmatrix'
 brew 'cocoapods'
 brew 'coreutils'
 brew 'cowsay'
+brew 'deno'
 brew 'direnv'
 brew 'duf'
 brew 'eksctl'
@@ -213,5 +214,5 @@ mas 'iMovie (10.4.3)', id: 408981434
 mas 'Keynote (14.4)', id: 409183694
 mas 'Numbers (14.4)', id: 409203825
 mas 'Pages (14.4)', id: 409201541
-mas 'TestFlight (4.3.0)', id: 899247664
+mas 'TestFlight (4.3.1)', id: 899247664
 mas 'Xcode (26.6)', id: 497799835
