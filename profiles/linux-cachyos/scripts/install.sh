@@ -119,7 +119,10 @@ paru -S --noconfirm zsh \
   btop \
   jq \
   dust \
-  bluetui
+  bluetui \
+  go-task \
+  just \
+  make
 
 # Editor Tools
 paru -S --noconfirm vim \
