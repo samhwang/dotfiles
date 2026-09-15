@@ -12,5 +12,6 @@ if type brew > /dev/null; then
     export HOMEBREW_BREWFILE_LEAVES=1
     export HOMEBREW_BREWFILE_FULL_NAME=1
     export HOMEBREW_BREWFILE_TOP_PACKAGES=1
+    export HOMEBREW_AUTO_UPDATE_QUIET=1
 
 fi
