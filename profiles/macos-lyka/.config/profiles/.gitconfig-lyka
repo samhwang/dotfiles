@@ -1,8 +1,0 @@
-# USER CONFIGURATION
-[user]
-    name = Sam Huynh
-    email = sam.huynh@lyka.com.au
-
-# GIT TEMPLATE
-[init]
-    templateDir = ~/.config/profiles/.git-template
