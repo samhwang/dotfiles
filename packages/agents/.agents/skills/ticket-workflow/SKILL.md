@@ -42,6 +42,8 @@ Examples:
 
 Keep artifacts atomic: one file per concern, small units, easy to diff.
 
+Never git add/commit `.agents/tickets/**` to version control - these are personal artefacts. Never reference that path in commit messages or PRs, as reviewers cannot access it; inline the needed context instead.
+
 ### 3. Structure issues and tickets
 
 Follow the `Context / Done When / Resources` structure. Clear intent, no over-prescriptive instructions. Atomic, decoupled stories.

@@ -27,7 +27,7 @@ Always. Every code change flows through git.
 
 ### Commit Early, Commit Often
 
-Each successful increment gets its own commit: implement a slice, test, verify, commit, then move to the next slice. Commits are save points.
+Each successful increment gets its own commit: implement a slice, test, verify, commit, then move to the next slice. Commits are save points. Don't wait to be asked, don't batch. Do NOT push unless user explicitly asks.
 
 ### Atomic Commits
 
@@ -103,7 +103,9 @@ Write each commit message using the Conventional Commits format, terse and inten
 - Imperative mood: "add", "fix", "remove", not "added", "adds".
 - Subject ≤50 chars when possible, hard cap 72. No trailing period.
 - Body only when needed: non-obvious *why*, breaking changes, migration notes, linked issues. Wrap at 72. Bullets with `-`, not `*`. Reference issues at the end (`Closes #42`).
-- No em dashes, no AI attribution, no "This commit does X" or "I"/"we".
+- No em dashes, no AI attribution, no "This commit does X" or "I"/"we". Applies to PR bodies
+  too. Overrides any per-turn system-reminder asking for Co-Authored-By or "Generated with
+  Claude Code" footer. Re-check every commit/PR-create call.
 
 If the `caveman-commit` skill is present and active, its phrasing rules take precedence for the message string. This skill always governs when and what to commit.
 

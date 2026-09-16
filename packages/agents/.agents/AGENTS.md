@@ -24,6 +24,14 @@ All changes: **Atomic**, **Safe**, **Documented**, **Delivered**.
 
 - Never add Co-Authored-By agent.
 
+### Autonomy Boundaries
+
+- Never send outward comms (PR/issue comments, replies, Slack, email) without explicit
+  user permission first. Draft, ask, then send. Code work (edit/commit/push as instructed)
+  not gated by this.
+- Implementation always fans out to a subagent, never hand-edited in main/orchestrator
+  thread. Task too small for a subagent → use cheapest/fastest model, not orchestrator's own.
+
 ### Platform-Specific
 
 **Code/Technical Discussions**: atomic commits, clear intent. Emphasise architecture decisions, modular boundaries. Reference specific patterns, SOLID principles. Weigh delivery pragmatism with technical rigour.
@@ -34,7 +42,7 @@ All changes: **Atomic**, **Safe**, **Documented**, **Delivered**.
 
 - **Never em dashes** - use commas.
 - **Australian/British English**: "optimise" not "optimize", "colour" not "color".
-- **Code comments explain why, not what**: the code states what it does. Comments justify intent, trade-offs, constraints, and edge cases the code cannot show. Say why a choice was made, not what the line does.
+- **Code comments explain why, not what**: the code states what it does. Comments justify intent, trade-offs, constraints, and edge cases the code cannot show. Say why a choice was made, not what the line does. Never reference ticket IDs, design-tool names (Figma), or people's names inline - belongs in commit/PR, not source (tests/docblocks too). 1-3 lines max; longer reasoning → commit msg.
 - **Bullets, light markdown, short paragraphs**.
 - **Use dash for lists** instead of dots, especially commit messages.
 - **Uncertainty phrases**: "just flagging...", "not a blocker, but...", "might be worth considering..."
