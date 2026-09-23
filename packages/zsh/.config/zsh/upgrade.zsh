@@ -26,6 +26,7 @@ function pkg_up() {
     CURRENT_PATH=`pwd`
     echo "UPDATING SYSTEM PACKAGES"
     update_packages
+    echo "UPDATING SYSTEM PACKAGES COMPLETE"
 
     echo "GOING TO DOTFILES DIRECTORY"
     cd "${HOME}/.dotfiles"
@@ -34,11 +35,7 @@ function pkg_up() {
     echo "UPDATING DOTFILES SUBMODULES"
     git pull
     git submodule update --recursive --remote
-
-    if type tv > /dev/null; then
-        echo "UPDATE TELEVISION CHANNELS"
-        tv update-channels --force
-    fi
+    echo "UPDATING DOTFILES SUBMODULES COMPLETE"
 
     echo "FINISH UPDATING. GOING BACK TO PREVIOUS DIRECTORY"
     cd $CURRENT_PATH
