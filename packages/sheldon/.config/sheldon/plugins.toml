@@ -4,6 +4,11 @@ shell = "zsh"
 
 defer = "{{ hooks?.pre | nl }}{% for file in files %}zsh-defer source \"{{ file }}\"\n{% endfor %}{{ hooks?.post | nl }}"
 
+bindkeys = """
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+"""
+
 
 [plugins]
 
@@ -26,4 +31,4 @@ github = "zsh-users/zsh-syntax-highlighting"
 
 [plugins.zsh-history-substring-search]
 github = "zsh-users/zsh-history-substring-search"
-apply = ["defer"]
+apply = ["defer", "bindkeys"]
