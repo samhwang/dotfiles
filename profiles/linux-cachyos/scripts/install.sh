@@ -1,7 +1,8 @@
 #!/bin/bash
+set -euo pipefail
 
 # Change to zsh
-chsh -s $(which zsh)
+chsh -s "$(which zsh)" || true
 
 # Install pre-requisite
 sudo pacman -S git \

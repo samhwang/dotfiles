@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
 # Install pre-requisite: Stow and 1Password
 
