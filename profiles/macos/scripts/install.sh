@@ -1,7 +1,8 @@
 #!/bin/bash
+set -euo pipefail
 
 # Install pre-requisite
-xcode-select --install
+xcode-select --install || true
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew install git \
     stow \
@@ -47,7 +48,7 @@ cd ..
 
 # Install the rest
 cd ~/.config/profiles
-brew bundle --verbose --force --cleanup
+brew bundle --verbose --force
 
 # Install macos settings
 source ./macos-settings.sh
