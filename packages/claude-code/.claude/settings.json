@@ -1,81 +1,82 @@
 {
-    "permissions": {
-        "defaultMode": "plan"
-    },
-    "model": "sonnet",
-    "hooks": {
-        "PreToolUse": [
-            {
-                "matcher": "Bash",
-                "hooks": [
-                    {
-                        "type": "command",
-                        "command": "rtk hook claude"
-                    }
-                ]
-            }
-        ],
-        "SessionStart": [
-            {
-                "hooks": [
-                    {
-                        "type": "command",
-                        "command": "node \"$HOME/.claude/hooks/caveman-activate.js\"",
-                        "timeout": 5,
-                        "statusMessage": "Loading caveman mode..."
-                    }
-                ]
-            }
-        ],
-        "UserPromptSubmit": [
-            {
-                "hooks": [
-                    {
-                        "type": "command",
-                        "command": "node \"$HOME/.claude/hooks/caveman-mode-tracker.js\"",
-                        "timeout": 5,
-                        "statusMessage": "Tracking caveman mode..."
-                    }
-                ]
-            }
+  "permissions": {
+    "defaultMode": "plan"
+  },
+  "model": "sonnet",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "rtk hook claude"
+          }
         ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$HOME/.claude/hooks/caveman-activate.js\"",
+            "timeout": 5,
+            "statusMessage": "Loading caveman mode..."
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$HOME/.claude/hooks/caveman-mode-tracker.js\"",
+            "timeout": 5,
+            "statusMessage": "Tracking caveman mode..."
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash \"$HOME/.claude/hooks/caveman-statusline.sh\""
+  },
+  "enabledPlugins": {
+    "typescript-lsp@claude-plugins-official": true,
+    "php-lsp@claude-plugins-official": true,
+    "figma@claude-plugins-official": true,
+    "caveman@caveman": true,
+    "ponytail@ponytail": true,
+    "i-have-adhd@i-have-adhd": true,
+    "frontend-design@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "caveman": {
+      "source": {
+        "source": "github",
+        "repo": "JuliusBrussee/caveman"
+      }
     },
-    "statusLine": {
-        "type": "command",
-        "command": "bash \"$HOME/.claude/hooks/caveman-statusline.sh\""
+    "ponytail": {
+      "source": {
+        "source": "github",
+        "repo": "DietrichGebert/ponytail"
+      }
     },
-    "enabledPlugins": {
-        "typescript-lsp@claude-plugins-official": true,
-        "php-lsp@claude-plugins-official": true,
-        "figma@claude-plugins-official": true,
-        "caveman@caveman": true,
-        "ponytail@ponytail": true,
-        "i-have-adhd@i-have-adhd": true
-    },
-    "extraKnownMarketplaces": {
-        "caveman": {
-            "source": {
-                "source": "github",
-                "repo": "JuliusBrussee/caveman"
-            }
-        },
-        "ponytail": {
-            "source": {
-                "source": "github",
-                "repo": "DietrichGebert/ponytail"
-            }
-        },
-        "i-have-adhd": {
-            "source": {
-                "source": "github",
-                "repo": "ayghri/i-have-adhd"
-            }
-        }
-    },
-    "tui": "fullscreen",
-    "autoMemoryEnabled": false,
-    "theme": "auto",
-    "editorMode": "vim",
-    "verbose": true,
-    "preferredNotifChannel": "ghostty"
+    "i-have-adhd": {
+      "source": {
+        "source": "github",
+        "repo": "ayghri/i-have-adhd"
+      }
+    }
+  },
+  "tui": "fullscreen",
+  "autoMemoryEnabled": false,
+  "theme": "auto",
+  "editorMode": "vim",
+  "verbose": true,
+  "preferredNotifChannel": "ghostty"
 }
