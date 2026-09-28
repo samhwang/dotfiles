@@ -2,18 +2,22 @@
 set -euo pipefail
 
 # Install pre-requisite
+echo "==> INSTALLING XCODE COMMAND LINE TOOLS AND HOMEBREW"
 xcode-select --install || true
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew install git \
     stow \
     curl \
     wget
+echo "==> INSTALLING CASKS"
 brew install --cask 1password
 
+DOTFILES_DIR="${HOME}/.dotfiles"
+source "${DOTFILES_DIR}/profiles/lib/install-common.sh"
+
 # Use stow to restore config
-cd ~/.dotfiles/packages
 # Generic packages
-stow --target=$HOME agents \
+stow_generic_packages agents \
     act \
     bat \
     bottom \
@@ -37,18 +41,19 @@ stow --target=$HOME agents \
     zed \
     zellij \
     zsh
+update_cowsay_submodule
 # macOS packages
-stow --target=$HOME aerospace
-cd ..
+stow_platform_packages aerospace
 
-cd ~/.dotfiles/profiles
-OP_ACCOUNT=my.1password.com op inject -i macos/.config/profiles/private.zsh.tpl -o macos/.config/profiles/private.zsh
-stow --target=$HOME macos
-cd ..
+inject_profile_secrets macos
+stow_profile macos
 
 # Install the rest
-cd ~/.config/profiles
-brew bundle --verbose --force
+echo "==> RUNNING BREW BUNDLE INSTALL"
+brew bundle --file="${DOTFILES_DIR}/profiles/macos/.config/profiles/Brewfile" --verbose --force
 
 # Install macos settings
-source ./macos-settings.sh
+echo "==> APPLYING MACOS SETTINGS"
+source ~/.config/profiles/scripts/macos-settings.sh
+
+echo "==> SETUP COMPLETE!"

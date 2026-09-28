@@ -2,10 +2,12 @@
 
 # Install pre-requisite: Stow and 1Password
 
+DOTFILES_DIR="${HOME}/.dotfiles"
+source "${DOTFILES_DIR}/profiles/lib/install-common.sh"
+
 # Use stow to restore config
-cd ~/.dotfiles/packages
 # Generic packages
-stow --target=$HOME agents \
+stow_generic_packages agents \
     act \
     bat \
     bottom \
@@ -29,18 +31,18 @@ stow --target=$HOME agents \
     zed \
     zellij \
     zsh
+update_cowsay_submodule
 # UNCOMMENT ONE OF THESE BLOCKS FOR THE OS THAT IS INSTALLED ON
 # Linux packages
-# stow --target=$HOME discord \
+# stow_platform_packages discord \
 #     hypr \
 #     lsfg-vk
 # # macOS packages
-# stow --target=$HOME aerospace
-cd ..
+# stow_platform_packages aerospace
 
-cd ~/.dotfiles/profiles
-OP_ACCOUNT=my.1password.com op inject -i TEMPLATE/.config/profiles/private.zsh.tpl -o TEMPLATE/.config/profiles/private.zsh
-stow --target=$HOME TEMPLATE
-cd ..
+inject_profile_secrets TEMPLATE
+stow_profile TEMPLATE
 
 # Install the rest
+
+echo "==> SETUP COMPLETE!"

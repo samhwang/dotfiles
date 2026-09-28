@@ -2,18 +2,22 @@
 set -euo pipefail
 
 # Install pre-requisite
+echo "==> INSTALLING XCODE COMMAND LINE TOOLS AND HOMEBREW"
 xcode-select --install || true
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew install git \
     stow \
     curl \
     wget
+echo "==> INSTALLING CASKS"
 brew install --cask 1password
 
+DOTFILES_DIR="${HOME}/.dotfiles"
+source "${DOTFILES_DIR}/profiles/lib/install-common.sh"
+
 # Use stow to restore config
-cd ~/.dotfiles/packages
 # Generic packages
-stow --target=$HOME agents \
+stow_generic_packages agents \
     act \
     bat \
     bottom \
@@ -37,18 +41,24 @@ stow --target=$HOME agents \
     zed \
     zellij \
     zsh
+update_cowsay_submodule
 # macOS packages
-stow --target=$HOME aerospace
-cd ..
+stow_platform_packages aerospace
 
-cd ~/.dotfiles/profiles
-OP_ACCOUNT=my.1password.com op inject -i macos-rosterfy/.config/profiles/private.zsh.tpl -o macos-rosterfy/.config/profiles/private.zsh
-stow --target=$HOME macos-rosterfy
-cd ..
+inject_profile_secrets macos-rosterfy
+stow_profile macos-rosterfy
 
 # Install the rest
-cd ~/.config/profiles
-brew bundle --verbose --force
+echo "==> RUNNING BREW BUNDLE INSTALL"
+brew bundle --file="${DOTFILES_DIR}/profiles/macos-rosterfy/.config/profiles/Brewfile" --verbose --force
+
+# Refresh EKS kubeconfig entries (~/.kube exists via stow_profile above).
+# Non-fatal: a fresh machine won't be AWS SSO'd in yet.
+echo "==> REFRESHING EKS KUBECONFIG"
+"${DOTFILES_DIR}/profiles/macos-rosterfy/scripts/update-kube-config.sh" || echo "Skipped EKS kubeconfig refresh (probably not logged into AWS SSO yet). Run 'aws sso login --profile <profile>' then re-run profiles/macos-rosterfy/scripts/update-kube-config.sh manually."
 
 # Install macos settings
-source ./macos-settings.sh
+echo "==> APPLYING MACOS SETTINGS"
+source ~/.config/profiles/scripts/macos-settings.sh
+
+echo "==> SETUP COMPLETE!"
