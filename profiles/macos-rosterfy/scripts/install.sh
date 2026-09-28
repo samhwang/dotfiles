@@ -49,5 +49,9 @@ stow_profile macos-rosterfy
 # Install the rest
 brew bundle --file="${DOTFILES_DIR}/profiles/macos-rosterfy/.config/profiles/Brewfile" --verbose --force
 
+# Refresh EKS kubeconfig entries (~/.kube exists via stow_profile above).
+# Non-fatal: a fresh machine won't be AWS SSO'd in yet.
+"${DOTFILES_DIR}/profiles/macos-rosterfy/scripts/update-kube-config.sh" || echo "Skipped EKS kubeconfig refresh (probably not logged into AWS SSO yet). Run 'aws sso login --profile <profile>' then re-run profiles/macos-rosterfy/scripts/update-kube-config.sh manually."
+
 # Install macos settings
 source ~/.config/profiles/scripts/macos-settings.sh
