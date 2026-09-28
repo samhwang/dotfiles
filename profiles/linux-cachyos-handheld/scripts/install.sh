@@ -3,10 +3,12 @@ set -euo pipefail
 
 # Install pre-requisite: Stow and 1Password
 
+DOTFILES_DIR="${HOME}/.dotfiles"
+source "${DOTFILES_DIR}/profiles/lib/install-common.sh"
+
 # Use stow to restore config
-cd ~/.dotfiles/packages
 # Generic packages
-stow --target=$HOME bat \
+stow_generic_packages bat \
     delta \
     git \
     sheldon \
@@ -14,13 +16,11 @@ stow --target=$HOME bat \
     stow \
     zsh
 # Linux packages
-stow --target=$HOME discord \
+stow_platform_packages discord \
     lsfg-vk
-cd ..
 
-cd ~/.dotfiles/profiles
-stow --target=$HOME linux-cachyos-handheld
-cd ..
+inject_profile_secrets linux-cachyos-handheld
+stow_profile linux-cachyos-handheld
 
 # Gaming Apps
 paru -S --noconfirm cachyos-gaming-meta \

@@ -10,10 +10,12 @@ brew install git \
     wget
 brew install --cask 1password
 
+DOTFILES_DIR="${HOME}/.dotfiles"
+source "${DOTFILES_DIR}/profiles/lib/install-common.sh"
+
 # Use stow to restore config
-cd ~/.dotfiles/packages
 # Generic packages
-stow --target=$HOME agents \
+stow_generic_packages agents \
     act \
     bat \
     bottom \
@@ -37,18 +39,15 @@ stow --target=$HOME agents \
     zed \
     zellij \
     zsh
+update_cowsay_submodule
 # macOS packages
-stow --target=$HOME aerospace
-cd ..
+stow_platform_packages aerospace
 
-cd ~/.dotfiles/profiles
-OP_ACCOUNT=my.1password.com op inject -i macos-rosterfy/.config/profiles/private.zsh.tpl -o macos-rosterfy/.config/profiles/private.zsh
-stow --target=$HOME macos-rosterfy
-cd ..
+inject_profile_secrets macos-rosterfy
+stow_profile macos-rosterfy
 
 # Install the rest
-cd ~/.config/profiles
-brew bundle --verbose --force
+brew bundle --file="${DOTFILES_DIR}/profiles/macos-rosterfy/.config/profiles/Brewfile" --verbose --force
 
 # Install macos settings
-source ./macos-settings.sh
+source ~/.config/profiles/scripts/macos-settings.sh

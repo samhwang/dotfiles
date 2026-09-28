@@ -3,10 +3,12 @@ set -euo pipefail
 
 # Install pre-requisite: Stow and 1Password
 
+DOTFILES_DIR="${HOME}/.dotfiles"
+source "${DOTFILES_DIR}/profiles/lib/install-common.sh"
+
 # Use stow to restore config
-cd ~/.dotfiles/packages
 # Generic packages
-stow --target=$HOME act \
+stow_generic_packages act \
     bat \
     bottom \
     cowsay \
@@ -27,15 +29,13 @@ stow --target=$HOME act \
     zed \
     zellij \
     zsh
+update_cowsay_submodule
 # Linux packages
-stow --target=$HOME discord \
+stow_platform_packages discord \
     hypr \
     lsfg-vk
-cd ..
 
-cd ~/.dotfiles/profiles
-OP_ACCOUNT=my.1password.com op inject -i linux/.config/profiles/private.zsh.tpl -o linux/.config/profiles/private.zsh
-stow --target=$HOME linux
-cd ..
+inject_profile_secrets linux
+stow_profile linux
 
 # Install the rest

@@ -15,10 +15,12 @@ paru -S --noconfirm stow \
   gnome-keyring \
   pass
 
+DOTFILES_DIR="${HOME}/.dotfiles"
+source "${DOTFILES_DIR}/profiles/lib/install-common.sh"
+
 # Use stow to restore config
-cd ~/.dotfiles/packages
 # Generic packages
-stow --target=$HOME agents \
+stow_generic_packages agents \
   act \
   bat \
   bottom \
@@ -43,17 +45,15 @@ stow --target=$HOME agents \
   zed \
   zellij \
   zsh
+update_cowsay_submodule
 # Linux packages
-stow --target=$HOME discord \
+stow_platform_packages discord \
   hypr \
   lact \
   lsfg-vk
-cd ..
 
-cd ~/.dotfiles/profiles
-OP_ACCOUNT=my.1password.com op inject -i linux-cachyos/.config/profiles/private.zsh.tpl -o linux-cachyos/.config/profiles/private.zsh
-stow --target=$HOME linux-cachyos
-cd ..
+inject_profile_secrets linux-cachyos
+stow_profile linux-cachyos
 
 # Install the rest
 
