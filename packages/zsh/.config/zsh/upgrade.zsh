@@ -24,20 +24,20 @@ function update_packages() {
 
 function pkg_up() {
     CURRENT_PATH=`pwd`
-    echo "UPDATING SYSTEM PACKAGES"
+    echo "==> UPDATING SYSTEM PACKAGES"
     update_packages
-    echo "UPDATING SYSTEM PACKAGES COMPLETE"
+    echo "==> UPDATING SYSTEM PACKAGES COMPLETE"
 
-    echo "GOING TO DOTFILES DIRECTORY"
+    echo "==> GOING TO DOTFILES DIRECTORY"
     cd "${HOME}/.dotfiles"
-    echo "CURRENTLY AT $(pwd)"
+    echo "==> CURRENTLY AT $(pwd)"
 
-    echo "UPDATING DOTFILES SUBMODULES"
+    echo "==> UPDATING DOTFILES SUBMODULES"
     git pull
     git submodule update --recursive --remote
-    echo "UPDATING DOTFILES SUBMODULES COMPLETE"
+    echo "==> UPDATING DOTFILES SUBMODULES COMPLETE"
 
-    echo "FINISH UPDATING. GOING BACK TO PREVIOUS DIRECTORY"
+    echo "==> FINISH UPDATING. GOING BACK TO PREVIOUS DIRECTORY"
     cd $CURRENT_PATH
-    echo "CURRENTLY AT $(pwd)"
+    echo "==> CURRENTLY AT $(pwd)"
 }

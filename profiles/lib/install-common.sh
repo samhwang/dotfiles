@@ -10,6 +10,7 @@
 # stow_generic_packages <pkg> [<pkg> ...]
 # Stows one or more packages/<pkg> dirs into $HOME.
 stow_generic_packages() {
+    echo "==> STOWING PACKAGES: $*"
     if [ "$#" -eq 0 ]; then
         echo "stow_generic_packages: at least one package name required" >&2
         return 1
@@ -30,6 +31,7 @@ stow_platform_packages() {
 # update_cowsay_submodule
 # --init handles a fresh clone; pkg_up's own submodule update never did.
 update_cowsay_submodule() {
+    echo "==> UPDATING COWSAY SUBMODULE"
     (
         cd "${DOTFILES_DIR}" || exit 1
         git submodule update --init --recursive -- packages/cowsay/.cowsay
@@ -44,6 +46,8 @@ inject_profile_secrets() {
     local profile="$1"
     local tpl_rel="${profile}/.config/profiles/private.zsh.tpl"
     local out_rel="${profile}/.config/profiles/private.zsh"
+
+    echo "==> INJECTING SECRETS FOR PROFILE: ${profile}"
 
     if [ ! -f "${DOTFILES_DIR}/profiles/${tpl_rel}" ]; then
         echo "inject_profile_secrets: no ${tpl_rel} found -- skipping 1Password injection for profile '${profile}' (this is expected if the profile has no private secrets)."
@@ -65,6 +69,7 @@ inject_profile_secrets() {
 # Stows profiles/<profile-name> into $HOME.
 stow_profile() {
     local profile="$1"
+    echo "==> STOWING PROFILE: ${profile}"
     (
         cd "${DOTFILES_DIR}/profiles" || exit 1
         stow --target="${HOME}" "${profile}"

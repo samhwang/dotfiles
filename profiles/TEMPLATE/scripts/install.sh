@@ -44,3 +44,5 @@ inject_profile_secrets TEMPLATE
 stow_profile TEMPLATE
 
 # Install the rest
+
+echo "==> SETUP COMPLETE!"

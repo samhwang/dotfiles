@@ -39,3 +39,5 @@ inject_profile_secrets linux
 stow_profile linux
 
 # Install the rest
+
+echo "==> SETUP COMPLETE!"

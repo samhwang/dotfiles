@@ -23,7 +23,10 @@ inject_profile_secrets linux-cachyos-handheld
 stow_profile linux-cachyos-handheld
 
 # Gaming Apps
+echo "==> INSTALLING GAMING APPS"
 paru -S --noconfirm cachyos-gaming-meta \
     cachyos-gaming-applications \
     discord \
     lsfg-vk
+
+echo "==> SETUP COMPLETE!"
