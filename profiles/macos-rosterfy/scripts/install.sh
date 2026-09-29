@@ -4,7 +4,7 @@ set -euo pipefail
 # Install pre-requisite
 echo "==> INSTALLING XCODE COMMAND LINE TOOLS AND HOMEBREW"
 xcode-select --install || true
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew install git \
     stow \
     curl \
