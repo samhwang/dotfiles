@@ -1,3 +1,4 @@
+config-version = 2
 # Start AeroSpace at login and specify which commands to run
 start-at-login = false
 after-login-command = []
