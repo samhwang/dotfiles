@@ -1,201 +1,169 @@
-
-# tap repositories and their packages
-
-tap 'homebrew/core'
-brew 'ack'
-brew 'act'
-brew 'automake'
-brew 'awscli'
-brew 'bash'
-brew 'bash-completion'
-brew 'bat'
-brew 'bottom'
-brew 'bzip2'
-brew 'certifi'
-brew 'cmatrix'
-brew 'coreutils'
-brew 'cowsay'
-brew 'curl'
-brew 'deno'
-brew 'direnv'
-brew 'dolt'
-brew 'doltgres'
-brew 'duf'
-brew 'expat'
-brew 'eza'
-brew 'fastfetch'
-brew 'fd'
-brew 'ffmpegthumbnailer'
-brew 'fnm'
-brew 'fzf'
-brew 'gh'
-brew 'ghostscript'
-brew 'git'
-brew 'git-delta'
-brew 'git-extras'
-brew 'gitui'
-brew 'go'
-brew 'helix'
-brew 'htop'
-brew 'hunk'
-brew 'ifstat'
-brew 'imagemagick'
-brew 'jq'
-brew 'k6'
-brew 'libedit'
-brew 'libffi'
-brew 'libiconv'
-brew 'libpsl'
-brew 'lnav'
-brew 'mas'
-brew 'mcfly'
-brew 'neonctl'
-brew 'neovim'
-brew 'ollama'
-brew 'oxker'
-brew 'openssl@1.1'
-brew 'perl'
-brew 'pipx'
-brew 'poppler'
-brew 'postgresql@15'
-brew 'python-tk'
-brew 'qemu'
-brew 'ripgrep'
-brew 'rsync'
-brew 'rtk'
-brew 'rust'
-brew 'sevenzip'
-brew 'sheldon'
-brew 'starship'
-brew 'stow'
-brew 'tealdeer'
-brew 'television'
-brew 'tmux'
-brew 'tree'
-brew 'vim'
-brew 'wget'
-brew 'xclip'
-brew 'yq'
-brew 'zellij'
-brew 'zig'
-brew 'zlib'
-brew 'zoxide'
-brew 'zsh'
-
-tap 'homebrew/cask'
-cask '1password'
-cask '1password-cli'
-cask 'balenaetcher'
-cask 'beekeeper-studio'
-cask 'bruno'
-cask 'caffeine'
-cask 'calibre'
-cask 'canva'
-cask 'claude-code'
-cask 'discord'
-cask 'docker-desktop'
-cask 'firefox'
-cask 'font-0xproto'
-cask 'font-0xproto-nerd-font'
-cask 'font-cascadia-code'
-cask 'font-caskaydia-cove-nerd-font'
-cask 'font-fira-code'
-cask 'font-fira-code-nerd-font'
-cask 'font-fira-mono'
-cask 'font-fira-mono-nerd-font'
-cask 'font-jetbrains-mono'
-cask 'font-jetbrains-mono-nerd-font'
-cask 'font-monaspace'
-cask 'font-monaspace-nf'
-cask 'fork'
-cask 'ghostty'
-cask 'gonhanh'
-cask 'google-chrome'
-cask 'google-drive'
-cask 'gpg-suite-no-mail'
-cask 'keymapp'
-cask 'logi-options+'
-cask 'logitech-g-hub'
-cask 'messenger'
-cask 'microsoft-auto-update'
-cask 'microsoft-office'
-cask 'miro'
-cask 'notion'
-cask 'numi'
-cask 'obs'
-cask 'paintbrush'
-cask 'rectangle'
-cask 'slack'
-cask 'spotify'
-cask 'steam'
-cask 'tableplus'
-cask 'tailscale-app'
-cask 'via'
-cask 'vial'
-cask 'visual-studio-code'
-cask 'zalo'
-cask 'zed'
-cask 'zoom'
-
-tap 'homebrew/bundle'
-
-tap 'homebrew/command-not-found'
-
-tap 'homebrew/services'
-
-tap 'anomalyco/tap'
-brew 'anomalyco/tap/opencode'
-
-tap 'atomicjar/tap'
-cask 'atomicjar/tap/testcontainers-desktop'
-
-tap 'beeftornado/rmtree'
-
-tap 'buo/cask-upgrade'
-
-tap 'cowsay-org/cowsay'
-
-tap 'github/gh'
-
-tap 'hashicorp/tap'
-brew 'hashicorp/tap/terraform'
-
-tap 'jesseduffield/lazydocker'
-brew 'jesseduffield/lazydocker/lazydocker'
-
-tap 'felixkratz/formulae'
-brew 'felixkratz/formulae/borders'
-brew 'felixkratz/formulae/sketchybar'
-
-tap 'libsql/sqld'
-
-tap 'localstack/tap'
-brew 'localstack/tap/localstack-cli'
-
-tap 'nikitabobko/tap'
-cask 'nikitabobko/tap/aerospace'
-
-tap 'nikolaeu/numi'
-brew 'nikolaeu/numi/numi-cli'
-
-tap 'oven-sh/bun'
-brew 'oven-sh/bun/bun'
-
-tap 'rcmdnk/file'
-brew 'rcmdnk/file/brew-file'
-
-tap 'tursodatabase/tap'
-brew 'tursodatabase/tap/turso'
-
-# App Store applications
-mas '1Password for Safari (8.11.18)', id: 15698132961
-mas 'Amazon Kindle (7.45.1)', id: 302584613
-mas 'Bear (2.6.5)', id: 1091189122
-mas 'Brother iPrint&Scan (14.0)', id: 1193539993
-mas 'GarageBand (10.4.12)', id: 682658836
-mas 'Genki Arcade (1.3.4)', id: 1555925018
-mas 'iMovie (10.4.3)', id: 408981434
-mas 'Keynote (14.4)', id: 409183694
-mas 'Notability (15.1.2)', id: 360593530
-mas 'Numbers (14.4)', id: 409203825
-mas 'Pages (14.4)', id: 409201541
+tap "anomalyco/tap", trusted: true
+tap "atomicjar/tap", trusted: true
+tap "beeftornado/rmtree", trusted: true
+tap "buo/cask-upgrade", trusted: true
+tap "cowsay-org/cowsay", trusted: true
+tap "felixkratz/formulae", trusted: true
+tap "github/gh", trusted: true
+tap "hashicorp/tap", trusted: true
+tap "jesseduffield/lazydocker", trusted: true
+tap "libsql/sqld", trusted: true
+tap "localstack/tap", trusted: true
+tap "nikitabobko/tap", trusted: true
+tap "nikolaeu/numi", trusted: true
+tap "oven-sh/bun", trusted: true
+tap "tursodatabase/tap", trusted: true
+brew "ack"
+brew "act"
+brew "automake"
+brew "awscli"
+brew "bash"
+brew "bash-completion"
+brew "bat"
+brew "bottom"
+brew "bzip2"
+brew "certifi"
+brew "cmatrix"
+brew "coreutils"
+brew "cowsay"
+brew "curl"
+brew "deno"
+brew "direnv"
+brew "dolt"
+brew "doltgres"
+brew "duf"
+brew "expat"
+brew "eza"
+brew "fastfetch"
+brew "fd"
+brew "ffmpegthumbnailer"
+brew "fnm"
+brew "fzf"
+brew "gh"
+brew "ghostscript"
+brew "git"
+brew "git-delta"
+brew "git-extras"
+brew "gitui"
+brew "go"
+brew "helix"
+brew "htop"
+brew "hunk"
+brew "ifstat"
+brew "imagemagick"
+brew "jq"
+brew "k6"
+brew "libedit"
+brew "libffi"
+brew "libiconv"
+brew "libpsl"
+brew "lnav"
+brew "mas"
+brew "mcfly"
+brew "neonctl"
+brew "neovim"
+brew "ollama"
+brew "openssl@1.1"
+brew "oxker"
+brew "perl"
+brew "pipx"
+brew "poppler"
+brew "postgresql@15"
+brew "python-tk"
+brew "qemu"
+brew "ripgrep"
+brew "rsync"
+brew "rtk"
+brew "rust"
+brew "sevenzip"
+brew "sheldon"
+brew "starship"
+brew "stow"
+brew "tealdeer"
+brew "television"
+brew "tmux"
+brew "tree"
+brew "vim"
+brew "wget"
+brew "xclip"
+brew "yq"
+brew "zellij"
+brew "zig"
+brew "zlib"
+brew "zoxide"
+brew "zsh"
+brew "anomalyco/tap/opencode", trusted: true
+brew "felixkratz/formulae/borders"
+brew "felixkratz/formulae/sketchybar"
+brew "hashicorp/tap/terraform"
+brew "jesseduffield/lazydocker/lazydocker"
+brew "localstack/tap/localstack-cli"
+brew "nikolaeu/numi/numi-cli"
+brew "oven-sh/bun/bun"
+brew "tursodatabase/tap/turso"
+cask "1password"
+cask "1password-cli"
+cask "nikitabobko/tap/aerospace"
+cask "balenaetcher"
+cask "beekeeper-studio"
+cask "bruno"
+cask "caffeine"
+cask "calibre"
+cask "canva"
+cask "claude-code"
+cask "discord"
+cask "docker-desktop"
+cask "firefox"
+cask "font-0xproto"
+cask "font-0xproto-nerd-font"
+cask "font-cascadia-code"
+cask "font-caskaydia-cove-nerd-font"
+cask "font-fira-code"
+cask "font-fira-code-nerd-font"
+cask "font-fira-mono"
+cask "font-fira-mono-nerd-font"
+cask "font-jetbrains-mono"
+cask "font-jetbrains-mono-nerd-font"
+cask "font-monaspace"
+cask "font-monaspace-nf"
+cask "fork"
+cask "ghostty"
+cask "gonhanh"
+cask "google-chrome"
+cask "google-drive"
+cask "gpg-suite-no-mail"
+cask "keymapp"
+cask "logi-options+"
+cask "logitech-g-hub"
+cask "messenger"
+cask "microsoft-auto-update"
+cask "microsoft-office"
+cask "miro"
+cask "notion"
+cask "numi"
+cask "obs"
+cask "paintbrush"
+cask "rectangle"
+cask "slack"
+cask "spotify"
+cask "steam"
+cask "tableplus"
+cask "tailscale-app"
+cask "atomicjar/tap/testcontainers-desktop"
+cask "via"
+cask "vial"
+cask "visual-studio-code"
+cask "zalo"
+cask "zed"
+cask "zoom"
+mas "1Password for Safari", id: 1569813296
+mas "Amazon Kindle", id: 302584613
+mas "Bear", id: 1091189122
+mas "Brother iPrint&Scan", id: 1193539993
+mas "GarageBand", id: 682658836
+mas "Genki Arcade", id: 1555925018
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Notability", id: 360593530
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
