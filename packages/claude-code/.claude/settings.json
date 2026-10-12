@@ -2,6 +2,11 @@
   "permissions": {
     "defaultMode": "plan"
   },
+  "model": "opus",
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
   "hooks": {
     "PreToolUse": [
       {
