@@ -75,3 +75,17 @@ stow_profile() {
         stow --target="${HOME}" "${profile}"
     )
 }
+
+# render_docker_config
+# Copies the stowed config.tpl.json to ~/.docker/config.json only if absent: docker rewrites config.json (e.g. currentContext), so a symlink or overwrite would churn the repo or lose state.
+render_docker_config() {
+    local src="${HOME}/.docker/config.tpl.json"
+    local dest="${HOME}/.docker/config.json"
+
+    echo "==> RENDERING DOCKER CONFIG"
+    if [ -e "${dest}" ]; then
+        echo "render_docker_config: ${dest} already exists -- skipping."
+        return 0
+    fi
+    cp "${src}" "${dest}"
+}

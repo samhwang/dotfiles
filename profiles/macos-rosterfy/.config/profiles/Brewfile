@@ -19,6 +19,7 @@ tap "nikitabobko/tap", trusted: true
 tap "nikolaeu/numi", trusted: true
 tap "oven-sh/bun", trusted: true
 tap "shivammathur/php", trusted: true
+tap "slp/krun", trusted: true
 tap "tursodatabase/tap", trusted: true
 tap "weaveworks/tap", trusted: true
 tap "wix-incubator/brew", "https://github.com/wix-incubator/homebrew-brew.git", trusted: true
@@ -34,12 +35,17 @@ brew "btop"
 brew "bzip2"
 brew "cmatrix"
 brew "cocoapods"
+brew "lima"
+brew "colima"
 brew "coreutils"
 brew "cowsay"
 brew "libpsl"
 brew "curl"
 brew "deno"
 brew "direnv"
+brew "docker"
+brew "docker-buildx"
+brew "docker-compose"
 brew "duf"
 brew "eksctl"
 brew "expat"
@@ -80,7 +86,7 @@ brew "libiconv"
 brew "librsvg"
 brew "lld"
 brew "lnav"
-brew "localstack"
+brew "localstack", link: false
 brew "make"
 brew "marp-cli"
 brew "mas"
@@ -150,7 +156,6 @@ cask "bruno"
 cask "caffeine"
 cask "claude-code@latest"
 cask "discord"
-cask "docker-desktop"
 cask "firefox"
 cask "font-0xproto"
 cask "font-0xproto-nerd-font"

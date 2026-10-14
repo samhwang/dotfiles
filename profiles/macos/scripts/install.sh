@@ -22,8 +22,10 @@ stow_generic_packages agents \
     bat \
     bottom \
     claude-code \
+    colima \
     cowsay \
     delta \
+    docker \
     fastfetch \
     gh \
     ghostty \
@@ -47,6 +49,7 @@ stow_platform_packages aerospace
 
 inject_profile_secrets macos
 stow_profile macos
+render_docker_config
 
 # Install the rest
 echo "==> RUNNING BREW BUNDLE INSTALL"

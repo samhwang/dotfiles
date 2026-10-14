@@ -36,8 +36,8 @@ PATH="$CONSOLE_NINJA_PATH:$PATH"
 # Load brew-wrap
 source "${ZSHCONFIG}/brew-wrap.zsh"
 
-# Load Docker completions
-source "${ZSHCONFIG}/docker-desktop.zsh"
+# Load colima docker env
+source "${ZSHCONFIG}/colima.zsh"
 
 # Load zoxide
 source "${ZSHCONFIG}/zoxide.zsh"
