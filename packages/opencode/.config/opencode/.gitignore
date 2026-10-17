@@ -4,3 +4,4 @@ bun.lock
 package-lock.json
 .caveman-active
 .ponytail-active
+service.json

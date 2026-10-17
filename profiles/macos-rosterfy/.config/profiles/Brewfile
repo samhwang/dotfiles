@@ -131,7 +131,7 @@ brew "zellij"
 brew "zlib"
 brew "zoxide"
 brew "zsh"
-brew "anomalyco/tap/opencode", trusted: true
+brew "anomalyco/tap/opencode-v2", trusted: true
 brew "cargo-lambda/tap/cargo-lambda"
 brew "common-fate/granted/granted"
 brew "derailed/k9s/k9s"

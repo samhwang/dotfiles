@@ -1,29 +1,27 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "autoupdate": true,
-  "plugin": [
-    "opencode-gemini-auth@latest",
-    "opencode-openai-codex-auth@latest",
-    "@nick-vi/opencode-type-inject@latest",
+  "update": "auto",
+  "plugins": [
     "@tarquinen/opencode-dcp@latest",
-    "@franlol/opencode-md-table-formatter@latest",
-    "opencode-vibeguard@latest",
-    "opencode-websearch-cited@latest",
-    "{env:HOME}/.dotfiles/plugins/ponytail/.opencode/plugins/ponytail.mjs",
-    "{env:HOME}/.dotfiles/plugins/i-have-adhd/.opencode/plugins/i-have-adhd.mjs",
+    "{env:HOME}/.dotfiles/plugins/ponytail/.opencode/plugins/",
+    "{env:HOME}/.dotfiles/plugins/i-have-adhd/.opencode/plugins/",
     "{env:HOME}/.dotfiles/plugins/caveman/plugin.js"
   ],
   "model": "opencode/big-pickle",
-  "small_model": "opencode/deepseek-v4-flash-free",
-  "provider": {
+  "agents": {
+    "title": {
+      "model": "opencode/deepseek-v4-flash-free"
+    }
+  },
+  "providers": {
     "anthropic": {
       "models": {},
-      "options": {
+      "settings": {
         "apiKey": "{env:ANTHROPIC_API_KEY}"
       }
     },
     "openrouter": {
-      "options": {
+      "settings": {
         "apiKey": "{env:OPENROUTER_API_KEY}"
       }
     }

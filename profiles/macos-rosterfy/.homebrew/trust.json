@@ -1,6 +1,6 @@
 {
   "trustedformulae": [
-    "anomalyco/tap/opencode"
+    "anomalyco/tap/opencode-v2"
   ],
   "trustedcasks": [],
   "trustedtaps": [

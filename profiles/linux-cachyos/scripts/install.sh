@@ -140,7 +140,7 @@ paru -S --noconfirm vim \
   ghostty \
   bruno-bin \
   docker \
-  opencode \
+  opencode-beta \
   claude-code \
   github-copilot-cli \
   beekeeper-studio-bin \
