@@ -38,6 +38,7 @@ stow_generic_packages agents \
   nvim \
   opencode \
   sheldon \
+  ssh \
   starship \
   stow \
   television \

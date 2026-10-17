@@ -21,6 +21,7 @@ stow_generic_packages act \
     nvim \
     opencode \
     sheldon \
+    ssh \
     starship \
     stow \
     testcontainers \
