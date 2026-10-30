@@ -39,7 +39,7 @@ update_cowsay_submodule
 #     hypr \
 #     lsfg-vk
 # # macOS packages
-# stow_platform_packages aerospace
+# stow_platform_packages omniwm
 
 inject_profile_secrets TEMPLATE
 stow_profile TEMPLATE

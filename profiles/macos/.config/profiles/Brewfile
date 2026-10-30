@@ -3,13 +3,11 @@ tap "atomicjar/tap", trusted: true
 tap "beeftornado/rmtree", trusted: true
 tap "buo/cask-upgrade", trusted: true
 tap "cowsay-org/cowsay", trusted: true
-tap "felixkratz/formulae", trusted: true
 tap "github/gh", trusted: true
 tap "hashicorp/tap", trusted: true
 tap "jesseduffield/lazydocker", trusted: true
 tap "libsql/sqld", trusted: true
 tap "localstack/tap", trusted: true
-tap "nikitabobko/tap", trusted: true
 tap "nikolaeu/numi", trusted: true
 tap "oven-sh/bun", trusted: true
 tap "slp/krun", trusted: true
@@ -99,8 +97,6 @@ brew "zlib"
 brew "zoxide"
 brew "zsh"
 brew "anomalyco/tap/opencode-v2", trusted: true
-brew "felixkratz/formulae/borders"
-brew "felixkratz/formulae/sketchybar"
 brew "hashicorp/tap/terraform"
 brew "jesseduffield/lazydocker/lazydocker"
 brew "localstack/tap/localstack-cli"
@@ -109,7 +105,6 @@ brew "oven-sh/bun/bun"
 brew "tursodatabase/tap/turso"
 cask "1password"
 cask "1password-cli"
-cask "nikitabobko/tap/aerospace"
 cask "balenaetcher"
 cask "beekeeper-studio"
 cask "bruno"
@@ -147,6 +142,7 @@ cask "miro"
 cask "notion"
 cask "numi"
 cask "obs"
+cask "omniwm"
 cask "paintbrush"
 cask "rectangle"
 cask "slack"

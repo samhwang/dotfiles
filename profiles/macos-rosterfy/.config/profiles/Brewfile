@@ -6,20 +6,18 @@ tap "cargo-lambda/tap", "https://github.com/cargo-lambda/homebrew-tap.git", trus
 tap "common-fate/granted", trusted: true
 tap "cowsay-org/cowsay", trusted: true
 tap "derailed/k9s", trusted: true
-tap "facebook/fb", trusted: true
-tap "felixkratz/formulae", trusted: true
 tap "fluxcd/tap", trusted: true
 tap "github/gh", trusted: true
 tap "hashicorp/tap", trusted: true
 tap "jesseduffield/lazydocker", trusted: true
 tap "lacework/tap", trusted: true
+tap "libkrun/krun", "https://github.com/libkrun/homebrew-krun.git", trusted: true
 tap "libsql/sqld", trusted: true
 tap "localstack/tap", trusted: true
-tap "nikitabobko/tap", trusted: true
+tap "meta/fb", "https://github.com/meta/homebrew-fb.git"
 tap "nikolaeu/numi", trusted: true
 tap "oven-sh/bun", trusted: true
 tap "shivammathur/php", trusted: true
-tap "slp/krun", trusted: true
 tap "tursodatabase/tap", trusted: true
 tap "weaveworks/tap", trusted: true
 tap "wix-incubator/brew", "https://github.com/wix-incubator/homebrew-brew.git", trusted: true
@@ -135,9 +133,6 @@ brew "anomalyco/tap/opencode-v2", trusted: true
 brew "cargo-lambda/tap/cargo-lambda"
 brew "common-fate/granted/granted"
 brew "derailed/k9s/k9s"
-brew "facebook/fb/idb-companion"
-brew "felixkratz/formulae/borders"
-brew "felixkratz/formulae/sketchybar"
 brew "fluxcd/tap/flux"
 brew "hashicorp/tap/terraform"
 brew "jesseduffield/lazydocker/lazydocker"
@@ -150,7 +145,6 @@ brew "tursodatabase/tap/turso"
 brew "wix-incubator/brew/applesimutils"
 cask "1password"
 cask "1password-cli"
-cask "nikitabobko/tap/aerospace"
 cask "android-studio"
 cask "bruno"
 cask "caffeine"
@@ -174,6 +168,7 @@ cask "logi-options+"
 cask "logitech-g-hub"
 cask "miro"
 cask "nosql-workbench"
+cask "omniwm"
 cask "openvpn-connect"
 cask "paintbrush"
 cask "phpstorm"

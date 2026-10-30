@@ -46,7 +46,7 @@ stow_generic_packages agents \
     zsh
 update_cowsay_submodule
 # macOS packages
-stow_platform_packages aerospace
+stow_platform_packages omniwm
 
 inject_profile_secrets macos
 stow_profile macos
