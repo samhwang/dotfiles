@@ -8,9 +8,12 @@ avatar_path = "/home/samhwang/.face"
 app_icon_colorize = true
 telemetry_enabled = false
 setup_wizard_enabled = false
-polkit_agent = false
+polkit_agent = true
 time_format = "{:%H:%M}"
 date_format = "%A, %x"
+
+[shell.panel]
+shadow = false
 
 [shell.launcher.providers.session]
 global = true
@@ -85,6 +88,7 @@ reserve_space = true
 show_dots = false
 magnification = true
 magnification_scale = 1.45
+shadow = false
 
 [bar]
 order = ["main"]
@@ -97,6 +101,8 @@ widget_spacing = 6
 padding = 2
 margin_ends = 4
 margin_edge = 4
+shadow = false
+contact_shadow = false
 capsule = true
 start = ["launcher", "clock", "sysmon-cpu", "sysmon-ram", "active-window"]
 center = ["workspaces", "media"]

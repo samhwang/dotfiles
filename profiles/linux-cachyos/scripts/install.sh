@@ -51,7 +51,7 @@ stow_generic_packages agents \
 update_cowsay_submodule
 # Linux packages
 stow_platform_packages discord \
-  hypr \
+  mango \
   lact \
   lsfg-vk
 
@@ -214,15 +214,16 @@ paru -S --noconfirm tailscale \
   nordvpn-bin \
   nordvpn-gui
 
-# Hyprland packages
-echo "==> INSTALLING HYPRLAND PACKAGES"
-paru -S --noconfirm hyprland \
-  hyprpicker \
-  hyprpolkitagent \
-  xdg-desktop-portal-hyprland \
+# Mango packages
+echo "==> INSTALLING MANGO PACKAGES"
+paru -S --noconfirm mangowm \
+  noctalia \
+  noctalia-greeter \
+  xdg-desktop-portal-wlr \
   xdg-desktop-portal-gtk \
+  kwallet \
+  kwallet-pam \
   egl-wayland \
-  hyprsunset \
   pipewire \
   wireplumber \
   pipewire-alsa \
@@ -235,12 +236,10 @@ paru -S --noconfirm hyprland \
   satty \
   gpu-screen-recorder \
   wl-clipboard \
+  wl-clip-persist \
   cliphist \
   playerctl \
   udiskie \
-  uwsm \
-  noctalia \
-  noctalia-greeter \
   vlc \
   vlc-plugins-all
 
@@ -249,8 +248,8 @@ paru -S --noconfirm hyprland \
 echo "==> INSTALLING GREETD/NOCTALIA-GREETER SYSTEM CONFIGS"
 sudo useradd -r -s /usr/bin/nologin -d /var/lib/noctalia-greeter greeter 2>/dev/null || true
 sudo cp -a /etc/greetd/config.toml /etc/greetd/config.toml.bak 2>/dev/null || true
-sudo install -Dm644 ~/.dotfiles/packages/hypr/etc/greetd/config.toml /etc/greetd/config.toml
-sudo install -Dm644 ~/.dotfiles/packages/hypr/var/lib/noctalia-greeter/greeter.toml /var/lib/noctalia-greeter/greeter.toml
+sudo install -Dm644 ~/.dotfiles/packages/mango/etc/greetd/config.toml /etc/greetd/config.toml
+sudo install -Dm644 ~/.dotfiles/packages/mango/var/lib/noctalia-greeter/greeter.toml /var/lib/noctalia-greeter/greeter.toml
 sudo chown greeter:greeter /var/lib/noctalia-greeter/greeter.toml
 
 # Replace sddm with greetd as display manager

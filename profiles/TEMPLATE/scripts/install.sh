@@ -36,7 +36,7 @@ update_cowsay_submodule
 # UNCOMMENT ONE OF THESE BLOCKS FOR THE OS THAT IS INSTALLED ON
 # Linux packages
 # stow_platform_packages discord \
-#     hypr \
+#     mango \
 #     lsfg-vk
 # # macOS packages
 # stow_platform_packages omniwm

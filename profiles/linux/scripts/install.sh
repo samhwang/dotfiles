@@ -33,7 +33,7 @@ stow_generic_packages act \
 update_cowsay_submodule
 # Linux packages
 stow_platform_packages discord \
-    hypr \
+    mango \
     lsfg-vk
 
 inject_profile_secrets linux

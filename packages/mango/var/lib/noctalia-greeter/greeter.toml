@@ -21,7 +21,7 @@ layout = "us"
 name = "DP-2"
 
 [session]
-default = "Hyprland"
+default = "Mango"
 
 [user]
 default = "samhwang"
