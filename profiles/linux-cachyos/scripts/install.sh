@@ -53,6 +53,7 @@ update_cowsay_submodule
 stow_platform_packages discord \
   mango \
   lact \
+  openlogi \
   lsfg-vk
 
 inject_profile_secrets linux-cachyos
@@ -188,7 +189,8 @@ paru -S --noconfirm snapper \
 
 # For Logitech mice
 echo "==> INSTALLING LOGITECH MICE SUPPORT"
-paru -S --noconfirm solaar
+paru -S --noconfirm solaar \
+  openlogi-bin
 
 # For Ergodox EZ
 echo "==> INSTALLING ERGODOX EZ SUPPORT"

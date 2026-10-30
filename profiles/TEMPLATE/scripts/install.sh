@@ -8,36 +8,37 @@ source "${DOTFILES_DIR}/profiles/lib/install-common.sh"
 # Use stow to restore config
 # Generic packages
 stow_generic_packages agents \
-    act \
-    bat \
-    bottom \
-    claude-clode \
-    cowsay \
-    delta \
-    fastfetch \
-    gh \
-    ghostty \
-    git \
-    gitui \
-    nvim \
-    opencode \
-    sheldon \
-    ssh \
-    starship \
-    stow \
-    television \
-    testcontainers \
-    tmux \
-    vim \
-    zed \
-    zellij \
-    zsh
+  act \
+  bat \
+  bottom \
+  claude-clode \
+  cowsay \
+  delta \
+  fastfetch \
+  gh \
+  ghostty \
+  git \
+  gitui \
+  nvim \
+  opencode \
+  openlogi \
+  sheldon \
+  ssh \
+  starship \
+  stow \
+  television \
+  testcontainers \
+  tmux \
+  vim \
+  zed \
+  zellij \
+  zsh
 update_cowsay_submodule
 # UNCOMMENT ONE OF THESE BLOCKS FOR THE OS THAT IS INSTALLED ON
 # Linux packages
 # stow_platform_packages discord \
-#     mango \
-#     lsfg-vk
+#   mango \
+#   lsfg-vk
 # # macOS packages
 # stow_platform_packages omniwm
 

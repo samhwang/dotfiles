@@ -34,6 +34,7 @@ update_cowsay_submodule
 # Linux packages
 stow_platform_packages discord \
     mango \
+    openlogi \
     lsfg-vk
 
 inject_profile_secrets linux
