@@ -53,6 +53,7 @@ update_cowsay_submodule
 stow_platform_packages discord \
   mango \
   lact \
+  openlogi \
   lsfg-vk
 
 inject_profile_secrets linux-cachyos

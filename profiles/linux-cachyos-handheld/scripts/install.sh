@@ -27,6 +27,7 @@ stow_generic_packages bat \
     zsh
 # Linux packages
 stow_platform_packages discord \
+    openlogi \
     lsfg-vk
 
 stow_profile linux-cachyos-handheld

@@ -46,7 +46,7 @@ stow_generic_packages agents \
     zsh
 update_cowsay_submodule
 # macOS packages
-stow_platform_packages omniwm
+stow_platform_packages omniwm openlogi
 
 inject_profile_secrets macos-rosterfy
 stow_profile macos-rosterfy
