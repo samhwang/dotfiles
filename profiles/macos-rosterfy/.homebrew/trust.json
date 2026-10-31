@@ -1,8 +1,12 @@
 {
   "trustedformulae": [
-    "anomalyco/tap/opencode-v2"
+    "anomalyco/tap/opencode-v2",
+    "hashicorp/tap/terraform",
+    "lacework/tap/lacework-cli"
   ],
-  "trustedcasks": [],
+  "trustedcasks": [
+    "atomicjar/tap/testcontainers-desktop"
+  ],
   "trustedtaps": [
     "anomalyco/tap",
     "atomicjar/tap",
