@@ -11,6 +11,7 @@ brew install git \
   wget
 echo "==> INSTALLING CASKS"
 brew install --cask 1password
+mkdir -p ~/.1password && ln -s "$HOME/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock" ~/.1password/agent.sock
 
 DOTFILES_DIR="${HOME}/.dotfiles"
 source "${DOTFILES_DIR}/profiles/lib/install-common.sh"
