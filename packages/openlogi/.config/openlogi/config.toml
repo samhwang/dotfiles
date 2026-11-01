@@ -1,5 +1,5 @@
 schema_version = 10
-selected_device = "serial:2147fe3003e8"
+selected_device = "receiver:f09298ea:slot:1"
 
 [devices."unit:30384703".identity]
 display_name = "POWERPLAY"
@@ -14,6 +14,9 @@ display_name = "Litra Glow"
 kind = "light"
 driver_id = "litra"
 registry_model_id = "8c900"
+
+[devices."receiver:f09298ea:slot:1"]
+custom_name = "Unifying Receiver"
 
 [app_settings]
 launch_at_login = true
