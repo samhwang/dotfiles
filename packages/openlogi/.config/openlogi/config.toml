@@ -1,5 +1,5 @@
 schema_version = 10
-selected_device = "unit:529f073d"
+selected_device = "serial:2147fe3003e8"
 
 [devices."unit:30384703".identity]
 display_name = "POWERPLAY"
@@ -8,6 +8,12 @@ kind = "touchpad"
 
 [devices."camera:046d:0893:serial:851c2f25".camera_controls]
 power_line_frequency = 2
+
+[devices."serial:2147fe3003e8".identity]
+display_name = "Litra Glow"
+kind = "light"
+driver_id = "litra"
+registry_model_id = "8c900"
 
 [app_settings]
 launch_at_login = true
@@ -45,11 +51,36 @@ model_ids = [
 ]
 extended_model_id = 0
 
+[devices."serial:2147fe3003e8".identity.capabilities]
+buttons = false
+pointer = false
+lighting = false
+scroll_inversion = false
+hires_wheel = false
+thumbwheel = false
+haptic_feedback = false
+haptic_panel = false
+dpi_gestures = false
+fn_lock = false
+os_layout = false
+report_rate = false
+backlight = false
+easy_switch = false
+virtual_thumbwheel = false
+pointer_scaling = false
+force_sensing = false
+disable_keys = false
+
 [devices."unit:30384703".identity.model_info.transports]
 usb = false
 equad = true
 btle = false
 bluetooth = false
+
+[devices."serial:2147fe3003e8".identity.light_capabilities]
+power = true
+color = false
+zones = false
 
 [devices."unit:30384703".identity.capabilities]
 buttons = false
@@ -71,6 +102,17 @@ pointer_scaling = false
 force_sensing = false
 disable_keys = false
 
+[devices."serial:2147fe3003e8".light]
+enabled = false
+brightness_percent = 100
+temperature_kelvin = 3400
+
+[devices."serial:2147fe3003e8".identity.light_capabilities.brightness]
+min = 20
+max = 250
+step = 1
+unit = "lumens"
+
 [devices."unit:30384703".links."receiver:b65d9365:slot:7".capabilities]
 buttons = false
 pointer = false
@@ -91,10 +133,18 @@ pointer_scaling = false
 force_sensing = false
 disable_keys = false
 
+[devices."serial:2147fe3003e8".identity.light_capabilities.temperature]
+min = 2700
+max = 6500
+step = 100
+unit = "kelvin"
+
 [devices."unit:8c2f6086".identity]
 display_name = "PRO X SUPERLIGHT"
 codename = "PRO X Wireless"
 kind = "mouse"
+
+[devices."serial:2147fe3003e8".links."raw:046d:c900:ff43:0202:serial:2147fe3003e8"]
 
 [devices."unit:529f073d".identity]
 display_name = "MX Ergo"
