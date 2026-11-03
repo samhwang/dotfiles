@@ -1,6 +1,3 @@
-# Ported from AeroSpace. Targets schema 4 for OmniWM 0.7.6, which rejects the whole
-# file if a required key is missing, so keep schema 4 and do not copy from main.
-# Required by 0.7.6 even when empty.
 monitorBarOverrides = []
 monitorDwindleOverrides = []
 monitorGapOverrides = []
@@ -12,8 +9,6 @@ schemaVersion = 4
 mode = "dark"
 tabRailAppIcons = false
 
-# Replaces the borders tool, same mauve (#cba6f7), width now 7.
-# unmapped: style=round and a separate inactive_color (OmniWM draws the focused window only)
 [borders]
 enabled = true
 width = 7.0
@@ -60,8 +55,6 @@ smartSplit = false
 splitWidthMultiplier = 1.0
 useGlobalGaps = true
 
-# Mouse follows focus, closest match to move-mouse monitor-lazy-center.
-# unmapped: exact monitor-lazy-center placement (OmniWM warps to the focused window instead)
 [focus]
 crossesMonitorAtEdge = false
 followsMouse = false
@@ -71,10 +64,6 @@ moveCrossesMonitorAtEdge = false
 moveMouseToFocusedWindow = true
 raiseOnMouseFocus = false
 
-# Gaps match AeroSpace inner 10 and outer 10 on every edge. The old top 40 on
-# external displays only made room for sketchybar, which the native bar replaces.
-# unmapped: per-monitor outer.top. OmniWM matches displays by UUID, not "Built-in", so add
-# [[monitorGapOverrides]] with monitorName and monitorDisplayUUID once the displays are known.
 [gaps]
 fullscreenUsesOuterGaps = false
 size = 10.0
@@ -85,10 +74,6 @@ left = 10.0
 right = 10.0
 top = 10.0
 
-# unmapped: AeroSpace flatten-containers and opposite-orientation normalisation (Dwindle manages its own tree)
-# unmapped: default-root-container-orientation = auto (orientation is per display in OmniWM, see monitorOrientationOverrides)
-# unmapped: automatically-unhide-macos-hidden-apps, key-mapping preset (hotkeys are keycode based)
-# unmapped: start-at-login (macOS-managed, toggle in OmniWM Settings)
 [general]
 animationSpeed = 1.0
 animationsEnabled = true
@@ -199,8 +184,6 @@ showIcon = true
 showWorkspaceName = false
 useWorkspaceId = false
 
-# Native bar replaces sketchybar workspace chips and click-to-switch.
-# unmapped: clock, front-app label, battery, volume and layout indicator (no native equivalent, layout indicator is an open upstream request)
 [workspaceBar]
 autoHide = false
 autoHideHideDelayMilliseconds = 0.0
@@ -234,7 +217,6 @@ yOffset = 0.0
 
 [workspaceBar.iconOverrides]
 
-# Upstream default rules (min window sizes) are kept as the file replaces the whole list.
 [[appRules]]
 bundleId = "com.openai.codex"
 id = "6A31F08A-4051-4354-B439-42F4C71894A3"
@@ -295,7 +277,6 @@ id = "AF752D95-8497-4844-BE20-4C93E73BAEF2"
 minHeight = 500.0
 minWidth = 800.0
 
-# Ghostty always lands on workspace 1. The min size keeps the upstream default for this bundle.
 [[appRules]]
 assignToWorkspace = "1"
 bundleId = "com.mitchellh.ghostty"
@@ -315,9 +296,6 @@ id = "552FB77D-BF0E-4737-90A6-B5BC6986C579"
 minHeight = 320.0
 minWidth = 660.0
 
-# Hotkeys omitted from this list are unassigned, so the full working set is spelled out.
-# unmapped: service mode flatten-workspace-tree, close-all-windows-but-current, reload-config (live reload is automatic)
-# unmapped: service mode itself (keyboard modes do not exist in 0.7.6)
 [[hotkeys]]
 binding = "Unassigned"
 id = "toggleScratchpad.1"
@@ -554,8 +532,6 @@ id = "switchWorkspace.next"
 binding = "Unassigned"
 id = "switchWorkspace.previous"
 
-# Vim-style Option+h/j/k/l focus and move. In Dwindle, Option+Shift+direction also
-# joins a singleton into a tile or group, which covers AeroSpace join-with.
 [[hotkeys]]
 binding = "Option+H"
 id = "focus.left"
@@ -720,8 +696,6 @@ id = "focusMonitorPrevious"
 binding = "Control+Command+Grave"
 id = "focusMonitorLast"
 
-# Option+Shift+Tab / Control+Option+Shift+Tab send the workspace to the monitor on the right / left.
-# unmapped: move-workspace-to-monitor --wrap-around (OmniWM never wraps, one key per direction)
 [[hotkeys]]
 binding = "Control+Option+Shift+Tab"
 id = "moveWorkspaceToMonitor.left"
@@ -786,7 +760,6 @@ id = "moveColumnToFirst"
 binding = "Control+Option+End"
 id = "moveColumnToLast"
 
-# unmapped: accordion layout (use Option+T tabbed Niri column instead)
 [[hotkeys]]
 binding = "Option+T"
 id = "toggleColumnTabbed"
@@ -943,7 +916,6 @@ id = "expandContainerToAvailablePrimarySpan"
 binding = "Control+Option+R"
 id = "resetWindowSecondarySpan"
 
-# Option+-/= resizes in Niri, Control+Option+-/= resizes in Dwindle.
 [[hotkeys]]
 binding = "Option+Minus"
 id = "setContainerPrimarySpan.decrease10Percent"
@@ -1044,7 +1016,6 @@ id = "toggleFloatingFocus"
 binding = "Unassigned"
 id = "rescueOffscreenWindows"
 
-# Option+Shift+Semicolon toggles floating (AeroSpace service mode "f").
 [[hotkeys]]
 binding = "Option+Shift+Semicolon"
 id = "toggleFocusedWindowFloating"
@@ -1077,7 +1048,6 @@ id = "toggleHiddenBarPanel"
 binding = "Option+Grave"
 id = "toggleQuakeTerminal"
 
-# Option+Slash toggles Niri/Dwindle per workspace (AeroSpace layout tiles toggle).
 [[hotkeys]]
 binding = "Option+Slash"
 id = "toggleWorkspaceLayout"
@@ -1090,13 +1060,9 @@ id = "toggleOverview"
 binding = "Unassigned"
 id = "toggleSystemStats"
 
-# Workspaces use layoutType "default" so they follow defaultLayoutType (dwindle).
-# 5 and 7 sit on the secondary display, the rest on main. Which physical display is main
-# or secondary depends on OmniWM's monitor ranking, check it after first launch and add
-# [monitors] ranking or specificDisplay if they are swapped.
 [[workspaces]]
 id = "AD36F001-C57E-41A5-AC1D-DF5249D007F0"
-layoutType = "default"
+layoutType = "dwindle"
 name = "1"
 
 [workspaces.monitorAssignment]
@@ -1104,7 +1070,7 @@ type = "main"
 
 [[workspaces]]
 id = "454CECD4-5E9D-4ED1-95D7-979D48817F5F"
-layoutType = "default"
+layoutType = "niri"
 name = "2"
 
 [workspaces.monitorAssignment]
@@ -1144,7 +1110,7 @@ type = "main"
 
 [[workspaces]]
 id = "A7D5E104-6985-4516-8ED5-07F144F2A33D"
-layoutType = "default"
+layoutType = "dwindle"
 name = "7"
 
 [workspaces.monitorAssignment]
