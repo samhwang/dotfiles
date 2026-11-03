@@ -25,6 +25,7 @@
     "libkrun/krun",
     "libsql/sqld",
     "localstack/tap",
+    "meta/fb",
     "nikitabobko/tap",
     "nikolaeu/numi",
     "oven-sh/bun",
