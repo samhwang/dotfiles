@@ -63,7 +63,7 @@ enabled = true
 enabled = true
 fill_mode = "crop"
 directory = "/home/samhwang/Pictures/Wallpapers"
-transition = ["fade", "disc", "stripes", "wipe", "pixelate", "honeycomb"]
+transition = ["fade", "disc", "stripes", "wipe", "pixel", "honeycomb"]
 transition_duration = 1500
 transition_on_startup = true
 
@@ -74,9 +74,8 @@ order = "random"
 recursive = true
 
 [dock]
-enabled = true
+enabled = false
 position = "bottom"
-monitors = ["DP-2"]
 auto_hide = true
 icon_size = 48
 background_opacity = 1.0
@@ -89,6 +88,9 @@ show_dots = false
 magnification = true
 magnification_scale = 1.45
 shadow = false
+
+[dock.monitor.DP-2]
+enabled = true
 
 [bar]
 order = ["main"]
