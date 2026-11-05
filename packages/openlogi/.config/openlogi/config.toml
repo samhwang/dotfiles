@@ -1,4 +1,4 @@
-schema_version = 10
+schema_version = 11
 selected_device = "receiver:f09298ea:slot:1"
 
 [devices."unit:30384703".identity]
@@ -8,6 +8,14 @@ kind = "touchpad"
 
 [devices."camera:046d:0893:serial:851c2f25".camera_controls]
 power_line_frequency = 2
+
+[app_settings.momentum_scrolling]
+enabled = false
+pixels_per_notch = 28
+glide_shape = "smooth"
+max_glide_speed = 8000
+glide_ms = 400
+repeat_boost = 135
 
 [devices."serial:2147fe3003e8".identity]
 display_name = "Litra Glow"
@@ -73,6 +81,9 @@ virtual_thumbwheel = false
 pointer_scaling = false
 force_sensing = false
 disable_keys = false
+onboard_profiles = false
+button_spy = false
+sidetone = false
 
 [devices."unit:30384703".identity.model_info.transports]
 usb = false
@@ -104,6 +115,9 @@ virtual_thumbwheel = false
 pointer_scaling = false
 force_sensing = false
 disable_keys = false
+onboard_profiles = false
+button_spy = false
+sidetone = false
 
 [devices."serial:2147fe3003e8".light]
 enabled = false
@@ -135,6 +149,9 @@ virtual_thumbwheel = false
 pointer_scaling = false
 force_sensing = false
 disable_keys = false
+onboard_profiles = false
+button_spy = false
+sidetone = false
 
 [devices."serial:2147fe3003e8".identity.light_capabilities.temperature]
 min = 2700
@@ -215,6 +232,9 @@ virtual_thumbwheel = false
 pointer_scaling = false
 force_sensing = false
 disable_keys = false
+onboard_profiles = true
+button_spy = true
+sidetone = false
 
 [devices."unit:529f073d".identity.capabilities]
 buttons = true
@@ -235,6 +255,9 @@ virtual_thumbwheel = false
 pointer_scaling = true
 force_sensing = false
 disable_keys = false
+onboard_profiles = false
+button_spy = false
+sidetone = false
 
 [devices."unit:8c2f6086".links."receiver:b65d9365:slot:1".capabilities]
 buttons = false
@@ -255,6 +278,9 @@ virtual_thumbwheel = false
 pointer_scaling = false
 force_sensing = false
 disable_keys = false
+onboard_profiles = true
+button_spy = true
+sidetone = false
 
 [devices."unit:529f073d".links."receiver:f09298ea:slot:2".capabilities]
 buttons = true
@@ -275,5 +301,8 @@ virtual_thumbwheel = false
 pointer_scaling = true
 force_sensing = false
 disable_keys = false
+onboard_profiles = false
+button_spy = false
+sidetone = false
 
 [keyboard]
