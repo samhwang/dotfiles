@@ -14,7 +14,7 @@ tap "lacework/tap", trusted: true
 tap "libkrun/krun", "https://github.com/libkrun/homebrew-krun.git", trusted: true
 tap "libsql/sqld", trusted: true
 tap "localstack/tap", trusted: true
-tap "meta/fb", "https://github.com/meta/homebrew-fb.git"
+tap "meta/fb", "https://github.com/meta/homebrew-fb.git", trusted: true
 tap "nikolaeu/numi", trusted: true
 tap "oven-sh/bun", trusted: true
 tap "shivammathur/php", trusted: true
@@ -134,10 +134,11 @@ brew "cargo-lambda/tap/cargo-lambda"
 brew "common-fate/granted/granted"
 brew "derailed/k9s/k9s"
 brew "fluxcd/tap/flux"
-brew "hashicorp/tap/terraform"
+brew "hashicorp/tap/terraform", trusted: true
 brew "jesseduffield/lazydocker/lazydocker"
-brew "lacework/tap/lacework-cli"
+brew "lacework/tap/lacework-cli", trusted: true
 brew "localstack/tap/localstack-cli"
+brew "meta/fb/idb-companion"
 brew "nikolaeu/numi/numi-cli"
 brew "oven-sh/bun/bun"
 brew "shivammathur/php/php@8.3"
@@ -177,7 +178,7 @@ cask "sequel-ace"
 cask "slack"
 cask "stats"
 cask "tailscale-app"
-cask "atomicjar/tap/testcontainers-desktop"
+cask "atomicjar/tap/testcontainers-desktop", trusted: true
 cask "visual-studio-code"
 cask "vivaldi"
 cask "zed"
