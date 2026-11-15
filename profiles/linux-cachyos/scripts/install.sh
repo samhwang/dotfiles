@@ -56,6 +56,9 @@ stow_platform_packages discord \
   openlogi \
   lsfg-vk
 
+# Clipboard persistence is a self-restarting user service (packages/mango).
+systemctl --user enable wl-clip-persist.service || true
+
 inject_profile_secrets linux-cachyos
 stow_profile linux-cachyos
 

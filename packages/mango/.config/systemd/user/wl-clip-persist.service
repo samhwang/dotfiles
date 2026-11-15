@@ -1,0 +1,16 @@
+[Unit]
+Description=Wayland clipboard persistence (keeps clipboard after source app exits)
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/wl-clip-persist --clipboard regular
+Restart=always
+RestartSec=2
+# wl-clip-persist 0.5.0 goes stale after ~3 days (GTK clients read empty).
+# Recycle it well before that; Restart=always brings it back.
+RuntimeMaxSec=12h
+
+[Install]
+WantedBy=graphical-session.target
