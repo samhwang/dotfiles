@@ -53,9 +53,9 @@ useGlobalGaps = true
 [focus]
 crossesMonitorAtEdge = false
 edgeNavigationInterval = 1.5
-followsMouse = false
+followsMouse = true
 followsMouseOnlyFullyVisible = false
-followsWindowToMonitor = false
+followsWindowToMonitor = true
 lockModifier = "off"
 moveCrossesMonitorAtEdge = false
 moveMouseToFocusedWindow = true
