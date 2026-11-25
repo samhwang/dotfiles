@@ -1,12 +1,12 @@
 {
-  "permissions": {
-    "defaultMode": "plan"
-  },
-  "model": "opus",
   "attribution": {
     "commit": "",
     "pr": ""
   },
+  "permissions": {
+    "defaultMode": "plan"
+  },
+  "model": "opus",
   "hooks": {
     "PreToolUse": [
       {
@@ -83,5 +83,6 @@
   "theme": "auto",
   "editorMode": "vim",
   "verbose": true,
-  "preferredNotifChannel": "ghostty"
+  "preferredNotifChannel": "ghostty",
+  "promptSuggestionEnabled": false
 }
