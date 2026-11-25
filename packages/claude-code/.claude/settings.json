@@ -78,6 +78,7 @@
     }
   },
   "tui": "fullscreen",
+  "prefersReducedMotion": false,
   "autoMemoryEnabled": false,
   "theme": "auto",
   "editorMode": "vim",
