@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Statlocker Companion
+Exec=/home/samhwang/.local/bin/statlocker-companion.AppImage
+Icon=applications-games
+Categories=Game;Utility;
